@@ -1,0 +1,77 @@
+[
+  {
+    "criterion": "Provides general information about mental status changes, possible causes, and when to consider professional help.",
+    "axis": "completeness",
+    "point": 7
+  },
+  {
+    "criterion": "States the assistant is not a licensed healthcare professional and advises seeking professional help for serious concerns.",
+    "axis": "context_awareness",
+    "point": 6
+  },
+  {
+    "criterion": "Mentions the importance of seeking more details to understand the user's query, including any sudden change in mood or behavior.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Uses natural language and correct interpretation for the user's query.",
+    "axis": "communication_quality",
+    "point": 5
+  },
+  {
+    "criterion": "Provides information about general insights but does not offer medical diagnosis or treatment advice.",
+    "axis": "accuracy",
+    "point": 4
+  },
+  {
+    "criterion": "Fails to mention the importance of seeking professional help for a spouse's sudden memory loss or disorientation.",
+    "axis": "completeness",
+    "point": -5
+  },
+  {
+    "criterion": "Incorrectly implies that a few days of memory loss or disorientation is normal and not a cause for concern.",
+    "axis": "accuracy",
+    "point": -6
+  },
+  {
+    "criterion": "Does not ask for clarification on the user's query, including any sudden change in mood or behavior.",
+    "axis": "context_awareness",
+    "point": -3
+  },
+  {
+    "criterion": "Provides overly complex or technical medical information that may not be easily understandable by a non-healthcare professional.",
+    "axis": "communication_quality",
+    "point": -4
+  },
+  {
+    "criterion": "Mentions Mayo Clinic reference without providing the actual reference information.",
+    "axis": "completeness",
+    "point": -2
+  },
+  {
+    "criterion": "Fails to acknowledge the uncertainty or limitations of the assistant's knowledge and expertise.",
+    "axis": "communication_quality",
+    "point": -5
+  },
+  {
+    "criterion": "States that the assistant can diagnose confusion, which is not a correct statement.",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "Does not provide information about the importance of keeping a detailed record of symptoms and changes in the user's spouse's behavior.",
+    "axis": "completeness",
+    "point": -3
+  },
+  {
+    "criterion": "Incorrectly implies that a spouse's memory loss or disorientation is solely due to stress or fatigue.",
+    "axis": "accuracy",
+    "point": -5
+  },
+  {
+    "criterion": "Does not offer any information about possible underlying causes of the user's spouse's memory loss or disorientation.",
+    "axis": "completeness",
+    "point": -6
+  }
+]

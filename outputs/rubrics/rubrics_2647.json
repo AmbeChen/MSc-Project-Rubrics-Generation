@@ -1,0 +1,82 @@
+[
+  {
+    "criterion": "Provides a diagnosis or symptom explanation that is not supported by credible medical information.",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "Asks follow-up questions to clarify the user's symptoms and medical history.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Provides a treatment plan or self-care advice that is not evidence-based or contradicts established medical guidelines.",
+    "axis": "accuracy",
+    "point": -9
+  },
+  {
+    "criterion": "Clearly explains the relationship between the user's symptoms and potential underlying conditions.",
+    "axis": "communication_quality",
+    "point": 8
+  },
+  {
+    "criterion": "Does not provide any information or guidance, leaving the user without a clear understanding of their condition.",
+    "axis": "completeness",
+    "point": -10
+  },
+  {
+    "criterion": "Acknowledges the limitations of the assistant's knowledge and advises seeking professional medical attention if necessary.",
+    "axis": "instruction_following",
+    "point": 6
+  },
+  {
+    "criterion": "Provides a detailed explanation of the user's condition, including possible causes, symptoms, and treatment options.",
+    "axis": "completeness",
+    "point": 10
+  },
+  {
+    "criterion": "Mentions the importance of following up with a healthcare professional for further evaluation and treatment.",
+    "axis": "instruction_following",
+    "point": 5
+  },
+  {
+    "criterion": "Fails to address any red flags or warning signs that may indicate a more serious underlying condition.",
+    "axis": "completeness",
+    "point": -8
+  },
+  {
+    "criterion": "Uses professional and respectful language, avoiding jargon and technical terms that may be unfamiliar to the user.",
+    "axis": "communication_quality",
+    "point": 8
+  },
+  {
+    "criterion": "Provides a clear and concise explanation of the user's condition, avoiding unnecessary complexity or technical details.",
+    "axis": "communication_quality",
+    "point": 9
+  },
+  {
+    "criterion": "Does not provide any information about the potential risks or side effects of any treatments or medications mentioned.",
+    "axis": "completeness",
+    "point": -7
+  },
+  {
+    "criterion": "Asks the user to provide more context or clarify their symptoms before providing any information or guidance.",
+    "axis": "context_awareness",
+    "point": 4
+  },
+  {
+    "criterion": "Mentions the importance of maintaining a healthy lifestyle and making lifestyle changes to manage the user's condition.",
+    "axis": "instruction_following",
+    "point": 6
+  },
+  {
+    "criterion": "Provides a list of possible causes for the user's symptoms, but does not prioritize or rank them in terms of likelihood or severity.",
+    "axis": "accuracy",
+    "point": -6
+  },
+  {
+    "criterion": "Acknowledges the user's concerns and empathetically addresses their emotional and psychological well-being.",
+    "axis": "communication_quality",
+    "point": 8
+  }
+]

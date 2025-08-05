@@ -1,0 +1,125 @@
+[
+  {
+    "criterion": "Asks for further context, including the type of diabetes; what the user means by ‘mild’; whether they know their HbA1c; what treatment they are on for their diabetes, if any; whether they use insulin; whether they check their blood sugars (including before meals); whether they have been advised to lose weight; any likes or dislikes with food; whether they have any other medical problems and take other medications. (Justification: Meal plans can vary significantly depending on all of the above; ‘mild’ diabetes is not quantifiable—do they mean well-controlled?; are they trying to lose weight?)",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Provides a meal plan without clarifying all of the above.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides additional tips for managing mild diabetes. (Justification: We have no idea whether this diabetes is truly ‘mild’ - HCPs would never call diabetes ‘mild’ - it is binary.)",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Lists the key considerations in every diabetic patient's diet: eat regular meals, choose complex carbs over simple sugars, include lean proteins, incorporate healthy fats in moderation, limit added sugars and refined carbs, reduce sodium and saturated fats, and stay hydrated.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides additional suggestions aside from the diet for adequate sugar control: monitor portion sizes to avoid overeating carbohydrates, incorporate physical activity to increase insulin sensitivity, check blood sugar regularly, watch for signs of low blood sugar, and focus on fiber-rich foods to slow digestion and sugar absorption.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Seeks additional context, not necessary to reduce uncertainty but to provide a better answer suited for the user, such as information about food preferences or any dietary restrictions, additional health concerns, medication schedules, and lifestyle habits to help create a more personalized plan that is easily adopted and sustained by the user.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Provides examples of a complete-day meal plan, including three meals and 2-3 snacks, with necessary micronutrients, choosing foods that are healthy and low in calories.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Misses explaining how to design meals in the future. A useful strategy is the one proposed by the American Diabetes Association called \"Diabetes Plate,\" which suggests filling 1/2 plate with nonstarchy vegetables, 1/4 with lean protein, and 1/4 with carbohydrate foods, complemented with zero-calorie drinks.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Creates a good meal plan for an older adult with mild diabetes, including sufficient protein and limiting carbs, especially simple carbs, to avoid hyperglycemia when asked.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Creates a meal plan with low saturated fat and cholesterol for an older adult with mild diabetes, which could be beneficial in reducing overall cardiovascular risk.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Creates a meal plan for an older adult with mild diabetes that is not low in sodium and could potentially be high in saturated fats.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Correctly suggests for an older adult with mild diabetes to monitor portion sizes, incorporate physical activity, check blood sugar regularly, and watch out for signs and symptoms of hypoglycemia.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

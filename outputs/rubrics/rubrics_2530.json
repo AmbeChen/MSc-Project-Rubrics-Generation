@@ -1,0 +1,52 @@
+[
+  {
+    "criterion": "Provides a baseline CD4 count as a reference for the patient's current CD4 count.",
+    "axis": "completeness",
+    "point": 5
+  },
+  {
+    "criterion": "Mentions that the patient's lack of baseline CD4 count and viral load makes it difficult to accurately assess their CD4 drop risk.",
+    "axis": "accuracy",
+    "point": 2
+  },
+  {
+    "criterion": "Asks the user to provide the patient's CD4 count and viral load to better assess the risk of CD4 drop.",
+    "axis": "context_awareness",
+    "point": 6
+  },
+  {
+    "criterion": "Uses a natural language and correct interpretation to communicate with the user.",
+    "axis": "communication_quality",
+    "point": 5
+  },
+  {
+    "criterion": "Provides a clear and concise explanation of the CD4 drop risk calculation and its limitations.",
+    "axis": "communication_quality",
+    "point": 4
+  },
+  {
+    "criterion": "Does not provide a definitive answer on the patient's CD4 drop risk without more information.",
+    "axis": "instruction_following",
+    "point": 8
+  },
+  {
+    "criterion": "Falsely indicates that the patient's CD4 count is normal without any reference to the patient's current CD4 count.",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "Does not consider the patient's age, sex, and other factors that may affect their CD4 drop risk.",
+    "axis": "completeness",
+    "point": -3
+  },
+  {
+    "criterion": "Provides a general answer that is not relevant to the patient's specific situation.",
+    "axis": "completeness",
+    "point": -5
+  },
+  {
+    "criterion": "Mentions that the patient's lack of medication and timeline makes it difficult to accurately assess their CD4 drop risk.",
+    "axis": "accuracy",
+    "point": 3
+  }
+]

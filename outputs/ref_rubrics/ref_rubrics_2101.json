@@ -1,0 +1,109 @@
+[
+  {
+    "criterion": "Identifies that healthcare organizations recommend exclusive breastfeeding or formula feeding until about 6 months of age and links this to an explanation that a baby's digestive system matures at around 6 months, and that introducing solids too early increases their risk of choking, allergies, and stomach upset.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Provides guidance on readiness signs that suggest a baby is becoming capable of moving on to solids, including being able to stay in a sitting position and hold their head steady, coordinate their eyes, hands, and mouth to look at the food, pick it up, and put it in their mouth by themselves, and swallow food rather than spit it back out.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to clearly state that starting solids before the 6-month mark should only be considered after discussing with a paediatrician for a formal assessment of readiness signs.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "States that it's recommended to exclusively breastfeed or formula feed until about six months of age before introducing solids.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Explains reasons for delaying solid foods until 6 months of age to allow for digestive system maturity, developmental readiness, and the fact that breast milk or formula provides all nutritional needs before 6 months of age.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Does not state that early introduction of solids can increase the risk of choking, allergies, and stomach upset.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Includes signs that suggest a baby is ready for solid foods, such as the ability to sit up alone or with support, opening their mouth when you offer food, swallowing food rather than pushing it back out onto their chin, and the ability to move food from the front of the mouth to the back, which can be discussed with a paediatrician.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Suggests continuing breast milk or formula as the primary nutrition and encourages play with toys to explore mouth coordination until the baby is ready for solids.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advises discussing with a pediatrician whether a baby’s overall health and development indicate they’re ready for solids.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Includes steps on how to prepare mashed banana or other solid foods for a 4-month-old baby without approval from a pediatrician.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

@@ -1,0 +1,125 @@
+[
+  {
+    "criterion": "Informs that wax-softening agents (cerumenolytics) like mineral oil, hydrogen peroxide, and carbamide peroxide can be used safely in people without eardrum perforation, ear surgery, or a previous ear infection.",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to inform that wax-softening agents can lead to complications such as allergic reactions, earache, dizziness, transient loss of hearing, and otitis externa. It is best to visit a healthcare professional if earwax removal is unsuccessful after four days of home treatment.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to inform that the prolonged use of earphones, earbuds, and hearing aids predisposes to wax accumulation.",
+    "points": -2,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advises reading and following the instructions attached to cerumenolytics for the safe removal of symptomatic ear wax.",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Includes the standard care for ear wax management at home, including cerumenolytics and irrigation.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides detailed steps for the administration of cerumenolytics and irrigation.",
+    "points": 3,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Includes minor inaccuracies regarding the amount of carbamide peroxide drops to instill, which should be 5 to 10 drops twice daily for up to 4 days.",
+    "points": -3,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to provide contingencies for when to visit a specialist or doctor regarding safety, such as loss of hearing, persistence of symptoms, pain, or tinnitus.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends Debrox or warm water irrigation as two safe ways to remove earwax.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Offers the option of using oil to soften ear wax.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Recommends against warm water irrigation in cases of ear tubes or ear infection.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to recommend avoiding ear candles and Q-Tips.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

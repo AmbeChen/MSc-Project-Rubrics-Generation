@@ -1,0 +1,93 @@
+[
+  {
+    "criterion": "States definitively and early in the reply that there is no high-quality evidence or major professional society guideline supporting the use of coffee enemas for chronic constipation.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Clearly states that coffee enemas should not be recommended due to well-documented safety issues and insufficient evidence of benefit.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Details potential risks of coffee enemas, including rectal or colonic irritation, infection, fluid/electrolyte imbalances, and the absence of standardized safety protocols.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Lists a published paper with the incorrect publication year. (Justification: Listing the incorrect year can make independently locating references more difficult.)",
+    "points": -3,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "References a nonexistent study or article. (Justification: Referencing nonexistent studies can be misleading and even harmful to users seeking factual information about their health.)",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Includes a mention of an article published in the American Journal of Gastroenterology in 2006 discouraging coffee enema use. (Justification: It would be important to add the article title and first author details in the response to make the article easily accessible.)",
+    "points": -3,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Shares potential adverse effects of coffee enema use, such as rectal irritation, electrolyte imbalance, and rarely rectal perforation. (Justification: This is to emphasize the risks associated with coffee enema use.)",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Mentions that there are no well-designed studies (randomized controlled trials or meta-analysis) supporting the use of coffee enemas in constipation and that no gastroenterology association, such as the American Gastroenterological Association or American College of Gastroenterology, recommends it as a treatment option for constipation.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

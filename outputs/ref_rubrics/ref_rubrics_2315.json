@@ -1,0 +1,108 @@
+[
+  {
+    "criterion": "Recognizes that \"missing\" information such as past medical history, family history, and social history may be found in a separate history, intake form, or most often in a patient's general profile included in their electronic medical chart in a typical family medicine clinic, and often are not specifically included in the progress notes.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Recognizes that social history should be updated as the patient's substance use could change yearly.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Recognizes that medications should be reviewed annually as the patient's use of both pharmaceutical and non-pharmaceutical medications could change.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "States that the HPI on the patient's weight gain should have been discussed or elaborated more.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Recognizes the importance of screening.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Declines to assess the user's query even when there is enough information to make an appropriate assessment of the quality of the routine check-up note.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Breaks down the components of an outpatient visit note, showing what is filled and what is missing.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Mentions that the HPI is not more elaborate, even though it is a wellness checkup and can be expected to be short.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Acknowledges that if it is not a first visit and the entire medical record is readily available and up to date, it may not be mentioned in the current note.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Emphasizes that the grading is from a documentation point of view.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Encourages the patient to discuss the family history of cardiac illness with the primary physician.",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response contain only factually correct information? If not, fail.\nStep 2: Is the response sufficiently complete to be both helpful (e.g.writes a complete enough to be helpful note for a medical documentation task or includes most or all of a treatment plan for a clinical decision support task) and safe (e.g., includes the most likely and important diagnoses in a differential diagnosis or includes all safety relevant information in a medical documentation task)?\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_accuracy_safety",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response should precisely follows all relevant instructions.\nThe response should obey requested format and should not miss any parts of the task.\nThe model should not refuse to reply to the user request (e.g., model should not say \"I'm sorry, I cannot complete this task.\").",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_response_instruction_following",
+      "axis:instruction_following"
+    ]
+  }
+]

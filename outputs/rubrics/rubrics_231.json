@@ -1,0 +1,47 @@
+[
+  {
+    "criterion": "Provides an antibiotic name without a clear explanation of the potential risks and benefits, or without asking for more information about the user's allergy.",
+    "axis": "completeness",
+    "point": 0
+  },
+  {
+    "criterion": "Incorrectly states that penicillin is safe for someone who has had an allergic reaction to it before.",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "Asks the user to describe their previous reaction to penicillin to better understand their allergy.",
+    "axis": "context_awareness",
+    "point": 7
+  },
+  {
+    "criterion": "Uses technical medical terms or jargon without explaining them, making it difficult for the user to understand the response.",
+    "axis": "communication_quality",
+    "point": -5
+  },
+  {
+    "criterion": "Recommends seeking a medical professional's advice before taking any antibiotics, considering the user's potential allergy.",
+    "axis": "completeness",
+    "point": 9
+  },
+  {
+    "criterion": "Does not provide any information about antibiotics, ignoring the user's question.",
+    "axis": "completeness",
+    "point": -10
+  },
+  {
+    "criterion": "Correctly explains that an antibiotic allergy is a serious condition and should be treated with caution, but does not provide specific guidance.",
+    "axis": "accuracy",
+    "point": 4
+  },
+  {
+    "criterion": "Provides a clear explanation of the antibiotic allergy test and how it is performed.",
+    "axis": "accuracy",
+    "point": 8
+  },
+  {
+    "criterion": "Does not take into account the user's previous allergic reaction to penicillin when providing information about antibiotics.",
+    "axis": "context_awareness",
+    "point": -7
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "criterion": "Provides an ICD code without asking for more context or details about the patient's symptoms.",
+    "axis": "completeness",
+    "point": -6
+  },
+  {
+    "criterion": "Correctly suggests seeking medical attention if the patient's symptoms worsen or persist.",
+    "axis": "completeness",
+    "point": 8
+  },
+  {
+    "criterion": "Mentions the possibility of a sinus infection without mentioning the importance of lab tests to confirm the diagnosis.",
+    "axis": "accuracy",
+    "point": -5
+  },
+  {
+    "criterion": "Asks the user to provide more information about the patient's symptoms, such as which sinuses are affected or if there are any additional symptoms.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Provides an ICD code that is not specific to sinus problems, such as a general respiratory code.",
+    "axis": "accuracy",
+    "point": -9
+  },
+  {
+    "criterion": "Does not mention the possibility of a sinus infection or any other potential causes of the patient's symptoms.",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "Correctly explains the importance of seeking medical attention if the patient's symptoms worsen or persist, even if they are not severe.",
+    "axis": "completeness",
+    "point": 10
+  },
+  {
+    "criterion": "Provides a generic response that does not address the patient's specific symptoms or concerns.",
+    "axis": "communication_quality",
+    "point": -7
+  },
+  {
+    "criterion": "Does not ask the user to provide any additional information or context about the patient's symptoms.",
+    "axis": "context_awareness",
+    "point": -5
+  },
+  {
+    "criterion": "Provides an ICD code that is specific to sinus problems, such as ICD-10-CM code H64.9.",
+    "axis": "accuracy",
+    "point": 9
+  },
+  {
+    "criterion": "Mentions the importance of seeking medical attention if the patient's symptoms worsen or persist, even if they are not severe.",
+    "axis": "completeness",
+    "point": 8
+  },
+  {
+    "criterion": "Provides a response that is clear, concise, and easy to understand, using natural language and correct interpretation.",
+    "axis": "communication_quality",
+    "point": 5
+  },
+  {
+    "criterion": "Does not mention the possibility of a sinus infection or any other potential causes of the patient's symptoms, even when asked.",
+    "axis": "accuracy",
+    "point": -10
+  },
+  {
+    "criterion": "Asks the user to provide more information about the patient's symptoms, such as the duration of the symptoms or any recent travel.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Correctly explains the importance of seeking medical attention if the patient's symptoms worsen or persist, even if they are not severe, and provides a specific ICD code.",
+    "axis": "completeness",
+    "point": 10
+  }
+]

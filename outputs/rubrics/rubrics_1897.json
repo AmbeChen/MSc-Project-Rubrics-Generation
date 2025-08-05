@@ -1,0 +1,67 @@
+[
+  {
+    "criterion": "Provides a correct ICD-10 code for bulimia nervosa",
+    "axis": "accuracy",
+    "point": 8
+  },
+  {
+    "criterion": "Provides a correct CPT code for a 50-minute psychotherapy session",
+    "axis": "accuracy",
+    "point": 8
+  },
+  {
+    "criterion": "Asks for clarification on the patient's treatment plan or condition",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Describes the patient's condition and treatment plan in a clear and natural language",
+    "axis": "communication_quality",
+    "point": 5
+  },
+  {
+    "criterion": "Fails to provide any relevant information about the patient's condition or treatment plan",
+    "axis": "completeness",
+    "point": -9
+  },
+  {
+    "criterion": "Incorrectly states that the patient is still in active bulimia nervosa",
+    "axis": "accuracy",
+    "point": -6
+  },
+  {
+    "criterion": "Asks the user for additional information about the patient's condition or treatment plan",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Advises the user to seek medical attention if the patient's condition worsens",
+    "axis": "completeness",
+    "point": 5
+  },
+  {
+    "criterion": "Provides a detailed explanation of the patient's condition and treatment plan",
+    "axis": "communication_quality",
+    "point": 8
+  },
+  {
+    "criterion": "Fails to provide the correct CPT code for a 50-minute psychotherapy session",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "Incorrectly states that the patient's condition is not treatable",
+    "axis": "accuracy",
+    "point": -9
+  },
+  {
+    "criterion": "Asks the user to provide additional information about their own condition or treatment plan",
+    "axis": "instruction_following",
+    "point": -5
+  },
+  {
+    "criterion": "Provides a detailed explanation of the importance of therapy for patients with bulimia nervosa",
+    "axis": "communication_quality",
+    "point": 8
+  }
+]

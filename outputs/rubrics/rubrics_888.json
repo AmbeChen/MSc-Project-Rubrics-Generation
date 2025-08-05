@@ -1,0 +1,47 @@
+[
+  {
+    "criterion": "Provides a prior authorization document with all necessary information.",
+    "axis": "completeness",
+    "point": 8
+  },
+  {
+    "criterion": "Mentions the doctor's instruction to submit a prior authorization.",
+    "axis": "instruction_following",
+    "point": 5
+  },
+  {
+    "criterion": "Fails to provide any information about the patient's diagnosis or exam notes.",
+    "axis": "completeness",
+    "point": -6
+  },
+  {
+    "criterion": "Uses overly technical or jargon-heavy language.",
+    "axis": "communication_quality",
+    "point": -5
+  },
+  {
+    "criterion": "Does not address the user's request for a prior authorization document.",
+    "axis": "completeness",
+    "point": -8
+  },
+  {
+    "criterion": "Includes incorrect information about the patient's diagnosis or exam notes.",
+    "axis": "accuracy",
+    "point": -9
+  },
+  {
+    "criterion": "Provides a clear and concise prior authorization document.",
+    "axis": "communication_quality",
+    "point": 7
+  },
+  {
+    "criterion": "Asks for more information about the patient's diagnosis or exam notes to clarify their request.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Fails to provide any information about the patient's medical history.",
+    "axis": "completeness",
+    "point": -7
+  }
+]

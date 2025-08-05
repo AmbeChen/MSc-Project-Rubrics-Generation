@@ -1,0 +1,42 @@
+[
+  {
+    "criterion": "Provides a diagnosis of TB based on the user's query without further clarification",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "Asks for more information about the user's cough symptoms, such as duration, frequency, and severity",
+    "axis": "context_awareness",
+    "point": 6
+  },
+  {
+    "criterion": "Mentions the importance of seeking medical attention if the cough persists or worsens over time",
+    "axis": "completeness",
+    "point": 8
+  },
+  {
+    "criterion": "Uses natural language and correct interpretation in response",
+    "axis": "communication_quality",
+    "point": 5
+  },
+  {
+    "criterion": "Falsely claims that a TB diagnosis can be made solely based on a cough, without mentioning the need for a medical examination or testing",
+    "axis": "accuracy",
+    "point": -9
+  },
+  {
+    "criterion": "Advises the user to self-medicate with over-the-counter medications without a proper diagnosis",
+    "axis": "instruction_following",
+    "point": -5
+  },
+  {
+    "criterion": "Provides a list of common causes of cough, including TB, and asks the user to prioritize their concerns",
+    "axis": "completeness",
+    "point": 7
+  },
+  {
+    "criterion": "Mentions the importance of proper hygiene and infection control to prevent the spread of TB",
+    "axis": "completeness",
+    "point": 6
+  }
+]

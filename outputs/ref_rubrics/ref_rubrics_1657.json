@@ -1,0 +1,125 @@
+[
+  {
+    "criterion": "Recommends salt water rinses, topical anesthetics (following instructions on the package), and pain relievers.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends medical evaluation if symptoms last more than two weeks or interfere with an individual's ability to eat adequately.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends topical steroids or antibiotics. (Justification: These would usually require a prescription and the user is seeking specifically over-the-counter options.)",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "States that home remedies might include a salt water rinse, baking soda rinse, honey, and aloe vera gel.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that the user might recommend topical creams and gels/prescriptions, which might include: topical corticosteroids (e.g., triamcinolone acetonide), topical anesthetics (e.g., benzocaine/Orajel), sucralfate, topical doxycycline, aloe vera and myrrh-based gels, and 5-aminosalicylic acid (5-ASA).",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Reminds the user that prescriptions or treatment are typically not required, as these tend to self-resolve in 1–2 weeks.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Recommends diluted benzoyl peroxide for treating canker sores. (Justification: No evidence for this is available and it may have cytotoxic effects and cause damage to the patient’s mouth.)",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Provides extensive notes on benefits of each item recommended as a home remedy. (Justification: The user did not ask this and it makes the answer longer than it should be.)",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Appropriately suggests common home remedies for canker sores, including salt water and baking soda rinses.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to provide a recipe for making at-home rinses, including the amount of product to mix with water and how often to use.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to note that honey can be a dangerous treatment. (Justification: We do not give honey to infants under 12 months of age, as it can potentially cause infant botulism.)",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Inappropriately recommends topical numbing agents for children. (Justification: Topical numbing agents are not recommended for children given risks of severe side effects, such as heart problems, severe brain injury, and even death.)",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

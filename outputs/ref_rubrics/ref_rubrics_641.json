@@ -1,0 +1,76 @@
+[
+  {
+    "criterion": "States that the current documentation does not meet standard outpatient clinic note guidelines due to missing critical components such as allergies, family history, and other pertinent medical information.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "States that information on allergies and family history are often considered optional for brief outpatient notes and that this omission typically does not violate standard outpatient clinic note guidelines for a routine visit. (Justification: For an outpatient visit especially if it’s the visit, all components of the note should be documented.)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Suggests expanding the note to ensure a thorough clinical assessment and appropriate continuity of care.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Does not update the note to include essential missing components, such as past medical history, current medications, allergies, family and social history, review of systems, physical exam findings, assessment, and treatment plan. Should also recommend relevant questions to ask the patient.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Lists the required components of a standard outpatient note and highlights the parts that are missing.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "States that allergies or review of family history are not standard components of outpatient notes.",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Provides an example of the note in the correct format.",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response contain only factually correct information? If not, fail.\nStep 2: Is the response sufficiently complete to be both helpful (e.g.writes a complete enough to be helpful note for a medical documentation task or includes most or all of a treatment plan for a clinical decision support task) and safe (e.g., includes the most likely and important diagnoses in a differential diagnosis or includes all safety relevant information in a medical documentation task)?\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_accuracy_safety",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response should precisely follows all relevant instructions.\nThe response should obey requested format and should not miss any parts of the task.\nThe model should not refuse to reply to the user request (e.g., model should not say \"I'm sorry, I cannot complete this task.\").",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_response_instruction_following",
+      "axis:instruction_following"
+    ]
+  }
+]

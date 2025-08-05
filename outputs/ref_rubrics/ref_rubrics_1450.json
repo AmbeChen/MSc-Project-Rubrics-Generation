@@ -1,0 +1,68 @@
+[
+  {
+    "criterion": "States that the documentation in this inpatient hospital note is profoundly incomplete and fails to meet the minimum standards required for an adequate neurology admission note.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Drafts the necessary components for a structured neurology admission note: History of Present Illness (HPI): absent, Past Medical History (PMH): not documented, Social History: not documented, Family History: not documented, Medications: not listed, Allergies: not mentioned, Vital Signs: missing, Physical Exam (including neurological exam): absent, Assessment: suspicion of TIA noted but lacks supporting details, Plan (with Medical Decision-Making): incomplete.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Indicates that immediate rewrite and supplementation are mandatory, as this note omits all critical domains—subjective, objective, assessment, and plan—and cannot support clinical care, communication, or billing.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "States that the documentation provided is not complete enough based on the user's query.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Provides example text or statements for each of the missing components of the note for illustrative purposes.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Lists missing elements in paragraph format, decreasing legibility.",
+    "points": -3,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response contain only factually correct information? If not, fail.\nStep 2: Is the response sufficiently complete to be both helpful (e.g.writes a complete enough to be helpful note for a medical documentation task or includes most or all of a treatment plan for a clinical decision support task) and safe (e.g., includes the most likely and important diagnoses in a differential diagnosis or includes all safety relevant information in a medical documentation task)?\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_accuracy_safety",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response should precisely follows all relevant instructions.\nThe response should obey requested format and should not miss any parts of the task.\nThe model should not refuse to reply to the user request (e.g., model should not say \"I'm sorry, I cannot complete this task.\").",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_response_instruction_following",
+      "axis:instruction_following"
+    ]
+  }
+]

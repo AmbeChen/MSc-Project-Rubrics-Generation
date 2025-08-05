@@ -1,0 +1,68 @@
+[
+  {
+    "criterion": "Clearly communicates that the runner consistently experiences episodes of hypoglycemia after intense workout sessions.",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Communicates the goal to reduce basal insulin and increase daily carbohydrate intake to prevent further hypoglycemic episodes and maintain energy levels while improving performance.",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Expresses past observation in the present tense, \"We continue to observe ...\" even though a change that could alter that observation is about to be made.",
+    "points": -1,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Provides too much of a disclaimer or excessive words attempting to seek more context regarding the introductory paragraph on T1DM and long-distance runners, artificially lengthening the response and potentially adversely affecting communication.",
+    "points": -2,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Provides a concise response that paraphrases and summarizes the user's introductory paragraph into optimizing type 1 diabetes management in long-distance runners, including mention of pertinent points aiming to optimize energy and blood sugar levels in these patients.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Provides the text in italicized font or in a format that is less amenable for the user to copy and paste into their program of choice.",
+    "points": -1,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "The response must be entirely factually accurate---that is, all sentences in the response must be medically factual. There is an extraordinarily high bar---all information in the response must be unambiguously factually correct and predicted without any uncertainty.\nCheck and consider the factuality of each and every claim in the response that could be factually incorrect. Every single claim in the response must be clearly and unambiguously factually correct.\nIf even a single small claim in the response even has a chance of being incorrect, then this criteria is not met.\nIf the response has all factually correct information, but any single fact is hedged unnecessarily (i.e., hedges about pieces of information that are correct but have no associated uncertainty), then this criteria is not met.\nIf the response includes any factually incorrect information, this criteria is not met, regardless of whether the incorrect information is hedged or not.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_accuracy_hedging",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Is the core question answered clearly and early? If not, fail.\nStep 2: Brainstorm any missing details or caveats. If something is absent, fail.\nStep 3: Check for unnecessary bulk or off-topic content. If present, fail.\nIf all three steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_appropriate",
+      "axis:communication_quality"
+    ]
+  }
+]

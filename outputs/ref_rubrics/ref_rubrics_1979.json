@@ -1,0 +1,82 @@
+[
+  {
+    "criterion": "Neglects to cut redundancies such as stating that an abdominal ultrasound is an example of abdominal imaging. (Justification: The model should just recommend \"abdominal ultrasound\" without adding extra words like \"abdominal imaging,\" which is redundant and implicitly understood.)",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Avoids redundant information such as saying \"elevated liver enzymes\" and \"elevated AST and ALT.\" (Justification: These mean the same thing, and the model should just say one or the other—with a preference for \"elevated AST/ALT\" as it is more specific.)",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Removes any of the significant next steps described, such as testing for hepatitis B or C, or proceeding with an abdominal ultrasound.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Removes the chief leading diagnosis, which is fatty liver disease or other structural problems.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Keeps the key components of the user input intact, which include the relevant objective past information, the next diagnostic steps, the leading differential of fatty liver disease, and the key question of whether to do hepatitis testing, abdominal ultrasound, or both.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Provides a more streamlined and shorter version of the user’s response.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Provides a response or decision to the user query, adding more information such as, “It’s probably best to tailor the choice to the individual patient’s situation.” (Justification: The user did not ask the model to comment on the note or add information; the task is to simply rewrite it in a more concise way.)",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Provides a straightforward response to a straightforward question that does not require hedging or additional context seeking.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Provides extra, repetitive, tangential, or overly detailed information, unnecessarily lengthening the answer and adversely affecting communication.",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Provides a concise response that adequately summarizes the user's query regarding high AST and ALT in patients with mild obesity and no other symptoms, including lack of alcohol use.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  }
+]

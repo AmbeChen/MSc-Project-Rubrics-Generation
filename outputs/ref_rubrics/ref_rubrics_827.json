@@ -1,0 +1,82 @@
+[
+  {
+    "criterion": "Doesn't inquire for more context or information about the Slava virus and where the user encountered the term, as this might help better understand the question.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Doesn't state the possibility of a misspelling or ask if the user meant to inquire about other viruses like Ebola, Lassa, or Zika.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Doesn't state that the term is non-existent and ask for clarification, as Slava might not be a recognized term.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Doesn't state that if Slava is a recently discovered virus, it might not be widely documented or recognized yet, hence, not much information can be given on it.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that there's no definitive confirmation that the Slava virus is airborne or lethal at this time.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "There is no known virus called \"Slava virus.\"",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Should seek context by asking if you're referring to a real or fictional virus and clarify where you heard about it.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Claims that the Slava virus is definitely airborne or has lethal effects are not confirmed by robust scientific evidence based on the conversation above.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that early cases appear to display mild to moderate symptoms, including fever, fatigue, joint pain, and possibly respiratory distress. (Justification: Based on the conversation above, symptoms noted in suspected cases include fever, fatigue, and joint pain but no respiratory symptoms like respiratory distress and cough.)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Shows length bias by discussing the same matter in the severity and lethality sections and key uncertainties.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  }
+]

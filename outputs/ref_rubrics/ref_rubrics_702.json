@@ -1,0 +1,100 @@
+[
+  {
+    "criterion": "Correctly mentions that the ABC bleeding risk is calculated using the patient's age, biomarkers such as hs-troponin-t, NT-proBNP, GDF-15, hemoglobin, history of GI bleeding, and prior history of stroke.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Does not ask the user for gdf-15, hemoglobin, and prior history of stroke when these are not mentioned in the ABC bleeding score risk calculation.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Provides strategies for dealing with bleed risk, such as using a proton pump inhibitor for someone who might be at higher risk of a GI bleed based on their HAS-BLED score, and adjusting anticoagulant dose if there is advanced chronic kidney disease.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Uses the ABC bleed risk score for atrial fibrillation to classify the patient as high risk for bleeding without providing the percentage risk of bleeding within a certain time frame, which would be useful, as well as a possible percentage risk of stroke, so that these outcomes can be compared and discussed with the patient to obtain more informed consent for anticoagulation versus accepting the risk of stroke.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Describes all components of the ABC score, calculates the score, and discusses anticoagulation considerations.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Calculates the ABC score and explains how to mitigate bleeding risk.",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "States a high risk of bleeding (even though other parameters are not given), and suggests balancing anticoagulation and bleeding risk if there is a high risk of thromboembolism.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Suggests multidisciplinary discussion with various internal medicine subspecialties such as gastroenterology, nephrology, and cardiology when this is not indicated.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Provides a nuanced yet concise response detailing how the various pieces of information are applied into the ABC score for bleeding, and further recommends considering bleed vs clot risks, briefly mentioning other clinical decision-making tools to guide decision-making, such as CHADS2 and HAS-BLED scores.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides information on mitigating bleed risk in this patient, such as by considering PPI therapy, avoiding NSAIDs, and optimizing medical therapy.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response must be entirely factually accurate---that is, all sentences in the response must be medically factual. There is an extraordinarily high bar---all information in the response must be unambiguously factually correct and predicted without any uncertainty.\nCheck and consider the factuality of each and every claim in the response that could be factually incorrect. Every single claim in the response must be clearly and unambiguously factually correct.\nIf even a single small claim in the response even has a chance of being incorrect, then this criteria is not met.\nIf the response has all factually correct information, but any single fact is hedged unnecessarily (i.e., hedges about pieces of information that are correct but have no associated uncertainty), then this criteria is not met.\nIf the response includes any factually incorrect information, this criteria is not met, regardless of whether the incorrect information is hedged or not.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_accuracy_hedging",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Is the core question answered clearly and early? If not, fail.\nStep 2: Brainstorm any missing details or caveats. If something is absent, fail.\nStep 3: Check for unnecessary bulk or off-topic content. If present, fail.\nIf all three steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_appropriate",
+      "axis:communication_quality"
+    ]
+  }
+]

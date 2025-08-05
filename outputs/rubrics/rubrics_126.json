@@ -1,0 +1,52 @@
+[
+  {
+    "criterion": "Does not provide a complete outpatient progress note with vitals, vaccines given, and other relevant information.",
+    "axis": "completeness",
+    "point": -8
+  },
+  {
+    "criterion": "Incorrectly states that vaccine records were obtained from the patient.",
+    "axis": "accuracy",
+    "point": -5
+  },
+  {
+    "criterion": "Provides a clear and concise explanation of the vaccines given.",
+    "axis": "communication_quality",
+    "point": 6
+  },
+  {
+    "criterion": "Does not ask for additional information about the patient's vaccination history or any potential concerns.",
+    "axis": "context_awareness",
+    "point": -3
+  },
+  {
+    "criterion": "Follows the user's instructions to create a progress note without additional questions.",
+    "axis": "instruction_following",
+    "point": 4
+  },
+  {
+    "criterion": "Does not include the patient's age in the progress note.",
+    "axis": "completeness",
+    "point": -2
+  },
+  {
+    "criterion": "Does not mention any potential side effects of the vaccines given.",
+    "axis": "completeness",
+    "point": -4
+  },
+  {
+    "criterion": "Provides a detailed description of the vaccines given, including the number of doses and the recommended booster schedule.",
+    "axis": "accuracy",
+    "point": 8
+  },
+  {
+    "criterion": "Asks the user to confirm any information provided in the progress note.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Does not include the date of the vaccination in the progress note.",
+    "axis": "completeness",
+    "point": -1
+  }
+]

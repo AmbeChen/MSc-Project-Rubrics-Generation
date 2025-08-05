@@ -1,0 +1,42 @@
+[
+  {
+    "criterion": "Provides an accurate calculation of the patient's perioperative mortality risk based on the given clinical details.",
+    "axis": "accuracy",
+    "point": 5
+  },
+  {
+    "criterion": "Fails to consider any comorbidities or functional capacity when calculating the patient's perioperative mortality risk.",
+    "axis": "accuracy",
+    "point": -5
+  },
+  {
+    "criterion": "Asks the user for additional information about the patient's medical history or current health status to better understand their perioperative mortality risk.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Uses overly complex medical terminology or jargon when explaining the patient's perioperative mortality risk.",
+    "axis": "communication_quality",
+    "point": -3
+  },
+  {
+    "criterion": "Provides a thorough explanation of the patient's perioperative mortality risk, including the potential risks and benefits of different surgical options.",
+    "axis": "completeness",
+    "point": 8
+  },
+  {
+    "criterion": "Fails to provide any information about the patient's perioperative mortality risk, citing a lack of relevant medical information.",
+    "axis": "completeness",
+    "point": -8
+  },
+  {
+    "criterion": "Asks the user to seek medical attention if their perioperative mortality risk is higher than expected, based on the given clinical details.",
+    "axis": "instruction_following",
+    "point": 5
+  },
+  {
+    "criterion": "Does not take into account the patient's age (60) when calculating their perioperative mortality risk.",
+    "axis": "accuracy",
+    "point": -3
+  }
+]

@@ -1,0 +1,125 @@
+[
+  {
+    "criterion": "Provides specific step-by-step instructions for using hydrogen peroxide (3%) for ear wax removal, including proper positioning, the number of drops (5-10), and waiting time (5-10 minutes).",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Explicitly warns against using cotton swabs (Q-tips) or ear candles for earwax removal.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to warn that people with specific conditions (eardrum perforation, ear tubes, recent ear surgery) should not attempt home ear wax removal.",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Does not mention that ear irrigation should be done with body-temperature water to prevent dizziness.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Does not include specific warning signs that indicate when to stop home ear wax removal and seek professional care, such as pain, discharge, dizziness, or bleeding.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Lists the symptoms that require medical attention: ineffective home methods, pain, hearing loss, bleeding, secretion, associated fever, persistent discomfort, and constant/frequent earwax build-up.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Explains the general steps for earwax removal, consisting of earwax softening, followed by draining the softening substance, gently rinsing with warm water to remove detached and softened earwax, and finally drying the outer ear.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Suggests using 3% hydrogen peroxide diluted 1:1 with distilled sterile water to prevent irritation of the skin of the ear canal.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Explains the process for safe earwax softening: prewarm the solution to body temperature, apply 4-5 drops into the ear, let it work for 5-10 minutes, and drain by head tilting before rinsing with warm water. 3% hydrogen peroxide, mineral oil, baby oil, almond oil, olive oil, glycerin, or OTC wax softening solutions can be used safely for this procedure.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Discourages the use of cotton swabs (due to the risk of wax pushing and compacting, and risk of eardrum perforation) and ear candles (not proven effective, unsafe, and cause burns).",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Advises performing the procedure 3 to 4 times a day for 3 to 5 days. If the problem is not resolved after this time, medical evaluation is advised.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Misses providing suggestions for earwax build-up prevention. (Justification: Earwax plays a protective role against dirt and germs, so it is necessary. However, it can be prevented by maintaining a moistened ear canal, regularly using eardrops or olive or almond oil to soften earwax, for instance.)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

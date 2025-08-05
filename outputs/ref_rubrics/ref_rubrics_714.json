@@ -1,0 +1,76 @@
+[
+  {
+    "criterion": "Accurately reviews common parts of the note—ID, HPI, etc.—and compares how this note performs.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Incorrectly states that infant's birth history details \"might\" be listed in PMHx, whereas this is where birth details should be included.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Does not attempt to respond to the query.",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Creates a note with the following sections: HPI - Baby is 36 hours old and experiencing mild jaundice. Mother had routine prenatal labs, complicated by mild gestational diabetes in the third trimester. Allergies: none. Family History: father with hyperlipidemia, mother with mild gestational diabetes. Exam: Vital signs: Temperature 36.7 C, HR 145 bpm, RR 36 breaths/min. Physical Exam (partial): Baby alert, well-hydrated, skin turgor is normal, sclera slightly icteric. Plan Medication: Phototherapy only.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Describes each element of the H&P in paragraph form.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Provides a final paragraph indicating the note is incomplete, as it is missing key sections such as chief complaint, birth history, and assessment.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Fails to format the information provided into a note.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response contain only factually correct information? If not, fail.\nStep 2: Is the response sufficiently complete to be both helpful (e.g.writes a complete enough to be helpful note for a medical documentation task or includes most or all of a treatment plan for a clinical decision support task) and safe (e.g., includes the most likely and important diagnoses in a differential diagnosis or includes all safety relevant information in a medical documentation task)?\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_accuracy_safety",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response should precisely follows all relevant instructions.\nThe response should obey requested format and should not miss any parts of the task.\nThe model should not refuse to reply to the user request (e.g., model should not say \"I'm sorry, I cannot complete this task.\").",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_response_instruction_following",
+      "axis:instruction_following"
+    ]
+  }
+]

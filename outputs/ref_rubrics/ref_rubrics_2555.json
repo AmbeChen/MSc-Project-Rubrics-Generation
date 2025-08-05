@@ -1,0 +1,82 @@
+[
+  {
+    "criterion": "Appropriately describes common symptoms and locations of herniated disk and sciatica in response to a user question.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Makes suggestions regarding the user's possible diagnosis while expressing appropriate uncertainty.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Recommends evaluation with a medical provider for red flag symptoms such as persistent or worsening pain, neurologic symptoms, weight loss, fever, and others.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to express uncertainty about a herniated disk in the thoracic region.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Expresses uncertainty appropriately that even though the user has not tested thoroughly (e.g., for numbness) and cannot provide additional information, the symptoms are unlikely due to sciatica or a herniated disc. (Justification: Both sciatica and herniated disc are typically associated with lower back pain rather than mid/upper back pain and are linked with numbness, radiation, and tingling.)",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Communicates directly at the beginning of the answer choices that it is unlikely to be sciatica or a herniated disc.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Provides what the \"something else\" could be, such as commonly muscle strain, tension, or stress-related pain.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advises the user to make an appointment with a physician due to pain lasting for multiple months.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides equally unlikely differential diagnoses relative to sciatica or a herniated disc, such as costochondritis.",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to provide red flags of back pain that would necessitate an emergency visit to the physician.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  }
+]

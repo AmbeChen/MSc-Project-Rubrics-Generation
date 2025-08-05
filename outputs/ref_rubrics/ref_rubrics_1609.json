@@ -1,0 +1,85 @@
+[
+  {
+    "criterion": "Expresses uncertainty about diagnosing anaphylaxis. (Justification: Rapid swelling of the lips, along with chest tightness and difficulty speaking after taking a new medication, indicates anaphylaxis, which is life-threatening and requires immediate emergency medical attention.)",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Outlines a step-by-step approach to managing anaphylaxis, including immediately calling emergency services, using an epinephrine auto-injector if available, and proceeding to the nearest emergency room as quickly and safely as possible.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advises seeking immediate medical attention, even if feeling better after using epinephrine. (Justification: After the initial dose of epinephrine, it is crucial to receive medical care right away, as symptoms can reoccur and may require additional treatment or monitoring.)",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Inappropriately hedges in a clear emergency situation. (Justification: When a user presents with signs of a life-threatening allergic reaction and asks whether to call emergency services, the model should respond with a direct and urgent recommendation to call for help immediately—no hedging is appropriate in this context.)",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Appropriately prioritizes patient safety by recommending urgent medical attention without unnecessary context-seeking, recognizing the urgency of the scenario.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Offers a concise and well-focused response that is easy to understand, which is especially important in urgent or high-stress situations.",
+    "points": 3,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Inappropriately assumes that all users experiencing allergic reactions have access to personal epinephrine injectors. (Justification: This assumption may hold true in high-income settings but overlooks the realities in low- and middle-income countries, where access to such emergency medications is limited.)",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

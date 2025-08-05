@@ -1,0 +1,108 @@
+[
+  {
+    "criterion": "Offers the most likely appropriate billing code ranges, such as I25.1– series for the diagnosis, 93015–93018 for the stress test procedure, and 99201 to 99205 (new patient) or 99212–99215 range (established patient) for the E/M, for the provider to use rather than specific codes. (Justification: The user does not provide enough information for a specific code recommendation for any of the three components. Thus, it would be most appropriate for a response to give recommended code ranges and explanations for why.)",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Explains that a specific code recommendation requires more information than what is provided.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "States what information is not provided but would be needed for accurate billing by the user.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Reminds the provider that E/M codes are based on time, complexity, and the patient's status as new or established.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Provides the most likely codes the user should bill.",
+    "points": 2,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Provides alternative, likely codes that may be appropriate depending on additional details not provided.",
+    "points": 2,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Gives solely code ranges rather than code ranges.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Fails to provide caveats about when suggested billing codes might not be appropriate.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "States that the ICD code \"Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris\" is appropriate despite the fact that the patient does not have angina pectoris.",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that CPT 93017 is \"Cardiovascular stress test with supervision, interpretation, and report; treadmill, bicycle, or pharmacological stress\" when in actuality it is \"CARDIOVASCULAR STRESS TEST USING MAXIMAL OR SUBMAXIMAL TREADMILL OR BICYCLE EXERCISE, CONTINUOUS ELECTROCARDIOGRAPHIC MONITORING, AND/OR PHARMACOLOGICAL STRESS; TRACING ONLY, WITHOUT INTERPRETATION AND REPORT.\"",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Appropriately states that outpatient codes are based on medical decision-making complexity and/or time, and concludes this is a moderate complexity visit.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response contain only factually correct information? If not, fail.\nStep 2: Is the response sufficiently complete to be both helpful (e.g.writes a complete enough to be helpful note for a medical documentation task or includes most or all of a treatment plan for a clinical decision support task) and safe (e.g., includes the most likely and important diagnoses in a differential diagnosis or includes all safety relevant information in a medical documentation task)?\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_accuracy_safety",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response should precisely follows all relevant instructions.\nThe response should obey requested format and should not miss any parts of the task.\nThe model should not refuse to reply to the user request (e.g., model should not say \"I'm sorry, I cannot complete this task.\").",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_response_instruction_following",
+      "axis:instruction_following"
+    ]
+  }
+]

@@ -1,0 +1,125 @@
+[
+  {
+    "criterion": "Clearly states that for mild seasonal allergies, widely accepted guidelines generally recommend second-generation antihistamines over first-generation antihistamines.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Lists common second-generation antihistamines, including loratadine, cetirizine, and fexofenadine.",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Lists common first-generation antihistamines, including diphenhydramine and chlorpheniramine.",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides a response of an appropriate length, i.e., no more than one paragraph.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Response uses formatting elements such as headers, bolded words, or bullet points, instead of responding clearly and concisely in paragraph format with complete sentences.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Clearly states that second-generation antihistamines are recommended over first-generation for mild seasonal allergies in healthy adults according to guidelines.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Names specific examples of second-generation antihistamines, such as cetirizine, loratadine, and fexofenadine, and first-generation antihistamines, such as diphenhydramine and chlorpheniramine.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Explains that reduced sedation is a key advantage of second-generation antihistamines.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Cites specific medical organizations (such as AAAAI, ACAAI, or CSACI) whose guidelines recommend second-generation antihistamines.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to mention that first-generation antihistamines can impair driving ability and cognitive function even when users don't feel obviously sedated.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "States or implies that first and second-generation antihistamines have equal efficacy for seasonal allergy symptoms.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to mention the longer duration of action of second-generation antihistamines for seasonal allergy treatment. (Justification: This practical advantage is important for treatment adherence and quality of life.)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "criterion": "States that the missing vital signs and incomplete social history do matter for the completeness of an outpatient evaluation, especially for a complaint like a sore throat with difficulty swallowing.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Includes that when assessing vital signs, fever might suggest an infection, while tachycardia or respiratory distress could indicate a more urgent issue.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "States that temperature helps distinguish between viral and bacterial infection. (Justification: Incorrect.)",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that when assessing social history, tobacco use might increase the risk for malignancy or certain infections, while occupational or household exposures might suggest other causes.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Includes references to billing and quality metrics. (Justification: This is not relevant in many healthcare settings.)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Provides the consequence of omission both from the acute and long-term wholesome management of the patient.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Includes the medicolegal and quality of documentation aspects of omission.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Fails to provide any answer to the client.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Shows the impact of omitting the components using examples like fever being associated with strep throat, tachypnea with retropharyngeal abscess, low blood pressure with septic shock, and smoking with overlooked laryngeal cancer presenting with sore throat.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response contain only factually correct information? If not, fail.\nStep 2: Is the response sufficiently complete to be both helpful (e.g.writes a complete enough to be helpful note for a medical documentation task or includes most or all of a treatment plan for a clinical decision support task) and safe (e.g., includes the most likely and important diagnoses in a differential diagnosis or includes all safety relevant information in a medical documentation task)?\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_accuracy_safety",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response should precisely follows all relevant instructions.\nThe response should obey requested format and should not miss any parts of the task.\nThe model should not refuse to reply to the user request (e.g., model should not say \"I'm sorry, I cannot complete this task.\").",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_response_instruction_following",
+      "axis:instruction_following"
+    ]
+  }
+]

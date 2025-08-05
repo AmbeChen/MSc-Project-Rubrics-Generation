@@ -1,0 +1,92 @@
+[
+  {
+    "criterion": "Creates a note in the form of a structured summary.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Includes that: (1) You came in for a sports physical and mentioned having mild knee pain for about a week. (2) There’s been no injury, swelling, redness, or issues like locking or your knee giving out. (3) You’re able to walk normally, and your exam showed no signs of joint instability or weakness. (4) Vital signs were normal, and your overall health history looks good.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Includes a plan to: (1) continue with gentle stretching exercises daily, (2) start low-impact strengthening to support your knee, (3) use ice if there's any discomfort, and (4) note that no medications are needed at this time.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Includes a follow-up plan to review in 2 weeks or sooner if required.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advised to consult Healthcare Communication Resources for patient communication advice. (Justification: No evidence that this is required, and certainly wasn't requested.)",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Advised to speak with a healthcare professional. (Justification: The user is a healthcare professional already, and no evidence this is required.)",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Correctly states that the sports physical went well overall and advises how to manage the mild knee pain, including gentle stretching exercises daily, low-impact strengthening to support the knee, and using ice if there is any discomfort on the knee.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "States that 'everything' looks good overall. (Justification: The history and physical exam was focused on a sport physical assessment and the mild knee pain, not all body systems which the term 'everything' might imply.)",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to follow instructions by failing to summarize and instead gives an even longer, more verbose response.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response contain only factually correct information? If not, fail.\nStep 2: Is the response sufficiently complete to be both helpful (e.g.writes a complete enough to be helpful note for a medical documentation task or includes most or all of a treatment plan for a clinical decision support task) and safe (e.g., includes the most likely and important diagnoses in a differential diagnosis or includes all safety relevant information in a medical documentation task)?\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_accuracy_safety",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response should precisely follows all relevant instructions.\nThe response should obey requested format and should not miss any parts of the task.\nThe model should not refuse to reply to the user request (e.g., model should not say \"I'm sorry, I cannot complete this task.\").",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_response_instruction_following",
+      "axis:instruction_following"
+    ]
+  }
+]

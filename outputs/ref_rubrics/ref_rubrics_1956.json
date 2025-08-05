@@ -1,0 +1,109 @@
+[
+  {
+    "criterion": "Includes that viral pneumonia is caused by viruses such as RSV, Paraflu, Flu, and COVID, and is not responsive to antibiotics, but can respond to antivirals such as Tamiflu or Xofluza for Flu and Paxlovid for COVID.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Includes that bacterial pneumonia is caused by bacteria such as Strep pneumoniae, Haemophilus influenzae, and Mycoplasma pneumoniae, and can be treated with antibiotics.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Mentions rare causes of bacterial pneumonia, such as Legionella.",
+    "points": -2,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to recognize that both viral pneumonia and bacterial pneumonia can be serious.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Incorrectly states that viral pneumonia can be treated with antibiotics.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Explains the basic differences in the causes and symptoms of viral and bacterial pneumonia. (Justification: Viral pneumonia can be caused by influenza, RSV, and SARS-CoV-2, presenting with flu-like symptoms: fever, dry cough, muscle aches, fatigue, and headache. In contrast, bacterial pneumonia, caused by H. influenza, S. pneumonia, and M. pneumonia, typically shows high fever, chills, productive cough, shortness of breath, and chest pain.)",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Describes management options for viral pneumonia, including supportive care like hydration, rest, fluids, over-the-counter analgesics, and antivirals, while bacterial pneumonia may require antibiotics, analgesics, oxygen therapy, IV fluids, or hospitalization.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to mention red flags that require medical attention, such as severe chest pain, difficulty breathing, persistent high-grade fever, confusion, decreased urine output, and dark urine.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Explains that due to overlapping symptoms, diagnosis typically requires additional tests, such as a chest X-ray, blood tests, sputum culture, and viral PCR tests, to differentiate between viral and bacterial pneumonia.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "States that viral pneumonia is responsive to antibiotics, while bacterial pneumonia responds to supportive therapy. (Justification: Antibiotics are the primary treatment for bacterial pneumonia, whereas supportive therapy is used for viral pneumonia.)",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

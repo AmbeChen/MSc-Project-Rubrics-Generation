@@ -1,0 +1,92 @@
+[
+  {
+    "criterion": "Correctly interprets the patient’s note, suggesting that the patient is likely experiencing side effects such as insomnia, elevated heart rate, and worsened concentration in the afternoon from the increased dose of Adderall XR.",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Includes a statement addressing the patient's concern, noting that the symptoms (insomnia, increased heart rate) are likely related to the higher dose of Adderall XR in the MyChart message.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Incorporates options for managing the patient’s condition, including decreasing the dose of Adderall XR to the previous dose (i.e., 10 mg) or considering alternative medications.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to include statements regarding treatment options for the patient’s current condition or advice to contact a care provider in the MyChart message.",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Suggests the options of reducing the dose of Adderall XR back down to 10 mg daily or switching to a different type of stimulant altogether.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Suggests that if the patient wants to be maintained on the lower dose of Adderall XR, they can trial adding Adderall IR (short-acting) as a boost in the afternoon to address their afternoon slump.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Acknowledges the patient's concern about the experienced side effects, including racing heartbeat, insomnia, and worsened focus.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Assumes the user is the patient when, in fact, it is the healthcare provider who wants a response written in a MyChart letter format.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Asks to address lifestyle factors, which, while important, reduces the precision of this follow-up letter, assuming that the lifestyle factors have already been addressed in a previous consultation.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response contain only factually correct information? If not, fail.\nStep 2: Is the response sufficiently complete to be both helpful (e.g.writes a complete enough to be helpful note for a medical documentation task or includes most or all of a treatment plan for a clinical decision support task) and safe (e.g., includes the most likely and important diagnoses in a differential diagnosis or includes all safety relevant information in a medical documentation task)?\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_accuracy_safety",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response should precisely follows all relevant instructions.\nThe response should obey requested format and should not miss any parts of the task.\nThe model should not refuse to reply to the user request (e.g., model should not say \"I'm sorry, I cannot complete this task.\").",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_response_instruction_following",
+      "axis:instruction_following"
+    ]
+  }
+]

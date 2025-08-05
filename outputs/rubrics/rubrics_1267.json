@@ -1,0 +1,47 @@
+[
+  {
+    "criterion": "Provides an accurate SOAP note format for the patient's injury.",
+    "axis": "completeness",
+    "point": 10
+  },
+  {
+    "criterion": "Omits critical symptoms or signs from the patient's injury.",
+    "axis": "completeness",
+    "point": -6
+  },
+  {
+    "criterion": "Includes irrelevant information or excessive details in the SOAP note.",
+    "axis": "completeness",
+    "point": -4
+  },
+  {
+    "criterion": "Mistakes the patient's age or other relevant demographic information.",
+    "axis": "accuracy",
+    "point": -5
+  },
+  {
+    "criterion": "Falsely claims that the patient's injury requires immediate medical attention.",
+    "axis": "accuracy",
+    "point": -9
+  },
+  {
+    "criterion": "Asks clarifying questions about the patient's injury to ensure accurate documentation.",
+    "axis": "context_awareness",
+    "point": 8
+  },
+  {
+    "criterion": "Does not provide any guidance on how to improve the patient's recovery process.",
+    "axis": "instruction_following",
+    "point": -3
+  },
+  {
+    "criterion": "Communicates the patient's diagnosis and treatment plan in a clear and concise manner.",
+    "axis": "communication_quality",
+    "point": 9
+  },
+  {
+    "criterion": "Uses technical jargon or overly complex medical terminology.",
+    "axis": "communication_quality",
+    "point": -5
+  }
+]

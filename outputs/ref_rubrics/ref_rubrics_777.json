@@ -1,0 +1,68 @@
+[
+  {
+    "criterion": "Incorrectly interprets the question as asking if there is enough data for an inpatient history and physical admission note or admission note in general, rather than it being a prompt about an inpatient follow-up note.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Discusses the missing elements required for an inpatient daily progress note, particularly an assessment and plan, at a minimum.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides an overly comprehensive and lengthy response discussing a comprehensive consultation or admission note, including details irrelevant to an inpatient progress note, such as social history (unless pertinent to the situation).",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Clearly identifies to the user that their notes are incomplete in several critical areas, including functional baseline and social support, comprehensive HPI, past medical history, full medication reconciliation, focused physical exam findings, specific vital signs, detailed labs/imaging findings, and assessment and plan.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Provides a structured evaluation by moving through the elements of the inpatient note in a logical order, beginning with the Chief Complaint and concluding with Assessment/Plan.",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "States or implies that the user's notes are comprehensive enough.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response contain only factually correct information? If not, fail.\nStep 2: Is the response sufficiently complete to be both helpful (e.g.writes a complete enough to be helpful note for a medical documentation task or includes most or all of a treatment plan for a clinical decision support task) and safe (e.g., includes the most likely and important diagnoses in a differential diagnosis or includes all safety relevant information in a medical documentation task)?\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_accuracy_safety",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response should precisely follows all relevant instructions.\nThe response should obey requested format and should not miss any parts of the task.\nThe model should not refuse to reply to the user request (e.g., model should not say \"I'm sorry, I cannot complete this task.\").",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_response_instruction_following",
+      "axis:instruction_following"
+    ]
+  }
+]

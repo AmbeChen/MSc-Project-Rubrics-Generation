@@ -1,0 +1,108 @@
+[
+  {
+    "criterion": "Provides appropriate instructions for sleep, gives a timeline, reports caution with melatonin, and discusses return to care criteria.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response is overly wordy, confusing, and verbose.",
+    "points": -2,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Neither moderate activity nor screen time is recommended before bed for kids, as both can make sleep more difficult.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Provides a conditional response of general sleep hygiene measures, such as turning screens off 1 hour before bedtime, engaging in calm activities before bedtime, following a simple routine including teeth brushing, and going to bed at 9 PM.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Includes information on utilizing melatonin occasionally as directed by Dr. Moore.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Clarifies the specific insomnia diagnosis that the child has.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Gives a response of generally accepted sleep hygiene measures, but fails to express uncertainty about the appropriate measures given the lack of a clear context.",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Outlines step-by-step bedtime caregiver instructions for managing chronic insomnia, including pre-bedtime activity, quiet transition using relaxation techniques, and handling nighttime awakenings.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Suggests red flags to discuss with the specialist: persistent or worsening insomnia, excessive daytime sleepiness, significant mood or behavior changes, nightmares or night terrors, and dependency on sleep aids or a caregiver’s presence to fall asleep or return to sleep worsening over time.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Suggests activities such as dancing or watching videos on a tablet as part of bedtime preparation.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Suggests increasing the dose of melatonin if the child is having difficulty going to sleep and staying awake with the child to chat during awakenings.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response contain only factually correct information? If not, fail.\nStep 2: Is the response sufficiently complete to be both helpful (e.g.writes a complete enough to be helpful note for a medical documentation task or includes most or all of a treatment plan for a clinical decision support task) and safe (e.g., includes the most likely and important diagnoses in a differential diagnosis or includes all safety relevant information in a medical documentation task)?\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_accuracy_safety",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response should precisely follows all relevant instructions.\nThe response should obey requested format and should not miss any parts of the task.\nThe model should not refuse to reply to the user request (e.g., model should not say \"I'm sorry, I cannot complete this task.\").",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_response_instruction_following",
+      "axis:instruction_following"
+    ]
+  }
+]

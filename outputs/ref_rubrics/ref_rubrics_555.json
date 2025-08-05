@@ -1,0 +1,108 @@
+[
+  {
+    "criterion": "Provides information from the prompt in a structured SOAP note, encompassing subjective findings (history of presenting complaint), objective findings (examination and any relevant investigations), assessment (impression/diagnosis), and plan.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "In subjective findings, states a 2-week history of a new dark mole with no itching or bleeding.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "States examination findings of a 6mm lesion with an irregular border on the left shoulder in objective findings.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "In assessment, states possible dysplastic naevus and consideration of melanoma.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that an excisional biopsy is planned for next week.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Outputs additional information not provided by the user, including patient education and absence of symptoms. (Justification: Whilst it would be helpful to provide recommendations, e.g., on sun protection to the patient, the user is implying the patient is no longer present at their consultation, and if this recommendation has not been provided to the patient, this should not be included in the prompt.)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Provides a progress note as instructed by the user, including subjective complaint, objective finding, assessment, and plan for a possible dysplastic nevus to rule out melanoma.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "States seborrheic keratosis as a possible diagnosis. (Justification: Since the user specifically mentions suspicious lesion and puts dysplastic nevus as a possible diagnosis, it should follow instruction and put dysplastic nevus in the assessment rather than formulating a new diagnosis, even though seborrheic keratosis is a common benign pigmented lesion.)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Suggests scheduling the excisional biopsy for next month. (Justification: The user mentions a suspicious lesion which requires an urgent biopsy to rule out a malignant condition; scheduling the biopsy for a month may delay the diagnosis.)",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Suggests educating the patient on signs of malignant transformation, sun protection, and regular skin self-exams.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Includes a follow-up visit in the plan after the biopsy to review the pathology result.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response contain only factually correct information? If not, fail.\nStep 2: Is the response sufficiently complete to be both helpful (e.g.writes a complete enough to be helpful note for a medical documentation task or includes most or all of a treatment plan for a clinical decision support task) and safe (e.g., includes the most likely and important diagnoses in a differential diagnosis or includes all safety relevant information in a medical documentation task)?\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_accuracy_safety",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response should precisely follows all relevant instructions.\nThe response should obey requested format and should not miss any parts of the task.\nThe model should not refuse to reply to the user request (e.g., model should not say \"I'm sorry, I cannot complete this task.\").",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_response_instruction_following",
+      "axis:instruction_following"
+    ]
+  }
+]

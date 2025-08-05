@@ -1,0 +1,100 @@
+[
+  {
+    "criterion": "Correctly states that elevated CRP and ES indicate ongoing illness.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Writes in a professional manner.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Gives suggestions for the treatment plan and dosage.",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Correctly formats the prior authorization paragraph into clearly labeled sections that include diagnosis, labs, prior treatments, and rationale.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Uses appropriate formatting elements for improved readability, such as bold headers.",
+    "points": 3,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Appropriately includes lab values, such as an ESR of 32 and CRP of 15, emphasizing that this indicates ongoing inflammation.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Incorrectly states that the patient reports both ESR and CRP have remained elevated over time. (Justification: This is an assumption. While it may seem reasonable given the partial treatment response, the user query does not confirm that inflammatory markers have remained elevated. Furthermore, this is presented as a subjective report from the patient, which is fabricated and not supported by the provided information.)",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Incorrectly states that the patient reports persistent joint pain, stiffness, and swelling despite adherence to current therapy. (Justification: The user query only mentions a partial response to treatment and does not specify the nature of the patient's current symptoms. Details such as persistent joint pain, stiffness, or swelling are not provided and are therefore fabricated and assumed in the response.)",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Response incorrectly suggests that the patient has tried methotrexate, sulfasalazine, and leflunomide in sequence, with only partial response to each agent. (Justification: The user query does not specify the order in which these medications were used, nor does it clarify whether they were used sequentially or in combination. Assuming a specific treatment sequence or monotherapy introduces inaccurate clinical history, which could misinform future treatment decisions.)",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Appropriately states that given inadequate response to multiple conventional DMARDs, initiating a TNF inhibitor is medically necessary to achieve better disease control, prevent further joint damage, and improve her quality of life.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response contain only factually correct information? If not, fail.\nStep 2: Is the response sufficiently complete to be both helpful (e.g.writes a complete enough to be helpful note for a medical documentation task or includes most or all of a treatment plan for a clinical decision support task) and safe (e.g., includes the most likely and important diagnoses in a differential diagnosis or includes all safety relevant information in a medical documentation task)?\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_accuracy_safety",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response should precisely follows all relevant instructions.\nThe response should obey requested format and should not miss any parts of the task.\nThe model should not refuse to reply to the user request (e.g., model should not say \"I'm sorry, I cannot complete this task.\").",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_response_instruction_following",
+      "axis:instruction_following"
+    ]
+  }
+]

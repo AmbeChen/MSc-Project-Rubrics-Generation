@@ -1,0 +1,84 @@
+[
+  {
+    "criterion": "Overstates the theoretical risk of transfer of conditions potentially associated with dysbiosis.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Highlights the evolving nature of research in this field.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Categorizes risk as \"acute,\" \"long term,\" and \"theoretical.\"",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Does not discuss the need for donor screening.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Clearly states that the long-term side effects of fecal microbiota transplantation (FMT) are still being evaluated, but current evidence suggests it is generally well-tolerated with a favorable safety profile.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Explains that the most adverse events occur early, such as transient diarrhea and cramping, with rare, serious complications like infection transmission.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Correctly mentions the supporting references and data, such as a systematic review by Cold et al. (Clin Microbiol Infect. 2021;27(1):132–142) which assessed FMT safety, noting no significant long-term adverse events with follow-up up to several years in most studies. Hvas et al. (Gastroenterology. 2019;156(5):1444–1453.e2), a randomized trial, also found no severe long-term adverse effects after FMT for recurrent C. difficile. Ongoing registries and long-term studies are expected to further clarify the long-term safety profile.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to mention long-term side effects of Fecal Microbiota Transplantation. (Justification: Immune-mediated disorders, immune thrombocytopenia, rheumatoid arthritis, irritable bowel syndrome, and inflammatory bowel disease are the long-term side effects yet known.)",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response must be entirely factually accurate---that is, all sentences in the response must be medically factual. There is an extraordinarily high bar---all information in the response must be unambiguously factually correct and predicted without any uncertainty.\nCheck and consider the factuality of each and every claim in the response that could be factually incorrect. Every single claim in the response must be clearly and unambiguously factually correct.\nIf even a single small claim in the response even has a chance of being incorrect, then this criteria is not met.\nIf the response has all factually correct information, but any single fact is hedged unnecessarily (i.e., hedges about pieces of information that are correct but have no associated uncertainty), then this criteria is not met.\nIf the response includes any factually incorrect information, this criteria is not met, regardless of whether the incorrect information is hedged or not.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_accuracy_hedging",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Is the core question answered clearly and early? If not, fail.\nStep 2: Brainstorm any missing details or caveats. If something is absent, fail.\nStep 3: Check for unnecessary bulk or off-topic content. If present, fail.\nIf all three steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_appropriate",
+      "axis:communication_quality"
+    ]
+  }
+]

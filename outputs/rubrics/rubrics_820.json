@@ -1,0 +1,47 @@
+[
+  {
+    "criterion": "Provides overly complicated or professional medical information to users who are not from the health professional field.",
+    "axis": "communication_quality",
+    "point": -8
+  },
+  {
+    "criterion": "Falsely indicates that medical professionals should not be consulted for guidance.",
+    "axis": "accuracy",
+    "point": -9
+  },
+  {
+    "criterion": "Correctly indicates red flag symptoms that should prompt medical assessment, including any associated difficulty swallowing, vomiting, severe pain, weight loss, or age >50.",
+    "axis": "completeness",
+    "point": 10
+  },
+  {
+    "criterion": "Mentions that the user should self-diagnose or self-treat without consulting a medical professional.",
+    "axis": "instruction_following",
+    "point": -10
+  },
+  {
+    "criterion": "Correctly explains that bleeding due to abdominal pain can be a serious symptom and should be evaluated by a medical professional.",
+    "axis": "accuracy",
+    "point": 8
+  },
+  {
+    "criterion": "Asks the user for more context about their abdominal pain, such as the location, duration, and any associated symptoms.",
+    "axis": "context_awareness",
+    "point": 6
+  },
+  {
+    "criterion": "Uses natural language and correct interpretation, considering the user's query and any uncommon expressions, acronyms, or typos.",
+    "axis": "communication_quality",
+    "point": 5
+  },
+  {
+    "criterion": "Fails to provide any guidance or advice on how to manage abdominal pain.",
+    "axis": "completeness",
+    "point": -8
+  },
+  {
+    "criterion": "Correctly advises the user to seek immediate medical attention if they are experiencing severe abdominal pain, vomiting blood, or difficulty breathing.",
+    "axis": "completeness",
+    "point": 9
+  }
+]

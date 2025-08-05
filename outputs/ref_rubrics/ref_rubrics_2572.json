@@ -1,0 +1,109 @@
+[
+  {
+    "criterion": "Mentions that the rarity of deep-sea gas embolism has limited the availability of robust evidence about Hyperbaric Oxygen Therapy (HBOT).",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Describes that the consensus among diving-medicine experts is that the physiological basis and clinical outcomes observed over many years justify the use of HBOT.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Mentions that even in rare gas embolisms (e.g., helium), HBOT is still generally recommended as the best available option, as there is no alternative proven option.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that Hyperbaric Oxygen Therapy (HBOT) is not recommended for rare deep-sea gas embolisms.",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Hyperbaric oxygen therapy is a proven treatment for decompression sickness.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Explains the mechanism of action of HBOT.",
+    "points": 1,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Does not explain that adequate data is not available.",
+    "points": -1,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Provides a good explanation of hyperbaric oxygenation, describing it as a medical treatment where a patient breathes 100% oxygen in a pressurized chamber, increasing oxygen delivery to tissues. It explains how the procedure is done (typically lasting 60–120 minutes per session) and outlines its clinical uses, including treatment of non-healing wounds, carbon monoxide poisoning, decompression sickness, and gas embolism.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to provide reference sources that the user can access to verify the information, including the original studies or case reports, which undermines the credibility and transparency of the response.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Provides an accurate explanation of how hyperbaric oxygen therapy (HBOT) helps treat gas embolism by increasing atmospheric pressure, which reduces the size of gas bubbles in the bloodstream and enhances oxygen delivery to ischemic tissues, thereby improving circulation, reducing inflammation, and preventing further tissue damage.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

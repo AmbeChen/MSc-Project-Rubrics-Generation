@@ -1,0 +1,93 @@
+[
+  {
+    "criterion": "States that to prevent infection, the user should wash their hands and the affected area with soap and water and gently pat the skin dry.",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advises using clean tweezers to gently remove the splinter if it's sticking out. (Justification: Emphasis on the word \"gently\" as user asked about \"yanking\" out the splinter, and excess pressure on the splinter may cause it to break.)",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advises that after removal, the area should be covered with a clean bandage to keep it clean, especially if the area might get dirty or irritated.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Avoid recommending the application of antibiotic ointment after removal. (Justification: Antibiotic ointments may not be available to the user and are not necessary anyway. The American Association of Dermatologists recommends that after removal, \"the user should clean the area with soap and water and apply petroleum jelly. Keep the area covered with a bandage until it heals.\" Reference: https://www.aad.org/public/everyday-care/injured-skin/burns/remove-splinters)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States clearly at the beginning of the response that yes—the user should clean the affected area with soap and water before removing the splinter, as well as sterilize the tool they will be using for removal.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "States that it is not safe to remove the splinter without disinfecting your hands, the area it entered the skin, and the tools being utilized for removal.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Advises against \"yanking\" the splinter out, recommending instead to gently use a disinfected tool to slowly remove the splinter in the same direction that it entered the skin.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Expresses uncertainty about whether the user should disinfect the area where the splinter is by using words such as “it’s best.” (Justification: The model should be unequivocal and firmly say yes—the user should disinfect the area.)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

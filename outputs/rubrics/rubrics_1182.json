@@ -1,0 +1,42 @@
+[
+  {
+    "criterion": "Mentions the possibility of tonsillitis as a cause of throat pain and difficulty swallowing.",
+    "axis": "accuracy",
+    "point": 5
+  },
+  {
+    "criterion": "Provides an incomplete or unclear explanation of the possible causes of throat pain and difficulty swallowing.",
+    "axis": "completeness",
+    "point": -3
+  },
+  {
+    "criterion": "Asks the user about additional symptoms to clarify their query and seek more relevant context.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Uses natural language and a clear, concise tone to explain the possible causes and next steps.",
+    "axis": "communication_quality",
+    "point": 8
+  },
+  {
+    "criterion": "Incorrectly advises ignoring the symptoms and not seeking medical attention.",
+    "axis": "accuracy",
+    "point": -9
+  },
+  {
+    "criterion": "Provides a clear and relevant recommendation to consult a doctor, especially considering the user's symptoms.",
+    "axis": "instruction_following",
+    "point": 5
+  },
+  {
+    "criterion": "Fails to mention any potential complications or red flag symptoms that may require immediate medical attention.",
+    "axis": "completeness",
+    "point": -5
+  },
+  {
+    "criterion": "Correctly advises seeking prompt medical attention if the user's symptoms worsen or persist.",
+    "axis": "completeness",
+    "point": 8
+  }
+]

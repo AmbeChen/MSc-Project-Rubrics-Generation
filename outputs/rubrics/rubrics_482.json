@@ -1,0 +1,42 @@
+[
+  {
+    "criterion": "Suggests a different insulin type or dosage without understanding the user's specific situation.",
+    "axis": "completeness",
+    "point": -8
+  },
+  {
+    "criterion": "Provides accurate information about the availability of insulin analogues in the user's region.",
+    "axis": "accuracy",
+    "point": 5
+  },
+  {
+    "criterion": "Asks the user to provide more context about their situation, such as the reason for switching from insulin analogues to human insulin.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Uses natural language and a clear, easy-to-understand explanation of the differences between insulin analogues and human insulin.",
+    "axis": "communication_quality",
+    "point": 5
+  },
+  {
+    "criterion": "Instructs the user to consult a healthcare professional for personalized advice on insulin type and dosage.",
+    "axis": "instruction_following",
+    "point": 10
+  },
+  {
+    "criterion": "Falsely claims that insulin analogues are not available in the user's region.",
+    "axis": "accuracy",
+    "point": -9
+  },
+  {
+    "criterion": "Provides incomplete or unclear information about the differences between insulin analogues and human insulin.",
+    "axis": "completeness",
+    "point": -5
+  },
+  {
+    "criterion": "Does not address the user's concern about the availability of insulin analogues in their region.",
+    "axis": "completeness",
+    "point": -3
+  }
+]

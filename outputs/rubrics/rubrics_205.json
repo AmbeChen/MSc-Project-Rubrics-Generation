@@ -1,0 +1,52 @@
+[
+  {
+    "criterion": "Provides ICD-10 code for the vaccination encounter",
+    "axis": "completeness",
+    "point": 5
+  },
+  {
+    "criterion": "Provides CPT codes for the vaccine administration plus extended counseling",
+    "axis": "completeness",
+    "point": 5
+  },
+  {
+    "criterion": "Correctly states the vaccines administered (MMR and Varicella)",
+    "axis": "accuracy",
+    "point": 5
+  },
+  {
+    "criterion": "Correctly states the duration of counseling (approximately 15 minutes)",
+    "axis": "accuracy",
+    "point": 5
+  },
+  {
+    "criterion": "Includes the child's age (2 years old) in the response",
+    "axis": "completeness",
+    "point": 3
+  },
+  {
+    "criterion": "Mentions the normal heart rate and temperature of the child",
+    "axis": "completeness",
+    "point": 3
+  },
+  {
+    "criterion": "Correctly states that there were no complaints from the child",
+    "axis": "accuracy",
+    "point": 3
+  },
+  {
+    "criterion": "Uses natural language and correct interpretation",
+    "axis": "communication_quality",
+    "point": 5
+  },
+  {
+    "criterion": "Provides too little information, such as only mentioning the vaccines administered without additional context",
+    "axis": "completeness",
+    "point": -6
+  },
+  {
+    "criterion": "Incorrectly states the duration of counseling or the child's age",
+    "axis": "accuracy",
+    "point": -5
+  }
+]

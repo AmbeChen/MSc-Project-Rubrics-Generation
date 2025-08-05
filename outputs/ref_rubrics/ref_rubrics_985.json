@@ -1,0 +1,101 @@
+[
+  {
+    "criterion": "Includes the standard of care advice for managing a mild sunburn, which involves cooling the skin, using light moisturizers preferably with products containing aloe vera, managing pain and inflammation with over-the-counter NSAIDs as directed, avoiding further sun exposure, staying well-hydrated, and wearing loose and cool clothing.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advises avoiding heavy creams or petroleum-based products initially, as they can trap heat and worsen pain.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advises seeking medical attention if sunburn starts to blister, covers a large area, or symptoms such as fever, chills, or nausea develop.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Uses appropriate formatting elements for improved readability, such as bold headers and bullet points.",
+    "points": 3,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Advises taking a lukewarm shower instead of a cool one. (Justification: A cool shower is ideal for mild sunburns, while a hot or warm shower can worsen the inflammation of the skin.)",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Explains how to treat mild sunburn by staying out of the sun once sunburn is noticed, cooling the area using a cool shower or cool compresses, staying hydrated, taking over-the-counter NSAIDs such as ibuprofen to relieve pain and reduce inflammation, applying moisturizer with soothing ingredients like aloe vera, and avoiding irritants.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Suggests staying away from the sun and applying sunscreen SPF>30 once the sunburn heals to prevent future sunburn.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends taking a lukewarm shower to calm the burning sensation. (Justification: It is recommended to take a cool shower rather than a lukewarm shower to calm the burning sensation.)",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Suggests seeking medical care if a blister starts to develop, if the sunburn covers a large area, or if symptoms like fever, chills, nausea, or confusion develop.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

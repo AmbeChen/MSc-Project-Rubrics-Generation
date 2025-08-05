@@ -1,0 +1,108 @@
+[
+  {
+    "criterion": "Recommends first evaluating with the patient if any barriers exist to taking levothyroxine (memory, price, modality of intake).",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Recognizes the high likelihood of pseudo-malabsorption related to missed doses or poorly taken doses.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Describes Directly Observed Therapy as the test to see if there is malabsorption. (Justification: A normal dose will not significantly increase blood levels of T4, but a supervised levothyroxine absorption test can.)",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Provides a step-by-step approach to tackling the problem of levothyroxine compliance even when the user does not clearly ask the question.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Assumes what the user wants and does not seek to clarify if the assumption of the question of what to do next in the event that levothyroxine usage is not achieving expected outcomes.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Asks the user to first review the dose, timing, formulation, and other medications levothyroxine may be used with to ensure that drug administration is appropriate, delivered, and well-absorbed.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Guides on how to conduct directly observed levothyroxine therapy, followed by testing for increased serum thyroxine levels.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Guides the user to extensively discuss cogent possible issues such as misunderstanding, beliefs, pill burden, and side effects of usage with the patient if non-compliance to levothyroxine is confirmed.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Provides an appropriately detailed response including the following stepwise management approach: confirming adherence history and addressing potential barriers (e.g., timing, other medications); checking TSH level (more reliable for long-term control assessment); if concerns remain, perform directly observed levothyroxine dose with subsequent measurement.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Asks the user whether they would like further assistance in interpreting these results.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Fails to explain that a random T4 alone is not very helpful.",
+    "points": -3,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response must be entirely factually accurate---that is, all sentences in the response must be medically factual. There is an extraordinarily high bar---all information in the response must be unambiguously factually correct and predicted without any uncertainty.\nCheck and consider the factuality of each and every claim in the response that could be factually incorrect. Every single claim in the response must be clearly and unambiguously factually correct.\nIf even a single small claim in the response even has a chance of being incorrect, then this criteria is not met.\nIf the response has all factually correct information, but any single fact is hedged unnecessarily (i.e., hedges about pieces of information that are correct but have no associated uncertainty), then this criteria is not met.\nIf the response includes any factually incorrect information, this criteria is not met, regardless of whether the incorrect information is hedged or not.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_accuracy_hedging",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Is the core question answered clearly and early? If not, fail.\nStep 2: Brainstorm any missing details or caveats. If something is absent, fail.\nStep 3: Check for unnecessary bulk or off-topic content. If present, fail.\nIf all three steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_appropriate",
+      "axis:communication_quality"
+    ]
+  }
+]

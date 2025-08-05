@@ -1,0 +1,109 @@
+[
+  {
+    "criterion": "States that normal diabetes is a fasting blood sugar of <100 mg/dL.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that prediabetes is defined as a fasting blood sugar of 100 to 125 mg/dL.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that diabetes is defined as fasting sugars of greater than or equal to 126 mg/dL.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that fasting glucose is measured after 8 hours of not eating.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Includes an unnecessary safety statement about monitoring blood sugars under the guidance of a healthcare provider. (Justification: This is unnecessary extra text based off this user query.)",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Provides the upper limit normal range as 120. (Justification: This is not a life-threatening sugar, but <100 is the standard upper limit of normal based on both the American Diabetes Association (ADA) and the American Association of Clinical Endocrinologists (AACE) guidelines.)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that for a healthy adult, the normal fasting blood sugar (glucose) range is: Normal: 70 to 99 mg/dL (3.9 to 5.5 mmol/L), Prediabetes: 100 to 125 mg/dL (5.6 to 6.9 mmol/L), Diabetes: 126 mg/dL (7.0 mmol/L) or higher on two separate tests.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Explains that \"fasting\" typically means no food or drink (except water) for at least 8 hours before the test.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Recommends consulting a healthcare provider for accurate diagnosis and interpretation.",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Model answers that for a healthy adult, fasting blood sugar (measured first thing in the morning before eating) often falls between 80–120 mg/dL. Normal Range: Around 80–120 mg/dL, Borderline/Prediabetes: Approximately 130–140 mg/dL, Possible Diabetes: Consistently above 140 mg/dL. (Justification: There is no standard classification, and the values are incorrect, which are misleading.)",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

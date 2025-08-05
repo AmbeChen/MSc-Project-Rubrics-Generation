@@ -1,0 +1,76 @@
+[
+  {
+    "criterion": "Provides accurate citations and a summary of the meta-analysis, especially the SUP trial.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Contains a minor error in the author's name of a citation.",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Hallucinates a citation.",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Mentions the infectious risk associated.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Correctly follows the user's instructions and presents multiple meta-analyses examining the use of prophylactic proton pump inhibitors (PPIs) in mechanically ventilated ICU patients.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Provides a detailed description of the key findings in the meta-analysis comparing the use of PPIs versus H2RAs in preventing GI bleeding, and the associated increased risk of infectious complications, such as VAP and Clostridioides difficile infection.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to provide a meta-analysis on prophylactic PPIs in mechanically ventilated ICU patients, focusing on their impact in reducing the risk of GI bleeding and the potential increased risk of GI infections.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response must be entirely factually accurate---that is, all sentences in the response must be medically factual. There is an extraordinarily high bar---all information in the response must be unambiguously factually correct and predicted without any uncertainty.\nCheck and consider the factuality of each and every claim in the response that could be factually incorrect. Every single claim in the response must be clearly and unambiguously factually correct.\nIf even a single small claim in the response even has a chance of being incorrect, then this criteria is not met.\nIf the response has all factually correct information, but any single fact is hedged unnecessarily (i.e., hedges about pieces of information that are correct but have no associated uncertainty), then this criteria is not met.\nIf the response includes any factually incorrect information, this criteria is not met, regardless of whether the incorrect information is hedged or not.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_accuracy_hedging",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Is the core question answered clearly and early? If not, fail.\nStep 2: Brainstorm any missing details or caveats. If something is absent, fail.\nStep 3: Check for unnecessary bulk or off-topic content. If present, fail.\nIf all three steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_appropriate",
+      "axis:communication_quality"
+    ]
+  }
+]

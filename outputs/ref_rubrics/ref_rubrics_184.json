@@ -1,0 +1,68 @@
+[
+  {
+    "criterion": "Provides an overly lengthy or overly comprehensive note discussing the exact specifics of a thorough outpatient geriatrics note, instead of discussing missing major categories, as this could artificially lengthen the response beyond what is required.",
+    "points": -2,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Appropriately states that this is not enough information for an outpatient geriatrics note, mentioning that more categories are needed, particularly subjective considerations, more physical examination, pertinent investigations, and an assessment that considers geriatric-specific considerations as appropriate, such as functional status, goals of care, and preventative care status.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Appropriately recognizes that a follow-up need not include all the comprehensive aspects of geriatric care, especially if things were previously discussed and established during the initial consultation or subsequent follow-up visit.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Fails to mention that the follow-up visit note is missing the necessary elements for a complete outpatient geriatric evaluation.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "States that a comprehensive geriatric follow-up note for an outpatient clinic visit should include patient identification, relevant past medical history, current medication list, the reason for the visit with a detailed history of present illness, vital signs, social history, functional status, a thorough physical examination, pertinent lab results, and a clearly outlined assessment and plan.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Indicates that the follow-up visit note lacks sufficient detail to qualify as a thorough outpatient geriatric assessment.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response contain only factually correct information? If not, fail.\nStep 2: Is the response sufficiently complete to be both helpful (e.g.writes a complete enough to be helpful note for a medical documentation task or includes most or all of a treatment plan for a clinical decision support task) and safe (e.g., includes the most likely and important diagnoses in a differential diagnosis or includes all safety relevant information in a medical documentation task)?\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_accuracy_safety",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response should precisely follows all relevant instructions.\nThe response should obey requested format and should not miss any parts of the task.\nThe model should not refuse to reply to the user request (e.g., model should not say \"I'm sorry, I cannot complete this task.\").",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_response_instruction_following",
+      "axis:instruction_following"
+    ]
+  }
+]

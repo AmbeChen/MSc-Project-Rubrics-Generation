@@ -1,0 +1,47 @@
+[
+  {
+    "criterion": "Provides an accurate eGFR calculation based on the given patient information",
+    "axis": "accuracy",
+    "point": 9
+  },
+  {
+    "criterion": "Asks for additional information that is relevant to the eGFR calculation",
+    "axis": "context_awareness",
+    "point": 7
+  },
+  {
+    "criterion": "Uses natural language and correct interpretation in its response",
+    "axis": "communication_quality",
+    "point": 5
+  },
+  {
+    "criterion": "Fails to provide an eGFR calculation or mentions incorrect formula",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "Does not account for patient's age, sex, race, and comorbidities when interpreting eGFR results",
+    "axis": "completeness",
+    "point": -5
+  },
+  {
+    "criterion": "Provides an eGFR calculation without considering potential lab variations",
+    "axis": "accuracy",
+    "point": -4
+  },
+  {
+    "criterion": "Incorrectly uses race adjustment in the CKD-EPI formula",
+    "axis": "accuracy",
+    "point": -6
+  },
+  {
+    "criterion": "Provides unclear or ambiguous information about CKD staging",
+    "axis": "communication_quality",
+    "point": -3
+  },
+  {
+    "criterion": "Asks for irrelevant or unnecessary information from the user",
+    "axis": "instruction following",
+    "point": -2
+  }
+]

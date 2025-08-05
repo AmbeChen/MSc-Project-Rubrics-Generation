@@ -1,0 +1,100 @@
+[
+  {
+    "criterion": "Correctly states that general outpatient notes should be formatted in SOAP format: Subjective, Objective, Assessment, Plan.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Incorrectly states there is no chief complaint identified when the prompt states the reason for visit is weight management.",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Suggests including billing/CPT codes and ensuring regulatory requirements are met for billable visits as a key component of outpatient notes.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Suggests including a billing code for thyrotoxicosis despite the user not mentioning this specific diagnosis in the prompt. The user has identified hyperthyroidism.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "States that the chief complaint is missing, even though it is stated to be \"weight management\" by the user.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Follows the SOAP framework to assess the completeness of the dietitian follow-up note.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Recommends including excess details in the dietitian's SOAP note, such as social history, medication details, general physical exam findings, and specific details related to the plan; while these are \"ideal\" recommendations, they are not practical and should not be expected at every follow-up visit.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Recommends stating that the patient is at an increased risk with a familial history of diabetes.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Recommends recording the actual vital signs, which are temperature, heart rate, respiratory rate, blood pressure, and O2 saturation, while noting that waist circumference, weight, and BMI are important measures for weight management but are not vital signs.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends ultimately following the regulatory body's guideline for documentation to ensure clear communication in the patient's interest, collaboration with colleagues, and accurate billing for dietitians.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response contain only factually correct information? If not, fail.\nStep 2: Is the response sufficiently complete to be both helpful (e.g.writes a complete enough to be helpful note for a medical documentation task or includes most or all of a treatment plan for a clinical decision support task) and safe (e.g., includes the most likely and important diagnoses in a differential diagnosis or includes all safety relevant information in a medical documentation task)?\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_accuracy_safety",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response should precisely follows all relevant instructions.\nThe response should obey requested format and should not miss any parts of the task.\nThe model should not refuse to reply to the user request (e.g., model should not say \"I'm sorry, I cannot complete this task.\").",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_response_instruction_following",
+      "axis:instruction_following"
+    ]
+  }
+]

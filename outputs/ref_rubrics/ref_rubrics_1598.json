@@ -1,0 +1,90 @@
+[
+  {
+    "criterion": "Fails to suggest consulting a healthcare professional before taking ibuprofen for individuals with a history of gastric disease. (Justification: People with a history of gastric disease are at a higher risk of stomach irritation, ulcers, or bleeding when taking ibuprofen. Seeking medical advice ensures safe use and appropriate precautions.)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to suggest consulting a healthcare professional before taking ibuprofen for individuals with heart disease. (Justification: Ibuprofen can increase the risk of cardiovascular events, including heart attacks, particularly in individuals with preexisting heart conditions. Medical consultation is essential to assess risks and consider alternative pain management options if necessary.)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends taking ibuprofen with a meal, snack, or a drink of milk. (Justification: Taking ibuprofen with food or milk helps reduce the likelihood of stomach irritation and discomfort, making it safer for regular use.)",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Suggests not taking ibuprofen on an empty stomach. (Justification: Taking ibuprofen without food increases the risk of stomach irritation, which may lead to discomfort or more serious gastrointestinal issues.)",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Recommends taking a gastric protection pill with ibuprofen if advised by a healthcare professional. (Justification: This can help reduce the risk of stomach irritation, ulcers, or other gastrointestinal issues associated with ibuprofen use.)",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Recommends not taking ibuprofen with alcohol. (Justification: Combining ibuprofen with alcohol increases the risk of stomach irritation, ulcers, and gastrointestinal bleeding. It may also enhance the risk of liver and kidney damage.)",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Recommends stopping ibuprofen and seeking medical advice promptly if experiencing stomach pain, acid reflux, nausea, haematemesis (vomiting blood or brown material), tarry stool, or other discomfort. (Justification: These symptoms may indicate serious side effects of ibuprofen, such as gastrointestinal bleeding or ulceration. Immediate medical evaluation is necessary to prevent complications.)",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Suggests that taking ibuprofen with milk may be harmful since milk is high in iron and calcium, which may affect the efficacy of the medication and hinder its absorption.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Avoid taking medication with alcohol.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Should seek more context from the user, such as past medical history and underlying diseases, to aim for a better response from the model.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Emphasizes that the user should always seek professional medical advice for health concerns.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  }
+]

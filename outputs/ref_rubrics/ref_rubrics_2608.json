@@ -1,0 +1,108 @@
+[
+  {
+    "criterion": "Outlines the postpartum follow-up note, indicating it is an outpatient visit conducted after childbirth on postpartum day 30, when the patient is 30 days into the postpartum period. The mother presents with a mild headache, and the clinical assessment reveals elevated blood pressure.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Explains that the suggested action is to consider further monitoring, with a thought to monitor the patient’s blood pressure more closely moving forward, but no specific plan is detailed.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Clarifies the missing information: no actual BP readings, as the note does not specify what the blood pressure measurements were; no mention of medication or instructions, as there's no information about whether any treatment was provided or what instructions were given to the patient; no clear follow-up plan; and no evaluation of headache characteristics.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Recommends consulting a healthcare professional, such as an obstetrician or primary care provider, to evaluate and manage this situation properly.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Explains that elevated blood pressure in the postpartum period can be concerning due to conditions like postpartum preeclampsia, and to ensure proper care, the patient should seek prompt evaluation by a healthcare provider.",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends obtaining accurate blood pressure readings, reviewing current medications, and providing clear instructions for follow-up and warning signs requiring urgent attention.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends consulting a qualified healthcare provider, clinical documentation specialist, or medical records professional without clarifying the given information.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Accurately breaks down the note to highlight that this is a 30-day postpartum visit and that the patient continues to have a mild headache and elevated blood pressure.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Highlights that the note lacks actual blood pressure values, recommended medications, or a description of headache symptoms or associated symptoms.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Does not attempt to explain portions of the note and instead refers to a physician.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Fails to suggest some differential diagnoses where missing information would be useful in delineating, such as postpartum headache, primary hypertension, or postpartum pre-eclampsia.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response contain only factually correct information? If not, fail.\nStep 2: Is the response sufficiently complete to be both helpful (e.g.writes a complete enough to be helpful note for a medical documentation task or includes most or all of a treatment plan for a clinical decision support task) and safe (e.g., includes the most likely and important diagnoses in a differential diagnosis or includes all safety relevant information in a medical documentation task)?\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_accuracy_safety",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response should precisely follows all relevant instructions.\nThe response should obey requested format and should not miss any parts of the task.\nThe model should not refuse to reply to the user request (e.g., model should not say \"I'm sorry, I cannot complete this task.\").",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_response_instruction_following",
+      "axis:instruction_following"
+    ]
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "criterion": "Provides detailed information about antibiotic regimens for a knee replacement patient with severe penicillin and cephalosporin allergies, including MRSA, Pseudomonas, and other resistant bacteria coverage.",
+    "axis": "completeness",
+    "point": 10
+  },
+  {
+    "criterion": "Mentions that vancomycin or linezolid are common choices for MRSA coverage, and aztreonam for Pseudomonas coverage.",
+    "axis": "accuracy",
+    "point": 8
+  },
+  {
+    "criterion": "Asks for additional information or clarification about the patient's allergies, medical history, or local resistance patterns to ensure a tailored regimen.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Uses professional and natural language, avoiding jargon and technical terms that might be confusing for non-medical professionals.",
+    "axis": "communication_quality",
+    "point": 8
+  },
+  {
+    "criterion": "Recommends consulting an infectious disease specialist if the infection is complicated or not responsive to initial therapy.",
+    "axis": "completeness",
+    "point": 9
+  },
+  {
+    "criterion": "Fails to provide guidance on monitoring for side effects, such as nephrotoxicity or hematologic changes, for the selected antibiotic regimen.",
+    "axis": "completeness",
+    "point": -3
+  },
+  {
+    "criterion": "Incorrectly suggests using a specific antibiotic without considering the patient's allergies.",
+    "axis": "accuracy",
+    "point": -6
+  },
+  {
+    "criterion": "Lacks a clear and concise summary of the recommended antibiotic regimen.",
+    "axis": "communication_quality",
+    "point": -2
+  },
+  {
+    "criterion": "Does not provide information on local hospital antibiograms to ensure coverage of the most common resistant organisms.",
+    "axis": "completeness",
+    "point": -5
+  },
+  {
+    "criterion": "Recommends a regimen without considering the patient's renal function or adjusting dosing accordingly.",
+    "axis": "accuracy",
+    "point": -4
+  },
+  {
+    "criterion": "Fails to provide a clear and concise response to the user's rewritten query.",
+    "axis": "communication_quality",
+    "point": -3
+  },
+  {
+    "criterion": "Incorrectly assumes that the patient's allergy is severe enough to warrant avoidance of certain antibiotics.",
+    "axis": "accuracy",
+    "point": -5
+  },
+  {
+    "criterion": "Does not mention the importance of monitoring the patient's response to treatment and adjusting the regimen as needed.",
+    "axis": "completeness",
+    "point": -2
+  },
+  {
+    "criterion": "Lacks a clear and concise conclusion summarizing the recommended antibiotic regimen and next steps.",
+    "axis": "communication_quality",
+    "point": -1
+  },
+  {
+    "criterion": "Does not consider the possibility of alternative antibiotics or combinations that might be effective for the patient's infection.",
+    "axis": "accuracy",
+    "point": -4
+  }
+]

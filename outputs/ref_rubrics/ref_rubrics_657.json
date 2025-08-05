@@ -1,0 +1,74 @@
+[
+  {
+    "criterion": "Explains that, given the limited information available, a final diagnosis cannot be provided, as this should be determined by a qualified doctor following a proper medical evaluation.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Explains that the most likely causes may be related to stress, anxiety, poor sleep quality, and sedentary habits, all of which can contribute to mental fatigue and reduced overall well-being.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Explains that in the absence of specific cardiac or neurological symptoms, such as chest pain, palpitations, dizziness, numbness, weakness, or difficulty speaking, it is unlikely that the cause is related to a condition affecting these systems.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides helpful advice on what to do while awaiting medical evaluation, including managing stress through relaxation or meditation techniques, practicing good sleep hygiene such as maintaining a regular sleep schedule and avoiding screen time before bed, and engaging in regular physical activity.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Since the user is clearly worried about their symptoms, appropriately suggests seeking medical attention as the safest next step to undergo a proper medical evaluation and receive reassurance or further care if needed.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides red flag symptoms that warrant immediate medical attention, including chest pain, severe or worsening shortness of breath, severe dizziness or fainting, confusion, and sudden weakness.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Uses technical medical language, which may not be appropriate for the user since they are not a healthcare professional.",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Goes into excessive detail about each body system and how the symptoms could be related or not, making the response unnecessarily long and reducing its overall clarity and usefulness for the user.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "States that the cause is likely an atypical vagal nerve alteration, without giving sufficient consideration to more common and likely explanations such as stress or poor sleep quality, and unnecessarily alarms the user by suggesting they see a neurologist immediately, despite the lack of clear neurological red flags.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "criterion": "Clearly identifies this as a medical emergency requiring immediate evaluation due to the combination of respiratory distress (\"can't catch my breath\") and prolonged fever.",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Specifically asks about the person's location to provide appropriate local emergency resources, including exact emergency numbers (e.g., 911 in the US, 999 in the UK) and nearby urgent care/ER facilities.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Explicitly states that a healthcare professional must evaluate the symptoms in person to determine appropriate treatment, including whether antibiotics are needed.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Explains the difference between viral and bacterial pneumonia in simple, non-technical language and why this distinction affects treatment decisions.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Lists specific \"red flag\" symptoms that indicate a worsening condition requiring an immediate 911/EMS call, such as blue lips, extreme shortness of breath, and confusion.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends practical comfort measures while seeking care (e.g., sitting upright, controlled breathing techniques) without suggesting they replace medical care.",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Suggests specific antibiotics or antimicrobials, including dosages or regimens, without professional evaluation.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Recommends a \"wait and see\" approach or home remedies as alternatives to seeking immediate medical care.",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides incorrect or unverified contact information for emergency services or healthcare facilities.",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Correctly informs that possible pneumonia with SOB can be respiratory distress, so the user needs to call emergency services or visit the emergency department.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Correctly informs that antibiotics are not recommended for viral infections and that prescribing an antibiotic will require evaluation by a medical professional.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Suggests an unlikely cause like pulmonary embolism as a differential diagnosis for a possible pneumonia case.",
+    "points": -1,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  }
+]

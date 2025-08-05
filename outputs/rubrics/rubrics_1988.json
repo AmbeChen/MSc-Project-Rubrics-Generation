@@ -1,0 +1,47 @@
+[
+  {
+    "criterion": "Provides a clear and relevant risk estimate, considering the user's age and symptoms.",
+    "axis": "completeness",
+    "point": 8
+  },
+  {
+    "criterion": "Incorrectly estimates the user's risk without considering the provided symptoms.",
+    "axis": "accuracy",
+    "point": -6
+  },
+  {
+    "criterion": "Asks the user to provide additional information, such as T-score or smoking history, to better assess their risk.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Response is unclear, confusing, or difficult to understand.",
+    "axis": "communication_quality",
+    "point": -8
+  },
+  {
+    "criterion": "Does not follow the user's instructions, such as providing a risk estimate without considering their symptoms.",
+    "axis": "instruction_following",
+    "point": -5
+  },
+  {
+    "criterion": "Provides a risk estimate without explaining the underlying factors that contribute to it.",
+    "axis": "completeness",
+    "point": 5
+  },
+  {
+    "criterion": "Incorrectly assumes the user has a specific medical condition based on their symptoms.",
+    "axis": "accuracy",
+    "point": -9
+  },
+  {
+    "criterion": "Asks the user to seek medical attention without providing a clear explanation for why.",
+    "axis": "communication_quality",
+    "point": -5
+  },
+  {
+    "criterion": "Provides a risk estimate without considering the potential impact of medication or other health conditions.",
+    "axis": "accuracy",
+    "point": -6
+  }
+]

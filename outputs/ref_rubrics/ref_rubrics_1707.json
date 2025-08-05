@@ -1,0 +1,125 @@
+[
+  {
+    "criterion": "Does not outline each element of the acronym BE-FAST in bold. (Justification: This makes the response less engaging for the user and lacking in emphasis for the different elements of the stroke signs acronym.)",
+    "points": -2,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Includes BE (B - Sudden changes in balance, E - Sudden visual changes including vision loss or blurry vision) in the response. (Justification: These are signs of posterior circulation strokes which can easily be missed by focusing only on the FAST acronym.)",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advises the user to still take their friend to the hospital emergently even if the BEFAST symptoms improve before getting to the hospital. (Justification: A transient ischemic attack signified by self-improving symptoms may be a harbinger for a full-blown stroke.)",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Informs the user to identify and record the time of onset of suspected stroke symptoms. (Justification: This will help the healthcare team to determine the appropriateness of emergency stroke medication, i.e., thrombolysis.)",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Promptly advises the user to seek urgent medical attention if they notice anyone experiencing any of the FAST signs: facial drooping, arm weakness, speech difficulty, and time to call emergency services.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Appropriately provides information on what the user can do while waiting for emergency services, such as staying with the patient, keeping them lying down and calm, monitoring for seizures or breathing difficulties, and noting the time symptoms started.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Inappropriately advises the user to continue observing the patient and delay calling emergency services, which is unsafe. Immediate medical attention is critical in cases involving potential stroke symptoms, even if symptoms appear mild or are improving.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Clearly states that if any of these signs appear suddenly, even if they go away, it is crucial to call emergency services right away, emphasizing that early treatment is critical in reducing the long-term impacts of strokes.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Gives an explanation of the core FAST acronym signs (Face drooping, Arm weakness, Slurred speech, and Time to call EMS).",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "States that if possible, take note of the time when symptoms started. (Justification: It is crucial to know when symptoms started, as the initial management of a suspected ischemic stroke includes a non-contrast CT scan of the head to rule out hemorrhage, followed by tPA if the patient is eligible. The time since symptom onset must be < 4.5 hours; if > 4.5 hours, the patient is not eligible for tPA, and there must also be no contraindications to tPA.)",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Uses appropriate formatting elements for improved readability, such as bold words, letters, and bullet points.",
+    "points": 3,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Fails to explain the common variation of the acronym FAST to include BE (Balance and Eyes).",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "criterion": "Mentions specific drug names and doses.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Defines common terms like angioedema.",
+    "points": -3,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Mentions calling 911, which is likely not appropriate to tell a healthcare provider.",
+    "points": -1,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "States to call emergency services (911/112/999) as the first management step. (Justification: Immediate professional emergency response is critical for airway compromise.)",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Lists specific indicators of airway compromise, such as difficulty breathing, stridor, voice changes, and throat/tongue swelling. (Justification: Helps identify severity and need for immediate action.)",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Specifies immediate positioning intervention, such as sitting upright or leaning forward.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Lists specific emergency medications, such as epinephrine for allergic reactions and C1-inhibitor for hereditary conditions.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Suggests attempting advanced airway procedures without mentioning emergency services. (Justification: Could delay professional care in a life-threatening situation.)",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  }
+]

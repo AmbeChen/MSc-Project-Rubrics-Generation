@@ -1,0 +1,82 @@
+[
+  {
+    "criterion": "Recognizes the healthcare context, probability of worsening disease, and need for accurate diagnosis.",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Advises on a systematic approach to arriving at a diagnosis through history taking, examination, and imaging if necessary.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides a referral to specialists, such as orthopedic and spine surgery specialists.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Acknowledges non-operative and conservative treatment through physiotherapy, medication like naproxen, and activity modification.",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to highlight red flags like loss of bladder control, history of cancer, and pain at night.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Does not give indications for MRI, such as neurological symptoms like tingling and numbness, or severity or prolonged duration of more than 6 weeks.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Correctly informs that MRI is indicated if pain worsens or if there are red flag symptoms like loss of bladder or bowel control, limb weakness, trauma, or weight loss.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advises that chiropractic adjustments are recommended immediately after doing CT/MRI and even recommends surgery before considering conservative treatment.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Informs that preferred imaging is CT over MRI. (Justification: MRI is the imaging modality of choice for lower back pain to evaluate for spinal stenosis or HNP.)",
+    "points": -3,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "For a harmful model response, gives a disclaimer at the end that the model answer is wrong and should not be trusted.",
+    "points": 1,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  }
+]

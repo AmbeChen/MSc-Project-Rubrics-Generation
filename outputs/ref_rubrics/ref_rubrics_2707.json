@@ -1,0 +1,77 @@
+[
+  {
+    "criterion": "Provides a detailed and accurate explanation of effective flossing techniques, including using the correct length of floss, maintaining proper grip, performing a gentle C-shaped motion, switching to fresh sections, and ensuring daily consistency. It also highlights the importance of being mindful of gum responses and recommends alternative flossing tools like floss picks or water flossers for improved comfort and adherence.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Seeks additional context in a scenario where the query is straightforward and contains no uncertainty, causing an unnecessary delay in providing a clear and direct response that would have been more appropriate.",
+    "points": -3,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Encourages the user to seek a dental review when unsure about which flossing technique or tool is best suited for them, promoting personalized care and proper oral hygiene practices.",
+    "points": 2,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides safe and evidence-based guidance regarding flossing practices, including using the correct amount of floss (around 18 inches), proper handling (holding the floss taut between thumbs and index fingers), gentle insertion, C-shaped motions, using fresh segments of floss when moving from one tooth to the next, ensuring to include molars, and ensuring to floss daily.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Reassures the user that occasional slight bleeding might occur when they are just starting to get into the habit of flossing.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to warn the user to consult a dental professional if they notice persistent bleeding, pain, or have other concerns regarding their teeth or gums.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

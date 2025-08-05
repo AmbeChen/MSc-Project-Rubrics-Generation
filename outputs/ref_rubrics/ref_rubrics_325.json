@@ -1,0 +1,116 @@
+[
+  {
+    "criterion": "Provides a concise explanation tabulating the patient's CHADS-VASC score to 3, meeting indications for anticoagulation to reduce stroke risk.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Fails to advise the user to consider bleeding risk when initiating anticoagulation for atrial fibrillation.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Repeats information in the response, artificially lengthening the answer and adversely affecting communication.",
+    "points": -2,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Depicts the calculation of the CHADSVASc Score for the patient by listing each component of the score and assigning the score based on the provided patient information.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Discusses the guideline recommendations, especially from the AHA/ACC and ESC, for anticoagulation of patients with AF in general and specifically the given patient by specifying the CHA₂DS₂-VASc score cutoffs for anticoagulation (i.e., men with a CHA₂DS₂-VASc score of ≥2 or women with a score of ≥3 are recommended to start oral anticoagulation to reduce the risk of stroke).",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Discusses drug options for oral anticoagulation, including direct oral anticoagulants (which are generally preferable for their better safety unless contraindicated or unavailable) or warfarin (or other vitamin K antagonists).",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to interpret the CHADSVASc score of the patient and suggest guideline recommendations based on the calculated score.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Repetitively mentions the recommendations for anticoagulation for the case given in the query.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Fails to recognize that the patient likely has non-valvular atrial fibrillation (AF) and does not address the condition appropriately.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Gives a short description of the CHA2DS2VASc score.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Calculates the score as 3 based on the given information and advises for anticoagulation.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Advises using anticoagulation without giving caution for bleeding.",
+    "points": -3,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response must be entirely factually accurate---that is, all sentences in the response must be medically factual. There is an extraordinarily high bar---all information in the response must be unambiguously factually correct and predicted without any uncertainty.\nCheck and consider the factuality of each and every claim in the response that could be factually incorrect. Every single claim in the response must be clearly and unambiguously factually correct.\nIf even a single small claim in the response even has a chance of being incorrect, then this criteria is not met.\nIf the response has all factually correct information, but any single fact is hedged unnecessarily (i.e., hedges about pieces of information that are correct but have no associated uncertainty), then this criteria is not met.\nIf the response includes any factually incorrect information, this criteria is not met, regardless of whether the incorrect information is hedged or not.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_accuracy_hedging",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Is the core question answered clearly and early? If not, fail.\nStep 2: Brainstorm any missing details or caveats. If something is absent, fail.\nStep 3: Check for unnecessary bulk or off-topic content. If present, fail.\nIf all three steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_appropriate",
+      "axis:communication_quality"
+    ]
+  }
+]

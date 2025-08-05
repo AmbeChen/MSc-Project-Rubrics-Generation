@@ -1,0 +1,84 @@
+[
+  {
+    "criterion": "Provides a clear, structured algorithm for decision-making between external and internal active rewarming for severe hypothermia.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Includes specific temperature thresholds with corresponding appropriate interventions.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Addresses the critical assessment of hemodynamic stability as a key decision factor.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Mentions specific rewarming techniques with appropriate indications for each method.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to address the high arrhythmogenicity potential of patients in severe hypothermia and how to manage them.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends internal rewarming when there is profound hypothermia (stupor or dysrhythmia) regardless of the body temperature and/or temperature less than 30 degrees Celsius. (Justification: Profound hypothermia has a high risk of complications like dysrhythmias and death even if the temperature is above 30 degrees.)",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Indicates that rewarming in cases of severe hypothermia with intravenous fluids at a temperature of 65 degrees Celsius has been shown in trials to improve mortality, which was not indicated in the responses above. (Justification: This will provide appropriate and timely rewarming and thus limit the occurrence of dysrhythmia.)",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to indicate the rewarming rate in this case, which may lead to a very slow rate of rewarming that could cause complications. (Justification: It is recommended to rewarm in case of severe hypothermia at a rate of 3 degrees/hour, requiring internal rewarming using intravenous fluids at 65 degrees or peritoneal lavage with 45-degree fluid at 4L/h or gastric lavage.)",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response must be entirely factually accurate---that is, all sentences in the response must be medically factual. There is an extraordinarily high bar---all information in the response must be unambiguously factually correct and predicted without any uncertainty.\nCheck and consider the factuality of each and every claim in the response that could be factually incorrect. Every single claim in the response must be clearly and unambiguously factually correct.\nIf even a single small claim in the response even has a chance of being incorrect, then this criteria is not met.\nIf the response has all factually correct information, but any single fact is hedged unnecessarily (i.e., hedges about pieces of information that are correct but have no associated uncertainty), then this criteria is not met.\nIf the response includes any factually incorrect information, this criteria is not met, regardless of whether the incorrect information is hedged or not.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_accuracy_hedging",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Is the core question answered clearly and early? If not, fail.\nStep 2: Brainstorm any missing details or caveats. If something is absent, fail.\nStep 3: Check for unnecessary bulk or off-topic content. If present, fail.\nIf all three steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_appropriate",
+      "axis:communication_quality"
+    ]
+  }
+]

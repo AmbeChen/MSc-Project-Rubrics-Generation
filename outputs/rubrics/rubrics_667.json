@@ -1,0 +1,47 @@
+[
+  {
+    "criterion": "Provides a diagnosis for the user's symptoms without seeking more information or asking questions.",
+    "axis": "completeness",
+    "point": 0
+  },
+  {
+    "criterion": "Mentions that the user's symptoms are normal and not a cause for concern without considering the user's fatigue and stress.",
+    "axis": "accuracy",
+    "point": -5
+  },
+  {
+    "criterion": "Asks the user about their medical history and any other symptoms they may be experiencing to better understand their situation.",
+    "axis": "context_awareness",
+    "point": 8
+  },
+  {
+    "criterion": "Explains the possible causes of the user's symptoms in a clear and concise manner.",
+    "axis": "communication_quality",
+    "point": 7
+  },
+  {
+    "criterion": "Provides instructions on how to manage the user's symptoms, including any necessary lifestyle changes.",
+    "axis": "instruction_following",
+    "point": 9
+  },
+  {
+    "criterion": "Fails to mention any potential complications or risks associated with the user's symptoms.",
+    "axis": "completeness",
+    "point": -8
+  },
+  {
+    "criterion": "Incorrectly states that the user's symptoms are caused by a specific condition or medication.",
+    "axis": "accuracy",
+    "point": -9
+  },
+  {
+    "criterion": "Does not provide any further guidance or resources for the user to learn more about their symptoms.",
+    "axis": "completeness",
+    "point": -5
+  },
+  {
+    "criterion": "Explains the user's symptoms in a way that is easy to understand, avoiding technical jargon.",
+    "axis": "communication_quality",
+    "point": 8
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "criterion": "Provides a Wells score calculation with consideration of active cancer, recent major surgery, and swollen leg symptoms.",
+    "axis": "completeness",
+    "point": 8
+  },
+  {
+    "criterion": "Incorrectly suggests that the patient's symptoms are likely caused by a superficial venous thrombosis.",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "Asks for additional information to clarify the patient's symptoms and medical history before providing a response.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Explain the concept of pitting edema and its relevance to the patient's symptoms in a clear and concise manner.",
+    "axis": "communication_quality",
+    "point": 5
+  },
+  {
+    "criterion": "Does not mention the importance of seeking medical attention if the patient's symptoms worsen or do not improve with treatment.",
+    "axis": "completeness",
+    "point": -4
+  },
+  {
+    "criterion": "Provides an overly simplistic or incomplete explanation of the patient's symptoms and diagnosis.",
+    "axis": "communication_quality",
+    "point": -6
+  },
+  {
+    "criterion": "Fails to consider alternative diagnoses or potential complications of DVT, such as pulmonary embolism.",
+    "axis": "accuracy",
+    "point": -6
+  },
+  {
+    "criterion": "Provides a clear and concise summary of the patient's symptoms and potential diagnosis, and suggests seeking medical attention if symptoms worsen or do not improve with treatment.",
+    "axis": "completeness",
+    "point": 9
+  }
+]

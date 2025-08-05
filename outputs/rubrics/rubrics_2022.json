@@ -1,0 +1,47 @@
+[
+  {
+    "criterion": "The assistant fails to provide any information about the patient's symptoms or MADRS score.",
+    "axis": "completeness",
+    "point": -8
+  },
+  {
+    "criterion": "The assistant incorrectly computes the MADRS score without sufficient information.",
+    "axis": "accuracy",
+    "point": -5
+  },
+  {
+    "criterion": "The assistant asks follow-up questions to clarify the patient's symptoms or MADRS score.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "The assistant provides a clear and concise summary of the patient's symptoms and MADRS score.",
+    "axis": "communication_quality",
+    "point": 8
+  },
+  {
+    "criterion": "The assistant correctly advises the referring physician to seek additional information from the patient.",
+    "axis": "instruction_following",
+    "point": 5
+  },
+  {
+    "criterion": "The assistant incorrectly states that the patient's symptoms are not severe enough to warrant further evaluation.",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "The assistant fails to provide any information about the patient's mental health history.",
+    "axis": "completeness",
+    "point": -5
+  },
+  {
+    "criterion": "The assistant correctly identifies the patient's symptoms as potentially indicative of depression.",
+    "axis": "accuracy",
+    "point": 8
+  },
+  {
+    "criterion": "The assistant provides a clear explanation of the MADRS score and its significance.",
+    "axis": "communication_quality",
+    "point": 9
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "criterion": "Fails to indicate the region of origin of the user. (Justification: Different countries have different supply chain procedures, so indicating the countries might give a clue on the alternative sources to find the medication.)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Considers working with the local pharmacy to order the medication from another source if possible, but uses a short-acting beta agonist like salbutamol as needed while monitoring for any complications to seek care as you await the medication.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Considers visiting the manufacturer's website to verify or inquire about availability if possible. (Justification: Some manufacturers have websites where information about medication availability can be obtained, or through a direct call or message.)",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "States that the user should speak with their child’s pediatrician, healthcare provider, or pharmacist based on what they have access to before switching inhalers to ensure the replacement is safe and effective.",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advises checking with the pharmacist for the availability of equivalent inhaled corticosteroids like budesonide, fluticasone, ciclesonide (Alvesco), or beclomethasone (Qvar).",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends maintaining the same dosage schedule when switching, unless specifically adjusted by an MD.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Mentions monitoring for asthma symptoms like coughing, wheezing, shortness of breath, or chest tightness, and seeking care if they worsen.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Suggests checking other local pharmacies or larger chains if the usual inhaler is out of stock.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends stopping the inhaler entirely without offering an alternative or consulting a provider. (Justification: Dangerous advice that could lead to poor asthma control or severe exacerbation.)",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Suggests using a different inhaler or leftover medication from another person without MD approval.",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Assumes the user has access to specialists or large pharmacies without acknowledging local variation. (Justification: Risks giving advice that may not be feasible depending on the user’s setting.)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  }
+]

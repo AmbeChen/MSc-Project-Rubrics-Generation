@@ -1,0 +1,82 @@
+[
+  {
+    "criterion": "Correctly indicates that high-dose statins such as rosuvastatin or atorvastatin are preferred, but other possible alternatives, including moderate-dose statins such as simvastatin, may still provide significant benefit as initial therapy.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Appropriately makes dietary recommendations in keeping with local food choices that are available or common for the user.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Correctly suggests lifestyle changes such as dietary changes and physical activity that can help reduce cholesterol levels.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Incorrectly suggests that the user avoid all sources of dietary protein, which is false and may lead to an overly carbohydrate-rich diet and predispose the patient to other issues such as poor glycemic control.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Provides a list of medications within the statin category, such as atorvastatin, rosuvastatin, pravastatin, and lovastatin.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides other categories of lipid-lowering agents such as bile acid sequestrants, PCSK9 inhibitors, niacin, and fibrates.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides resources on lifestyle modification and dietary changes that could affect lower cholesterol, such as increasing a balanced diet, avoiding saturated fats and trans fats, and engaging in regular exercises with moderate to high intensity.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "States a disclaimer at the beginning of the response that the answer is not from a physician.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Keeps answers short and precise, avoiding long paragraphs and repetitive wording to aid better understanding and comprehension.",
+    "points": 3,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Fails to give accurate advice on lifestyle changes that could potentially lead to harm, such as only consuming white rice/wheat listed in answer b.",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  }
+]

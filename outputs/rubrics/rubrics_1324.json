@@ -1,0 +1,62 @@
+[
+  {
+    "criterion": "Describes the cause of joint stiffness and pain as an inflammatory condition, such as rheumatoid arthritis, without considering other possible causes.",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "Advises the user to consult a doctor, considering their symptoms and age.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Provides a detailed explanation of the user's symptoms and possible causes, including non-inflammatory conditions such as fibromyalgia or osteoarthritis.",
+    "axis": "completeness",
+    "point": 9
+  },
+  {
+    "criterion": "Uses natural language and correct interpretation, considering the user's query and age.",
+    "axis": "communication_quality",
+    "point": 7
+  },
+  {
+    "criterion": "Does not consider the possibility of underlying medical conditions, such as hypothyroidism or anemia, that may contribute to joint stiffness and pain.",
+    "axis": "completeness",
+    "point": -6
+  },
+  {
+    "criterion": "Mentions that morning stiffness is a common symptom of rheumatoid arthritis, without providing further context or alternative explanations.",
+    "axis": "accuracy",
+    "point": -5
+  },
+  {
+    "criterion": "Asks the user to describe their symptoms in more detail to better understand their query.",
+    "axis": "context_awareness",
+    "point": 6
+  },
+  {
+    "criterion": "Provides a list of possible causes of joint stiffness and pain, including both inflammatory and non-inflammatory conditions, without prioritizing one over the other.",
+    "axis": "completeness",
+    "point": 8
+  },
+  {
+    "criterion": "Does not consider the possibility of a vitamin deficiency, such as vitamin D or B12 deficiency, that may contribute to joint stiffness and pain.",
+    "axis": "completeness",
+    "point": -5
+  },
+  {
+    "criterion": "Uses technical jargon or overly complex language, making it difficult for the user to understand their symptoms and possible causes.",
+    "axis": "communication_quality",
+    "point": -9
+  },
+  {
+    "criterion": "Advises the user to seek medical attention immediately, without considering the severity of their symptoms or the potential consequences of delayed medical attention.",
+    "axis": "instruction_following",
+    "point": -8
+  },
+  {
+    "criterion": "Provides a detailed explanation of the user's symptoms and possible causes, including non-inflammatory conditions such as fibromyalgia or osteoarthritis, and suggests that they consult a doctor for further evaluation and treatment.",
+    "axis": "completeness",
+    "point": 9
+  }
+]

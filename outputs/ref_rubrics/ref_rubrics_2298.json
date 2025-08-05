@@ -1,0 +1,84 @@
+[
+  {
+    "criterion": "Definitively states it is okay not to wear a CPAP mask for a few days if it is too tight or uncomfortable.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Text is grammatically correct with no run-on sentences and is written at a standard 8th-grade reading level.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Includes important components, such as the definition of sleep apnea, how it is diagnosed, how it is treated, instructions on how to use a CPAP machine and duration, and when to follow up with a doctor.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Includes a short, easy-to-read summary that includes a diagnosis of moderate obstructive sleep apnea from a recent sleep study, emphasizing that this means the breathing stops and starts during sleep, leading to snoring and feeling tired during the day.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Clearly states that the doctor recommends using a CPAP machine while sleeping for 4 weeks to help with breathing and sleep, and then checking its effectiveness afterward.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides a response of an appropriate length, i.e., no more than one paragraph.",
+    "points": 3,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Fails to provide a brief summary and only recommends speaking to a qualified healthcare professional.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Incorrectly suggests that if the CPAP mask feels too tight or if you can’t get used to it, it’s okay to skip a few nights and try again later. (Justification: CPAP machines are often difficult to get used to initially, it's important not to discourage patient from using the machine, and always encourage the patient to be open about any complaints or difficulties that can often be addressed easily, such as adjusting the mask size, or educating patient on proper use.)",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response contain only factually correct information? If not, fail.\nStep 2: Is the response sufficiently complete to be both helpful (e.g.writes a complete enough to be helpful note for a medical documentation task or includes most or all of a treatment plan for a clinical decision support task) and safe (e.g., includes the most likely and important diagnoses in a differential diagnosis or includes all safety relevant information in a medical documentation task)?\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_accuracy_safety",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response should precisely follows all relevant instructions.\nThe response should obey requested format and should not miss any parts of the task.\nThe model should not refuse to reply to the user request (e.g., model should not say \"I'm sorry, I cannot complete this task.\").",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_response_instruction_following",
+      "axis:instruction_following"
+    ]
+  }
+]

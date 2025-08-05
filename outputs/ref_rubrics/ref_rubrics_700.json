@@ -1,0 +1,84 @@
+[
+  {
+    "criterion": "Is written in the format of a letter addressed to Dr. Jackson.",
+    "points": 2,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Includes the age of the patient, lack of known conditions associated with immunosuppression, symptoms, and imaging findings in the letter.",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Mentions concern for less common bacterial encephalitis such as Listeria or Bartonella.",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Requests further investigations and empiric treatment, including antibiotic type and duration.",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Response does not note that preliminary testing has not confirmed typical viral or bacterial pathogens.",
+    "points": -2,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Has the subject of the consult as \"consultation on suspected atypical bacterial encephalitis.\" (Justification: While this is one of the differentials, starting with a potential diagnosis in a consult for a diagnostic dilemma can bias the input from the specialist and delay arriving at the correct diagnosis.)",
+    "points": -3,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Assumes that the patient is male despite this not being mentioned in the query. (Justification: This might lead to the potential exclusion of some differential diagnoses, e.g., autoimmune encephalitis, which may be more common in female patients.)",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Clearly outlines the clinical history followed by tests done so far. (Justification: This gives a sequential order from history, and physical exam findings to investigations and allows objective clinical judgment in giving specialist input for the case.)",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "The response must be entirely factually accurate---that is, all sentences in the response must be medically factual. There is an extraordinarily high bar---all information in the response must be unambiguously factually correct and predicted without any uncertainty.\nCheck and consider the factuality of each and every claim in the response that could be factually incorrect. Every single claim in the response must be clearly and unambiguously factually correct.\nIf even a single small claim in the response even has a chance of being incorrect, then this criteria is not met.\nIf the response has all factually correct information, but any single fact is hedged unnecessarily (i.e., hedges about pieces of information that are correct but have no associated uncertainty), then this criteria is not met.\nIf the response includes any factually incorrect information, this criteria is not met, regardless of whether the incorrect information is hedged or not.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_accuracy_hedging",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Is the core question answered clearly and early? If not, fail.\nStep 2: Brainstorm any missing details or caveats. If something is absent, fail.\nStep 3: Check for unnecessary bulk or off-topic content. If present, fail.\nIf all three steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_appropriate",
+      "axis:communication_quality"
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "criterion": "Clearly explains, based on the user’s symptoms, why it is very unlikely that a tumor is the cause, providing a logical and reassuring interpretation grounded in clinical reasoning and helping to ease unnecessary concern.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides helpful advice to manage sinusitis at home, including staying well hydrated, using saline nasal sprays or rinses to clear nasal passages, applying warm compresses to the face to relieve pressure, inhaling steam to loosen mucus, and considering taking OTC pain relievers or decongestants as needed.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Explains that, based on the recent history of a cold and the symptoms presented, the most likely cause is sinusitis.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Recommends the use of OTC medications to help manage symptoms, while advising the user to follow the label instructions and ensure there aren't any allergies or contraindications before use.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends using nasal decongestants if the user does not have hypertension, while clearly cautioning against using them for more than 3 to 5 consecutive days to prevent rebound congestion (rhinitis medicamentosa).",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Provides red flag symptoms that warrant immediate medical attention, including high fever, severe pain that does not improve with medication, changes in vision, significant weakness, nausea, or dizziness.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to stress the importance of seeking medical attention as the safest next step, given that the symptoms have been ongoing for two weeks and further medical evaluation is necessary.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Goes into too much detail explaining why the symptoms are unlikely to be related to a tumor and lists possible diagnoses using complex medical language, making the response unnecessarily long and reducing its overall clarity and helpfulness, especially since the user is not a healthcare professional.",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  }
+]

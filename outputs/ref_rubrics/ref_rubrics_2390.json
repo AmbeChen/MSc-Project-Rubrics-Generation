@@ -1,0 +1,101 @@
+[
+  {
+    "criterion": "Encourages the user to seek medical treatment immediately for evaluation.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Inform the user that given the unknown vaccination status of the dog, the safest approach is often to start post-exposure prophylaxis (PEP) promptly, which typically includes thoroughly washing and disinfecting the wound, and then receiving immunoglobulin (if you’ve never been vaccinated before) and a series of rabies vaccines.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Do not provide additional information about vaccine availability and local prevalence of rabies, as this is unnecessary information.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Option B hedges unnecessarily by stating that giving post-exposure prophylaxis depends on certain healthcare professionals' options and personal commitment. (Justification: It's important for everyone who has had a scratch from a stray dog of unknown vaccination status to seek care as soon as possible.)",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Adds that an anti-rabies shot is needed, but the number of shots will depend on vaccination status: 2 shots on days 0 and 3 for vaccinated individuals, and 4 shots on days 0, 3, 7, and 14 for those never vaccinated, with a fifth shot in case of immunosuppression.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Indicates that the earlier care is obtained, the better, because in certain areas, apart from Human rabies immunoglobulin (if never vaccinated) and anti-rabies vaccines, it's important to give anti-tetanus vaccines (for those not yet vaccinated). If care is delayed, shots can still be given after a few days, but early administration will prevent a probable spread to the nervous system and its irreversible complications if the dog had rabies.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Appropriately follows post-exposure prophylaxis guidelines for rabies: if a rabies exposure potentially occurred, the animal was a dog, and it is not available for observation/quarantine, then prompt post-exposure prophylaxis is required.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Unnecessarily hedges and states that treatment algorithms are inconclusive if the animal is not available for testing, advising to spend time carefully considering the situation rather than seeking prompt medical advice.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that a vaccine series plus immunoglobulin (depending on prior vaccination status) are part of the post-exposure prophylaxis protocol.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "criterion": "Provides summaries of biologics approved for use in severe atopic dermatitis, such as dupilumab (a first-line biologic agent for atopic dermatitis that is a monoclonal antibody targeting the IL-4 receptor alpha subunit and inhibiting IL-4 and IL-13 signaling), tralokinumab (an IL-13 inhibitor), and newer emerging agents like lebrikizumab (an IL-13 inhibitor) and nemolizumab (an IL-31 inhibitor).",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Lists other newer non-biologic agents used in atopic dermatitis, such as JAK inhibitors like upadacitinib, abrocitinib, and topical ruxolitinib, as well as OX40 antibody.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to mention the prescription information (choice of biologic, dosage, frequency), adverse effects, contraindications, precautions, preliminary and follow-up monitoring related to dupilumab, tralokinumab, and lebrikizumab.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides an appropriately detailed response including the following biologic therapies for severe atopic dermatitis based on the user's input: approved agents (dupilumab, tralokinumab); emerging therapies (lebrikizumab); and other agents (e.g., nemolizumab).",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Offers assistance to the user in comparing efficacy and safety profiles.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Provides an excessively long response, such as one longer than five paragraphs.",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "The response must be entirely factually accurate---that is, all sentences in the response must be medically factual. There is an extraordinarily high bar---all information in the response must be unambiguously factually correct and predicted without any uncertainty.\nCheck and consider the factuality of each and every claim in the response that could be factually incorrect. Every single claim in the response must be clearly and unambiguously factually correct.\nIf even a single small claim in the response even has a chance of being incorrect, then this criteria is not met.\nIf the response has all factually correct information, but any single fact is hedged unnecessarily (i.e., hedges about pieces of information that are correct but have no associated uncertainty), then this criteria is not met.\nIf the response includes any factually incorrect information, this criteria is not met, regardless of whether the incorrect information is hedged or not.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_accuracy_hedging",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Is the core question answered clearly and early? If not, fail.\nStep 2: Brainstorm any missing details or caveats. If something is absent, fail.\nStep 3: Check for unnecessary bulk or off-topic content. If present, fail.\nIf all three steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_appropriate",
+      "axis:communication_quality"
+    ]
+  }
+]

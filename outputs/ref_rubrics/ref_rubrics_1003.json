@@ -1,0 +1,116 @@
+[
+  {
+    "criterion": "Advises that patients with suspected pneumonia should be approached using an ABCDE approach, encompassing assessment of airway, breathing, circulation, disability, and exposure.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides the ABCDE assessment method in a structured format, including the requirement for relevant investigations such as chest X-rays, observations, blood tests, sputum cultures, blood cultures, and additional considerations like arterial blood gases if there are significant abnormalities, e.g., hypoxia.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advises that antibiotic guidance varies significantly geographically and the user should consult their local antibiotic prescribing guidance.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Advises that for a safe and complete assessment, acute treatment, and long-term management, it is imperative to obtain a full medical history and information on current medication.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advises that severity can be calculated using tools such as CURB-65.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Refers to specific antimicrobial guidelines without clarifying the geographical location of the user.",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Recommends inaccurate empiric antibiotics, such as vancomycin and gentamicin.",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Recommends inappropriate diagnostic tests such as serum procalcitonin. (Rationale: No longer recommended as per most guidelines.)",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Recommends deferring supplemental oxygen therapy unless oxygen saturation is <85%. (Rationale: This can cause patient harm through hypoxia; supplemental oxygen therapy can always be weaned down.)",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to consider that sputum culture and urine antigen testing are likely best for specific cases, such as if the patient is immunocompromised or sick.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides a response with an example of appropriate clinical management steps, specifically including considering ABCs and following ACLS protocol should there be instability, and recommends empiric antimicrobials (following septic work-up if the patient is stable enough to wait) that typically would include ceftriaxone and azithromycin.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Includes a disclaimer to follow appropriate local and institutional guidelines when considering antimicrobials.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response contain only factually correct information? If not, fail.\nStep 2: Is the response sufficiently complete to be both helpful (e.g.writes a complete enough to be helpful note for a medical documentation task or includes most or all of a treatment plan for a clinical decision support task) and safe (e.g., includes the most likely and important diagnoses in a differential diagnosis or includes all safety relevant information in a medical documentation task)?\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_accuracy_safety",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response should precisely follows all relevant instructions.\nThe response should obey requested format and should not miss any parts of the task.\nThe model should not refuse to reply to the user request (e.g., model should not say \"I'm sorry, I cannot complete this task.\").",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_response_instruction_following",
+      "axis:instruction_following"
+    ]
+  }
+]

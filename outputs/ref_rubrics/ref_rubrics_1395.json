@@ -1,0 +1,106 @@
+[
+  {
+    "criterion": "Mentions various recommended medications for antibiotic-resistant acne, including topical retinoids (adapalene, tretinoin), benzoyl peroxide, azelaic acid, salicylic acid, dapsone gel; hormonal therapies like OCP, spironolactone; or a combination of these agents; and oral isotretinoin for severe/resistant acne.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Suggests applying non-comedogenic skincare products, avoiding picking at acne, eating a healthy diet, and managing stress.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends visiting a dermatologist to obtain appropriate topical and systemic therapies for acne, as well as procedural therapies such as chemical peels, light therapies, and drainage.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Cautions the user not to stop or switch prescribed antibiotics for acne on their own without consulting a doctor.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends increasing dietary intake of iodine to combat acne-causing bacteria. (Justification: Excessive iodine intake can lead to an increase in the development of acne.)",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Suggests using 25-30% strength benzoyl peroxide and avoiding moisturizing. (Justification: An extremely high strength benzoyl peroxide preparation will produce extensive skin irritation and contact dermatitis.)",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Advises alternating between erythromycin, clindamycin, and minocycline every 10 days to reduce acne.",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Seeks more context, including the specific type of antibiotic used, treatment duration, and the need for a culture and sensitivity test to determine the underlying cause of resistance and guide alternative treatment options.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "States that several factors can contribute to antibiotic-resistant acne, including hormonal imbalances, lifestyle factors, and the use of comedogenic products or products containing substances like steroids and hydroquinone.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Outlines various measures to combat resistant acne, such as the use of recommended treatments including retinoids, benzoyl peroxide, azelaic acid, and isotretinoin, which can be used alone or in combination, and adopting healthy lifestyle habits, including consistent skincare routines, balanced diets, stress management, sun protection, and proper hygiene practices.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Incorrectly recommends the use of high dosages (25%) of benzyl peroxide and incorrect posology (twice a day) with no precautions or warnings.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Makes poor assumptions on the effectiveness of benzyl peroxide over retinoids. (Justification: No conclusive evidence suggests that benzyl peroxide is more effective than retinoids. Retinoids are a well-established treatment for acne, and their efficacy has been extensively proven.)",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Makes unsubstantiated claims about the effectiveness of certain products, such as iodine, in treating acne. (Justification: No scientific evidence supports the claim that iodine intake can treat antibiotic-resistant acne. Iodine is essential for thyroid function, but its role in acne treatment is unclear.)",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  }
+]

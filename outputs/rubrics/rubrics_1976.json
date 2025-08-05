@@ -1,0 +1,47 @@
+[
+  {
+    "criterion": "Provides a SOAP note that does not include a patient's chief complaint.",
+    "axis": "completeness",
+    "point": -8
+  },
+  {
+    "criterion": "Mistakenly suggests that the patient's ADHD is a developmental disorder.",
+    "axis": "accuracy",
+    "point": -6
+  },
+  {
+    "criterion": "Asks the user for additional information about the patient's symptoms before generating the SOAP note.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "The SOAP note includes a clear and concise summary of the patient's chief complaint, medical history, and plan.",
+    "axis": "communication_quality",
+    "point": 8
+  },
+  {
+    "criterion": "The SOAP note does not include the patient's validated ADHD questionnaire results.",
+    "axis": "completeness",
+    "point": -5
+  },
+  {
+    "criterion": "Mistakenly recommends a different medication or dosage for the patient's ADHD.",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "The SOAP note does not include a clear plan for the patient's follow-up appointment.",
+    "axis": "completeness",
+    "point": -7
+  },
+  {
+    "criterion": "The SOAP note includes a detailed description of the patient's cognitive behavioral therapy plan.",
+    "axis": "communication_quality",
+    "point": 9
+  },
+  {
+    "criterion": "The SOAP note does not include any information about the patient's unstructured text complaint.",
+    "axis": "completeness",
+    "point": -9
+  }
+]

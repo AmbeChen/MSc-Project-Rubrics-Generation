@@ -1,0 +1,108 @@
+[
+  {
+    "criterion": "Provides an appropriately detailed response including the following management suggestions: oral dexamethasone, nebulised racemic epinephrine, observing for improvement after treatments, monitoring airway, vital signs, and clinical appearance, considering escalation of care if symptoms persist or worsen, and additional considerations such as ensuring a humidified air environment.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Mentions ensuring that airway adjuncts are available for rapid escalation if deterioration occurs.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to identify that the clinical presentation described is consistent with moderate croup.",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Answers the specific question on the treatment of moderate croup with emphasis on oral dexamethasone at 0.6mg/kg and minimizing discomfort to the child.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Alerts the physician to the possibilities of bacterial tracheitis, foreign body aspiration, and allergic reactions even when managing a case as moderate croup.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "States the maximum dose of oral dexamethasone to be 10 or 12 mg, whereas it is considered to be 16 mg, or oral prednisolone at 1 mg/kg with a maximum of 60 mg in moderate croup.",
+    "points": -1,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Gives options of either racemic epinephrine or oral dexamethasone in moderate croup, noting that initial treatment can be provided with both nebulized epinephrine and oral dexamethasone.",
+    "points": -2,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Mentions the correct dose and route of dexamethasone for moderate viral croup (0.6 mg/kg/dose oral or IM or IV if not tolerated orally) and nebulized racemic epinephrine (0.5 ml mixed with 2-3 ml of normal saline).",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Emphasizes important supportive care, such as keeping the child comfortable and avoiding agitation, as agitation can worsen airway obstruction, monitoring for signs of impending airway compromise (e.g., lethargy, cyanosis, diminished air entry, altered level of consciousness), and providing supplemental oxygen if hypoxic.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Mentions red flag signs (worsening stridor despite meds, lethargy, cyanosis, poor air movement, altered mental status, impending respiratory failure requiring advanced airway management) and criteria for admission (persistent stridor at rest, recurrent need for nebulized epinephrine, worsening respiratory distress, inability to maintain oxygenation, or concern for airway compromise).",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Can omit summaries and final recommendations at the end as they are repetitions of what is already mentioned in the response.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "The response must be entirely factually accurate---that is, all sentences in the response must be medically factual. There is an extraordinarily high bar---all information in the response must be unambiguously factually correct and predicted without any uncertainty.\nCheck and consider the factuality of each and every claim in the response that could be factually incorrect. Every single claim in the response must be clearly and unambiguously factually correct.\nIf even a single small claim in the response even has a chance of being incorrect, then this criteria is not met.\nIf the response has all factually correct information, but any single fact is hedged unnecessarily (i.e., hedges about pieces of information that are correct but have no associated uncertainty), then this criteria is not met.\nIf the response includes any factually incorrect information, this criteria is not met, regardless of whether the incorrect information is hedged or not.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_accuracy_hedging",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Is the core question answered clearly and early? If not, fail.\nStep 2: Brainstorm any missing details or caveats. If something is absent, fail.\nStep 3: Check for unnecessary bulk or off-topic content. If present, fail.\nIf all three steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_appropriate",
+      "axis:communication_quality"
+    ]
+  }
+]

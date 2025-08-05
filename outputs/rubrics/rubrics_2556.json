@@ -1,0 +1,42 @@
+[
+  {
+    "criterion": "Provides incorrect information about self-medication with over-the-counter medication for a dry cough lasting 2 days.",
+    "axis": "accuracy",
+    "point": -6
+  },
+  {
+    "criterion": "Asks follow-up questions to clarify the user's symptoms and medical history before providing any advice.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Does not recommend seeking medical attention if symptoms worsen, change, or persist.",
+    "axis": "completeness",
+    "point": -8
+  },
+  {
+    "criterion": "Uses clear and concise language to explain the possible causes of the user's symptoms.",
+    "axis": "communication_quality",
+    "point": 8
+  },
+  {
+    "criterion": "Instructs the user to follow up with a doctor if their symptoms do not improve or worsen.",
+    "axis": "instruction_following",
+    "point": 5
+  },
+  {
+    "criterion": "Does not provide information about the possible complications of untreated dry cough.",
+    "axis": "completeness",
+    "point": -5
+  },
+  {
+    "criterion": "Does not recommend using a humidifier or steam inhaler to relieve dry cough symptoms.",
+    "axis": "accuracy",
+    "point": -3
+  },
+  {
+    "criterion": "Provides information about the possible causes of the user's dry cough, including environmental factors.",
+    "axis": "completeness",
+    "point": 6
+  }
+]

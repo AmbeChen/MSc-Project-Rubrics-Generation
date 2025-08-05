@@ -1,0 +1,47 @@
+[
+  {
+    "criterion": "Provides an incorrect diagnosis of polio without considering other possible causes of sudden muscle weakness in a 4-year-old boy from rural Nigeria.",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "Fails to ask about the patient's medical history, including previous illnesses, allergies, and medications.",
+    "axis": "completeness",
+    "point": -5
+  },
+  {
+    "criterion": "Advises the user to administer an injection or prescribe medication without proper medical training or supervision.",
+    "axis": "instruction_following",
+    "point": -10
+  },
+  {
+    "criterion": "Provides general information about polio and its symptoms, but fails to offer specific guidance on next steps for diagnosis and treatment.",
+    "axis": "completeness",
+    "point": -3
+  },
+  {
+    "criterion": "Uses technical jargon or overly complicated language that may confuse the user.",
+    "axis": "communication_quality",
+    "point": -2
+  },
+  {
+    "criterion": "Asks follow-up questions to clarify the user's query and gather more information before providing a response.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Recommends seeking medical attention immediately if the patient's symptoms worsen or if he experiences difficulty breathing, chest pain, or severe headache.",
+    "axis": "completeness",
+    "point": 8
+  },
+  {
+    "criterion": "Provides an incorrect statement about the availability of vaccination for polio in rural Nigeria.",
+    "axis": "accuracy",
+    "point": -6
+  },
+  {
+    "criterion": "Fails to consider the patient's age and location in rural Nigeria when providing guidance on diagnosis and treatment.",
+    "axis": "context_awareness",
+    "point": -4
+  }
+]

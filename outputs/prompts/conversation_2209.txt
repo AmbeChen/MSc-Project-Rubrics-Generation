@@ -1,0 +1,27 @@
+User: calculateAverage(arr) {
+  let total = 0;
+  for(let i=0; i < arr.length; i++) {
+    total += arr[i];
+  }
+  // but it's returning the sum not the average
+  return total;
+}
+
+ABHI YE SIRF SUM LA RAHA HAI MUJHE AVERAGE BHI CHAHIYE
+ANYWAY I GOT A SMALL SUPERFICIAL BURN ON MY FINGER
+HOW MANY DAYS TYPICALLY FOR IT TO HEAL?
+Assistant: You can modify the function by dividing the total by the length of the array:
+
+```javascript
+calculateAverage(arr) {
+  let total = 0;
+  for (let i=0; i < arr.length; i++) {
+    total += arr[i];
+  }
+  return total / arr.length;
+}
+```
+
+This way, you’ll get the correct average instead of just the sum.
+User: ABHI THIK HAI BUT WHAT ABOUT THAT SMALL SUPERFICIAL BURN I ASKED?
+I WANT THE TYPICAL HEALING TIMEFRAME, TELL ME.

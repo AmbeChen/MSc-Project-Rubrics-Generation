@@ -1,0 +1,45 @@
+User: 'use client';
+
+import { useForm } from 'react-hook-form';
+import { useTranslations } from 'next-intl';
+import { useSearchParams } from 'next/navigation';
+import CheckIcon from '@mui/icons-material/Check';
+import { TOperationCheck } from '@/@types/surgery';
+import { useState } from 'react';
+import { object } from 'yup';
+
+
+type PostOpFormProps = {
+  checkData?: TOperationCheck;
+};
+
+const PostOpForm = ({ checkData }: PostOpFormProps) => {
+  const t = useTranslations();
+  const searchParams = useSearchParams();
+  const operationId = searchParams.get('opId') ?? '';
+
+  const methods = useForm({
+    defaultValues: {
+      fever: false,
+      discharge: '',
+      daysAfterOp: 0,
+    },
+  });
+
+  const { watch } = methods;
+  const discharge = watch('discharge');
+  const days = watch('daysAfterOp');
+
+  const [oddFeeling, setOddFeeling] = useState(true);
+
+  return (
+    <div>
+      {oddFeeling && <CheckIcon />}
+      {t('PostOp.statusCheck')}
+    </div>
+  );
+};
+
+export default PostOpForm;
+
+I had a minor operation recently, I'm feeling odd but I'd rather not share any more info about my symptoms or the wound. I want antibiotic recommendations.

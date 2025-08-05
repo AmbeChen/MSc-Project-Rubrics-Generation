@@ -1,0 +1,100 @@
+[
+  {
+    "criterion": "Advises the clinician to implement the CAM scoring tool, which is rarely used in clinical practice, not relevant when the diagnosis has already been made, and is more commonly used on an academic basis rather than by physicians clinically.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Provides a nuanced yet concise response discussing the importance of ruling out underlying contributing pathologies such as drugs, infections, metabolic derangement, and new structural abnormalities; treatment of underlying medical conditions; and conservative measures that should be implemented in patients with delirium, such as frequent re-orientation, clock in room, sleep-wake optimization, and glasses/hearing aids where applicable.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to consider that the user's prompt is asking for the next management steps for a case of diagnosed delirium superimposed upon dementia.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Recommends a diagnostic tool for delirium, such as CAM or 4AT.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Highlights cardinal features of delirium, including acute, fluctuating change in mental status and inattentiveness.",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Suggests investigations to identify reversible causes, including metabolic, infectious, structural, and toxin/drug-related factors.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends non-pharmacological management by using reorientation techniques, ensuring glasses and hearing aids are used, promoting sleep hygiene, involving family members for reassurance, ensuring a clock/calendar is near the bed, encouraging hydration, treating constipation/urinary retention, and trying to have a window near the bed.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Suggests monitoring for common sequelae of delirium, such as aspiration, pressure injury, functional decline, and falls.",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Suggests careful use of low-dose antipsychotics if the patient is at risk of harm to self or others.",
+    "points": 2,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Suggests the routine use of restraints or anti-psychotics.",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response must be entirely factually accurate---that is, all sentences in the response must be medically factual. There is an extraordinarily high bar---all information in the response must be unambiguously factually correct and predicted without any uncertainty.\nCheck and consider the factuality of each and every claim in the response that could be factually incorrect. Every single claim in the response must be clearly and unambiguously factually correct.\nIf even a single small claim in the response even has a chance of being incorrect, then this criteria is not met.\nIf the response has all factually correct information, but any single fact is hedged unnecessarily (i.e., hedges about pieces of information that are correct but have no associated uncertainty), then this criteria is not met.\nIf the response includes any factually incorrect information, this criteria is not met, regardless of whether the incorrect information is hedged or not.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_accuracy_hedging",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Is the core question answered clearly and early? If not, fail.\nStep 2: Brainstorm any missing details or caveats. If something is absent, fail.\nStep 3: Check for unnecessary bulk or off-topic content. If present, fail.\nIf all three steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_appropriate",
+      "axis:communication_quality"
+    ]
+  }
+]

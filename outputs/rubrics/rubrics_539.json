@@ -1,0 +1,47 @@
+[
+  {
+    "criterion": "Provides a detailed description of possible headache causes, including tension-type headache, migraine, and sinus issues.",
+    "axis": "completeness",
+    "point": 8
+  },
+  {
+    "criterion": "Incorrectly attributes headaches to only one cause, such as stress, dehydration, or posture.",
+    "axis": "accuracy",
+    "point": -6
+  },
+  {
+    "criterion": "Asks for more information about the headache, such as location, severity, associated symptoms, or triggers.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Responds with a clear and concise outpatient progress note for the headache complaint.",
+    "axis": "completeness",
+    "point": 8
+  },
+  {
+    "criterion": "Provides a progress note that is overly complicated or difficult to understand.",
+    "axis": "communication_quality",
+    "point": -5
+  },
+  {
+    "criterion": "Does not consider the patient's medical history, medications, or vital signs in assessing the headache.",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "Includes red flag symptoms that should prompt medical assessment, such as severe headache, confusion, or stiff neck.",
+    "axis": "completeness",
+    "point": 9
+  },
+  {
+    "criterion": "Mentions that further evaluation or imaging may be necessary if headaches persist or worsen.",
+    "axis": "completeness",
+    "point": 7
+  },
+  {
+    "criterion": "Does not provide a clear and actionable plan for further evaluation or treatment.",
+    "axis": "instruction_following",
+    "point": -3
+  }
+]

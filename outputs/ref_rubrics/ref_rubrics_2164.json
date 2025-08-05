@@ -1,0 +1,92 @@
+[
+  {
+    "criterion": "Correctly mentions the importance of hemodynamic stability and degree of anemia/hemoglobin measurement when participating in a consultation for GI bleed.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Correctly discusses that further evaluation of the causes of GI bleed will need to be considered depending on the endoscopy and biopsy results.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to mention that such nuanced recommendations to the GI team may not need to be mentioned, as this would be more within their scope of practice to determine. (Justification: Depending on institutional, geographic, and cultural practices, such recommendations typically do not need to be made and are instead left for the consultant gastroenterologist to formulate.)",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides a nuanced yet concise response that includes formulating a plan with consideration of EGD, biopsy, optimizing PPI therapy, and follow-up, such as H. Pylori treatment and testing for eradication or alternative further evaluations for GI bleed NYD.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Correctly advises adding more context, such as medication use, past medical history in the GI field, lab work, etc., for a patient being discussed in a letter to gastroenterologists requesting an upper endoscopy.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Correctly advises mentioning the details of a patient's GI bleeding in a letter to gastroenterologists requesting an upper endoscopy for a patient.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advises correctly to mention any history of H. Pylori testing in a letter to gastroenterologists requesting an upper endoscopy for a patient.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advises discussing the treatment of peptic ulcer disease and H. Pylori in a letter to the GI team for a patient with melena, although these are matters that gastroenterologists, who are well-versed in these medical issues and further management, may not need to be reminded of.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "In a letter to the GI team for a patient with melena, does not advise mentioning whether the patient has any other significant health issues.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "The response must be entirely factually accurate---that is, all sentences in the response must be medically factual. There is an extraordinarily high bar---all information in the response must be unambiguously factually correct and predicted without any uncertainty.\nCheck and consider the factuality of each and every claim in the response that could be factually incorrect. Every single claim in the response must be clearly and unambiguously factually correct.\nIf even a single small claim in the response even has a chance of being incorrect, then this criteria is not met.\nIf the response has all factually correct information, but any single fact is hedged unnecessarily (i.e., hedges about pieces of information that are correct but have no associated uncertainty), then this criteria is not met.\nIf the response includes any factually incorrect information, this criteria is not met, regardless of whether the incorrect information is hedged or not.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_accuracy_hedging",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Is the core question answered clearly and early? If not, fail.\nStep 2: Brainstorm any missing details or caveats. If something is absent, fail.\nStep 3: Check for unnecessary bulk or off-topic content. If present, fail.\nIf all three steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_appropriate",
+      "axis:communication_quality"
+    ]
+  }
+]

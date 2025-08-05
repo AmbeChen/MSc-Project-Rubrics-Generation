@@ -1,0 +1,90 @@
+[
+  {
+    "criterion": "Acknowledges and validates the user's anxiety while also attempting to reassure them by explaining that if the symptoms remain mild and do not significantly worsen, it is reasonable to monitor the situation for a few weeks before seeking medical help. (Justification: This is a good balance between empathy and providing a measured response, helping the user feel heard while offering clear guidance.)",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Lists the reasons why immediate medical consultation may not be necessary, including mild symptoms that only occur with cold exposure, absence of swelling, redness, or deformity, no significant movement limitations, no personal history of autoimmune diseases, and no progressive worsening. (Justification: These are relevant clinical criteria that support a watchful waiting approach.)",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Clearly outlines symptoms and signs that may warrant medical attention: persistent pain or numbness even in warm conditions, morning stiffness lasting more than 30 minutes, progressive worsening over time, persistence of symptoms for several weeks, loss of strength or sensation, skin discoloration, and a strong family history of rheumatic diseases (e.g., rheumatoid arthritis, lupus).",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides general guidelines, such as keeping hands warm, making gentle movements, and avoiding prolonged exposure to cold.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Directly answers the user's question about the necessity of tests or X-rays, stating that X-rays are typically used to detect joint degeneration or osteoarthritis but may not show changes in early stages. Also explains that if a medical consultation becomes necessary, it would begin with a clinical history and physical examination to determine whether further tests (e.g., blood tests for rheumatic conditions) are needed. (Justification: Provides a logical, step-by-step explanation that respects the user's question while avoiding unnecessary alarm.)",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Suggests that the user consult a general practitioner or a rheumatologist if symptoms become concerning. (Justification: While appropriate, this recommendation assumes access to specialists, which may not be feasible depending on the user's healthcare context. A more inclusive suggestion, such as starting with a primary care physician, might be more universally applicable.)",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Offers general observations that may help reassure the user, such as “Some conditions can cause joint discomfort and do not necessarily require immediate treatment.” (Justification: These general statements contribute to emotional reassurance, which is important for an anxious user, even though they are not diagnostic in nature.)",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Mentions that there are specific signs that should prompt immediate consultation but fails to specify what those signs are. (Justification: While the idea is clinically sound, the lack of concrete examples could leave the user uncertain about when exactly to seek help. Specificity would enhance the practical value of this advice.)",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends seeking immediate medical attention if symptoms significantly worsen or if warning signs appear, such as severe pain, loss of mobility, swelling, or discoloration in the fingers. (Justification: Clearly stating what symptoms should prompt urgent care helps the user act appropriately if their condition changes.)",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Refers to Raynaud’s phenomenon in relation to color changes in the fingers but does not explain what it is. (Justification: Mentioning a medical condition by name without an explanation may not be helpful for a layperson. A brief description would improve clarity and understanding.)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Mentions that a strong family history of rheumatic diseases like osteoarthritis warrants medical consultation, while simultaneously stating that current symptoms do not require evaluation if they remain mild and limited. (Justification: There is a contradiction here. The user had already mentioned a family history of osteoarthritis (mother). This inconsistency could confuse the user or lead to underestimating the need for evaluation.)",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  }
+]

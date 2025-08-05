@@ -1,0 +1,108 @@
+[
+  {
+    "criterion": "Provides subjective updates including admission overnight for upper GI bleeding, initiation of IV PPI, and no evidence of bleeding without evidence of hemodynamic instability.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Displays objective data, including stable vitals and orthostatics, lab data such as Hgb and INR, and imaging/procedural data, including results from EGD.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Displays an assessment that includes a brief summary of the patient's past medical history (peptic ulcer disease with prior Upper GI bleeding), their current presentation (upper GI bleeding), and current status (hemodynamically stable without endoscopic evidence of active bleed).",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Provides a plan for upper GI bleeding with erosive duodenitis, including repeating Hgb/INR in 4 hours, hemodynamic monitoring, continuation of PPI, and discussing care further with GI.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fabricates information that was not provided by the user about physical exam or vitals.",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to include a plan for repeating Hgb and INR in 4 hours.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Includes a summary section that summarizes assessment and plan. (Justification: Unnecessary information that a good assessment and plan should succinctly include anyway.)",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Provides a summary section to the inpatient progress note. (Justification: Assessment and plan sections should be summarizing the relevant detail with sufficient brevity.)",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Hallucinates information such as example vital signs instead of stating they are stable, within normal range, or providing a template for the user to use.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Overly lengthy progress note; they are meant to be brief and concise.",
+    "points": -2,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Provides a sufficiently accurate and concise progress note, without hallucinated information, that includes pertinent subjective, objective, assessment, and plan, including the continuation of the IV pantoprazole infusion (as per user request) and that labs will be repeated in 4 hours to ensure continued stability.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response contain only factually correct information? If not, fail.\nStep 2: Is the response sufficiently complete to be both helpful (e.g.writes a complete enough to be helpful note for a medical documentation task or includes most or all of a treatment plan for a clinical decision support task) and safe (e.g., includes the most likely and important diagnoses in a differential diagnosis or includes all safety relevant information in a medical documentation task)?\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_accuracy_safety",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response should precisely follows all relevant instructions.\nThe response should obey requested format and should not miss any parts of the task.\nThe model should not refuse to reply to the user request (e.g., model should not say \"I'm sorry, I cannot complete this task.\").",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_response_instruction_following",
+      "axis:instruction_following"
+    ]
+  }
+]

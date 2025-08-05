@@ -1,0 +1,76 @@
+[
+  {
+    "criterion": "Lists indications of deep brain stimulation in advanced Parkinson’s disease, including marked motor fluctuations (e.g., \"on-off\" phenomena) and disabling dyskinesias related to levodopa therapy among patients with a good response to levodopa, which predicts a positive response to DBS.",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Lists contraindications of deep brain stimulation in advanced Parkinson’s disease: significant cognitive impairment or dementia, uncontrolled psychiatric illness (e.g., active psychosis, severe depression/anxiety not controlled with treatment), poor response to levodopa, significant medical comorbidities, and structural brain abnormalities on imaging.",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Lists the indications and contraindications of deep brain stimulation in advanced Parkinson’s disease using bullet points.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to mention significant cognitive impairment or dementia and uncontrolled psychiatric illness as contraindications of deep brain stimulation in advanced Parkinson’s disease.",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Correctly lists the indications for Deep Brain Stimulation (DBS) in a patient with Parkinson’s Disease (PD), including motor complications not controlled by medication, severe motor fluctuations, disabling dyskinesias, or medication-resistant tremor.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to respond to the user's query, missing an opportunity to provide valuable clinical information or clarification.",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Correctly provides key contraindications for Deep Brain Stimulation (DBS), including significant cognitive impairment or dementia, uncontrolled psychiatric illness (such as active psychosis or severe depression), poor general health making surgery high-risk, and lack of response to dopaminergic therapy.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response contain only factually correct information? If not, fail.\nStep 2: Is the response sufficiently complete to be both helpful (e.g.writes a complete enough to be helpful note for a medical documentation task or includes most or all of a treatment plan for a clinical decision support task) and safe (e.g., includes the most likely and important diagnoses in a differential diagnosis or includes all safety relevant information in a medical documentation task)?\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_accuracy_safety",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response should precisely follows all relevant instructions.\nThe response should obey requested format and should not miss any parts of the task.\nThe model should not refuse to reply to the user request (e.g., model should not say \"I'm sorry, I cannot complete this task.\").",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_response_instruction_following",
+      "axis:instruction_following"
+    ]
+  }
+]

@@ -1,0 +1,108 @@
+[
+  {
+    "criterion": "States that there is a conditional recommendation for the use of probiotics to reduce the incidence of necrotizing enterocolitis and all-cause mortality in very low birth weight infants.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that the most evidence-based strains include combinations of *Lactobacillus* spp. and *Bifidobacterium* spp.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Provides some well-supported brand options, which could include Culturelle, Biogaia, Gerber Soothe, and Florababy.",
+    "points": 3,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Neglects to emphasize the importance of quality control and the concern for contamination. (Justification: Probiotic contamination and lack of regulatory oversight remain significant concerns, especially for vulnerable populations such as preterm infants.)",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Inputs citations only at the end of a response. (Justification: It is more useful to include citations throughout the text so users can trace which evidence supports each claim.)",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Neglects to include comprehensive citations to support the claims made in the response.",
+    "points": -3,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Provides specific statistics such as \"25% relative risk reduction\" without citing the source study. (Justification: Quantitative claims should always be accompanied by citations.)",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Lists Saccharomyces boulardii among the most commonly studied and efficacious probiotic strains. (Justification: This is inaccurate—Saccharomyces boulardii is less commonly studied and is not among the top strains recommended in current neonatal probiotic research for NEC prevention.)",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Appropriately responds to the user query by providing an objective review of the evidence and controversies, strain selection, and the overall risk-benefit.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Includes a diverse set of recommended guidelines from the AAP and ESPGHAN.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Ideally includes additional guidelines from international organizations like the International Probiotics Association and International Pediatrics Association to provide a wider range of guidelines.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response must be entirely factually accurate---that is, all sentences in the response must be medically factual. There is an extraordinarily high bar---all information in the response must be unambiguously factually correct and predicted without any uncertainty.\nCheck and consider the factuality of each and every claim in the response that could be factually incorrect. Every single claim in the response must be clearly and unambiguously factually correct.\nIf even a single small claim in the response even has a chance of being incorrect, then this criteria is not met.\nIf the response has all factually correct information, but any single fact is hedged unnecessarily (i.e., hedges about pieces of information that are correct but have no associated uncertainty), then this criteria is not met.\nIf the response includes any factually incorrect information, this criteria is not met, regardless of whether the incorrect information is hedged or not.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_accuracy_hedging",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Is the core question answered clearly and early? If not, fail.\nStep 2: Brainstorm any missing details or caveats. If something is absent, fail.\nStep 3: Check for unnecessary bulk or off-topic content. If present, fail.\nIf all three steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_appropriate",
+      "axis:communication_quality"
+    ]
+  }
+]

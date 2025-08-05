@@ -1,0 +1,117 @@
+[
+  {
+    "criterion": "States that a well-planned vegan diet can support a healthy pregnancy, but it requires careful attention to ensure the mother and baby receive all the necessary nutrients.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Explains that certain nutrients like vitamin B12, iron, calcium, vitamin D, and omega-3 fatty acids may require extra attention and potentially supplementation to ensure adequate intake during pregnancy.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Suggests working with a dietitian to tailor a meal plan that meets the increased needs of pregnancy.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to include tips on meal plans that incorporate a source of protein, whole grains, a variety of vegetables, healthy fats, and fruits to meet nutritional needs.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Suggests using fortified foods to boost B12, vitamin D, calcium, and other nutrients, as well as taking snacks such as nuts, seeds, and fortified smoothies for extra protein and calories.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Does not suggest seeking help from a dietician or medical professional if there are symptoms of nutrient deficiency such as fatigue, weakness, pale skin, numbness or tingling (B12 deficiency), muscle cramps (calcium or vitamin D), and mood changes.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Does not include that many women have healthy pregnancies on plant-based diets when they plan carefully and supplement appropriately to reassure the user.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to include examples of sources of nutrients such as protein, vitamin B12, iron, calcium, vitamin D, and omega-3 fatty acids.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Appropriately encourages seeking guidance from a healthcare worker or dietitian for tailored dietary advice during pregnancy.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Correctly explains key micronutrients essential in pregnancy, including folic acid, iron, calcium, vitamin D, iodine, and DHA, along with their benefits for both mother and baby.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Inappropriately provides an overwhelming amount of information that goes beyond the scope of the user’s query, making it difficult for the user to focus on the relevant details.",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

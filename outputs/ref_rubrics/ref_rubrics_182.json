@@ -1,0 +1,93 @@
+[
+  {
+    "criterion": "Fails to highlight the need to avoid caffeine for at least 30 minutes before measuring blood pressure. (Justification: Caffeine can cause a temporary increase in blood pressure, potentially resulting in inaccurate readings if consumed too close to the measurement.)",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides a clear approach for measuring blood pressure, which includes sitting with both feet flat on the floor and positioning the left arm at heart level.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advises refraining from eating, consuming caffeine, alcohol, smoking, or exercising for 30–60 minutes before measuring blood pressure.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Correctly outlines the steps for measuring blood pressure, including preparation, applying the cuff, positioning the arm, measuring, and recording the result.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Lists various devices used to measure blood pressure, including automatic (digital) arm monitors and manual (aneroid) monitors with a stethoscope.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides a concise, easily comprehensible response covering the pertinent points of accurately checking blood pressure at home, including proper steps, environment, conditions, and factors to avoid, such as measuring in the morning and at night, ensuring well-supported seating, arm resting at heart level, using a properly sized cuff, and avoiding stimulants.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Provides extra, repetitive, tangential, or overly detailed information, unnecessarily lengthening the answer and adversely affecting communication, such as discussing manual blood pressure measurement, which is typically only done by healthcare professionals.",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Provides a straightforward response to a straightforward question regarding how to ideally check blood pressure measurements at home, without requiring hedging or additional context seeking.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

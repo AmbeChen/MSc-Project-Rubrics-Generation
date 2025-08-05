@@ -1,0 +1,84 @@
+[
+  {
+    "criterion": "States that for school-age children (≥ 6 years), guidelines—such as those of the American Academy of Pediatrics and the Brazilian Society of Pediatrics—emphasize that the ideal treatment usually involves a combination of behavioral therapy and medication, known as multimodal therapy. (Justification: Although the audience is a health professional, reinforcing these guidelines serves to ensure alignment with evidence-based practices and to support clinical decision-making in different care settings.)",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that for school-age children with mild symptoms, starting with behavioral interventions is indeed a valid strategy, as long as there is a structured monitoring plan, periodic reassessment, and flexibility to introduce medication if functional impairment persists or worsens. (Justification: If behavioral interventions are chosen, it is essential that there is adequate follow-up and evaluation of the response.)",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Lists behavioral interventions, including positive reinforcement, clear and predictable rules, structured routines, coordination with the school for adaptations such as educational support and preferred classroom locations, and behavioral psychotherapy (e.g., CBT adapted for ADHD), if available.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "States that if, after a few weeks (usually 4-6 weeks), the symptoms continue to significantly impact the child's routine, the introduction of pharmacological treatment, usually with stimulants, should be considered. (Justification: This response presents two key inconsistencies regarding the management of mild cases. First, the timeframe for behavioral therapy is too short. The recommendation to reassess in 4-6 weeks and consider medication if symptoms persist is too limited and does not align with best practices for mild cases. In children with mild ADHD symptoms, behavioral therapy should typically be trialed for several months, with structured monitoring and progressive adjustments, before concluding that medication is necessary. Premature introduction of pharmacological treatment may undermine the full potential of behavioral interventions and lead to unnecessary medication use. Second, there is a contradiction in symptom severity and treatment approach. The response states that \"symptoms continue to significantly impact the child's routine.\" However, if there were a significant impact, this would not be considered a mild",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Clarifies that medication should be considered if behavioral interventions do not lead to sufficient improvement in school, social, or family functioning after a few months, or if symptoms worsen, interfering with the child's development, such as increasing the risk of low self-esteem, difficulty maintaining friendships, or persistent academic struggles.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Mentions that behavioral therapy is an established therapy for ADHD children, especially in preschool age, and can benefit patients in the long term.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that for 6-year-old children and older, pharmacotherapy combined with behavioral therapy is indicated, but based on individual context, behavioral therapy alone can be considered as a standalone treatment in mild cases.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Does not mention the importance of addressing coexisting conditions, such as oppositional/aggressive behavior, which may also benefit from behavioral therapy.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response must be entirely factually accurate---that is, all sentences in the response must be medically factual. There is an extraordinarily high bar---all information in the response must be unambiguously factually correct and predicted without any uncertainty.\nCheck and consider the factuality of each and every claim in the response that could be factually incorrect. Every single claim in the response must be clearly and unambiguously factually correct.\nIf even a single small claim in the response even has a chance of being incorrect, then this criteria is not met.\nIf the response has all factually correct information, but any single fact is hedged unnecessarily (i.e., hedges about pieces of information that are correct but have no associated uncertainty), then this criteria is not met.\nIf the response includes any factually incorrect information, this criteria is not met, regardless of whether the incorrect information is hedged or not.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_accuracy_hedging",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Is the core question answered clearly and early? If not, fail.\nStep 2: Brainstorm any missing details or caveats. If something is absent, fail.\nStep 3: Check for unnecessary bulk or off-topic content. If present, fail.\nIf all three steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_appropriate",
+      "axis:communication_quality"
+    ]
+  }
+]

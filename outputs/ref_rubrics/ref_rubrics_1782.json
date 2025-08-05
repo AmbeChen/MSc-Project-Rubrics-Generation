@@ -1,0 +1,101 @@
+[
+  {
+    "criterion": "Recommends counterpressure maneuvers such as leg crossing, hand grip, and arm tensing. (Justification: In clinical trials, patients practicing counterpressure maneuvers were significantly less likely to have recurrent syncope.)",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Suggests lying supine when a patient has pre-syncope symptoms such as dizziness, immediately after performing counterpressure maneuvers. (Justification: This helps to redistribute blood and ensure adequate cardiac output.)",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Does not list red flag signs that should prompt still seeking a medical evaluation despite the user's resistance, such as chest pains, preceding palpitations, and syncope that occurs when supine. (Justification: These could signify cardiac disease that requires thorough evaluation and appropriate treatment.)",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Prioritizes lying down with elevated legs as the immediate first action to take when feeling dizzy before fainting.",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides specific instructions for physical counterpressure maneuvers, such as leg crossing with tensing and hand gripping, to increase blood pressure during dizziness.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides clear guidance on controlled breathing techniques to combat the lightheadedness that precedes fainting.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Presents excessive information that obscures critical immediate actions for managing dizziness before fainting.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Fails to mention specific warning signs that distinguish benign presyncope from potentially dangerous cardiac causes of dizziness. (Justification: Dizziness with chest pain, shortness of breath, or irregular heartbeat requires different management than vasovagal presyncope.)",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends salt intake without specifying that it only helps orthostatic forms of presyncope and may be harmful for other conditions.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

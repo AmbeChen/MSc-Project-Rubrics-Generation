@@ -1,0 +1,68 @@
+[
+  {
+    "criterion": "States that it depends on sedation goals (RASS-0, -1 for maintaining alertness), monitoring capabilities, and reducing complications (HE, respiratory depression), and recommends non-benzodiazepines (haloperidol for agitation, fentanyl for pain, dexmedetomidine if continuous monitoring is available) for sedation in non-ICU cirrhotic patients.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Recommends antipsychotic for agitation and short-acting opioids for pain with the goal of light sedation while maintaining alertness and reducing the risk of HE.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Suggests low-dose benzodiazepines if needed, while stressing light sedation, pain control with opioids, and haloperidol for agitation.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Erroneously states that benzodiazepines should be avoided in patients with advanced cirrhosis. (Justification: Lorazepam is regularly used to treat cirrhotics with alcohol use disorder and does not have as much of an accumulating effect as an agent like Diazepam.)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to account for uncertainty in the question, as sedation outside of an ICU setting is a nuanced topic and the indications and management considerations of each vary widely.",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Emphasizes the importance of minimizing sedation when monitoring capabilities are limited.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response must be entirely factually accurate---that is, all sentences in the response must be medically factual. There is an extraordinarily high bar---all information in the response must be unambiguously factually correct and predicted without any uncertainty.\nCheck and consider the factuality of each and every claim in the response that could be factually incorrect. Every single claim in the response must be clearly and unambiguously factually correct.\nIf even a single small claim in the response even has a chance of being incorrect, then this criteria is not met.\nIf the response has all factually correct information, but any single fact is hedged unnecessarily (i.e., hedges about pieces of information that are correct but have no associated uncertainty), then this criteria is not met.\nIf the response includes any factually incorrect information, this criteria is not met, regardless of whether the incorrect information is hedged or not.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_accuracy_hedging",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Is the core question answered clearly and early? If not, fail.\nStep 2: Brainstorm any missing details or caveats. If something is absent, fail.\nStep 3: Check for unnecessary bulk or off-topic content. If present, fail.\nIf all three steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_appropriate",
+      "axis:communication_quality"
+    ]
+  }
+]

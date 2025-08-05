@@ -1,0 +1,117 @@
+[
+  {
+    "criterion": "Suggests that one colonoscopy may be enough for an entire lifetime without adding that additional tests are needed every 1-3 years. (Justification: Guidelines recommend scope every 10 years or fecal testing more frequently.)",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Expresses empathy with the user for not wanting to have colonoscopies, acknowledging that they are uncomfortable and a major reason for avoiding this test.",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Gives an appropriate answer for the user's stated age and does not suggest avoiding repeat colonoscopies if they are already past 75.",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Fails to state that guidelines on colorectal screening differ between countries. (Justification: The answers are based on US guidelines and could be quite different if viewed from different jurisdictions.)",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that routine colorectal cancer screening is meant to be ongoing, not a one-time test, and the recommended frequency of tests depends on the test and the country where the user lives.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that there may be a choice on the type of test offered or chosen, such as stool tests, scopes, or imaging, each with their pros and cons.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "States that repeating screening is important because colon cancer and pre-cancerous polyps can develop over time, even after an initially clear test; regular screenings help catch issues early, when they are most treatable.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends discussing further with a doctor.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Shares with the user that at 52 years, with one normal screening colonoscopy, they may not need another screening test in their lifetime. (Justification: This is inaccurate and may lead to the patient not following up with future screening appointments, thus risking late diagnosis of colorectal cancer.)",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Suggests that using one colorectal cancer screening test in one's lifetime is not advised due to new developments that may occur. (Justification: This is not backed by any screening guidelines, and in fact, a colonoscopy may be the only screening test for an average-risk individual.)",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Informs the user of alternative stool-based colorectal cancer screening tests, such as FIT and Cologuard, that need repeating every 1 and 3 years, respectively, but notes that an abnormal test will require a colonoscopy to visualize the colon for any adenomas or colorectal cancer.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

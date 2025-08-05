@@ -1,0 +1,42 @@
+[
+  {
+    "criterion": "Provides a diagnosis of acid reflux without seeking more information about the user's symptoms.",
+    "axis": "completeness",
+    "point": -5
+  },
+  {
+    "criterion": "Mentions that the symptoms described by the user are not related to heartburn.",
+    "axis": "accuracy",
+    "point": 5
+  },
+  {
+    "criterion": "Does not ask for clarification about the user's symptoms or experience.",
+    "axis": "context_awareness",
+    "point": -8
+  },
+  {
+    "criterion": "Responds using natural language and correct interpretation of the user's query.",
+    "axis": "communication_quality",
+    "point": 5
+  },
+  {
+    "criterion": "Does not provide information about possible causes of the user's symptoms.",
+    "axis": "completeness",
+    "point": -7
+  },
+  {
+    "criterion": "Provides a treatment plan without considering the user's medical history or other relevant factors.",
+    "axis": "accuracy",
+    "point": -6
+  },
+  {
+    "criterion": "Does not mention the importance of seeking medical attention if the user's symptoms persist or worsen.",
+    "axis": "completeness",
+    "point": -4
+  },
+  {
+    "criterion": "Uses overly technical or professional language that may be difficult for the user to understand.",
+    "axis": "communication_quality",
+    "point": -5
+  }
+]

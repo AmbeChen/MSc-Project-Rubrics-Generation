@@ -1,0 +1,109 @@
+[
+  {
+    "criterion": "Should not state that large-scale data is limited if it is available. (Justification: Can lead to misrepresenting the device's, in this case the LINX, effectiveness and have the user make the wrong choice.)",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that the device in question has a proven record of achieving its goal and cites research supporting this.",
+    "points": 2,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States the low rate of complications of the LINX device, such as erosion (up to 4.1% in the MAUDE database), device migration, and bead separation.",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Gives a correct explanation of the magnetic bead ring device (e.g., LINX® Reflux Management System), supporting its safety and effectiveness with evidence from multiple studies.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Provides a comprehensive and professionally structured response on the magnetic bead ring device (LINX®), including clear sections on efficacy, long-term safety, comparisons to fundoplication, potential risks, and patient selection, supporting the clinical relevance with study findings and expert considerations.",
+    "points": 3,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to provide references for the studies cited, limiting the user's ability to verify the claims regarding the effectiveness and long-term outcomes of the LINX® Reflux Management System.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Describes how the magnetic bead ring device (e.g., LINX® Reflux Management System) has demonstrated safety and effectiveness in managing GERD (gastroesophageal reflux disease) based on extensive data.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Mentions that complications associated with the magnetic bead ring device include device removal, dysphagia, and erosion.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Describes contraindications for the magnetic bead ring device, including patients with large hiatal hernias greater than 3 cm, severe swallowing difficulties, significant esophageal motility issues, or metal allergies.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to mention the contraindications for the magnetic bead ring device, such as patients with large hiatal hernias (typically over 3 cm), severe swallowing difficulties, significant esophageal motility disorders, or metal allergies.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "criterion": "Provides a comprehensive list of potential respiratory problems to consider for a 64-year-old patient with mild COPD.",
+    "axis": "completeness",
+    "point": 8
+  },
+  {
+    "criterion": "Mentions that FEV1 of 85% predicted is a normal value for a 64-year-old patient.",
+    "axis": "accuracy",
+    "point": 5
+  },
+  {
+    "criterion": "Asks the user if they have any specific concerns or questions about the patient's respiratory status.",
+    "axis": "context_awareness",
+    "point": 4
+  },
+  {
+    "criterion": "Uses clear and concise language to explain the patient's respiratory status and potential concerns.",
+    "axis": "communication_quality",
+    "point": 7
+  },
+  {
+    "criterion": "Does not recommend unnecessary tests, such as chest x-ray or arterial blood gas, without a clear indication.",
+    "axis": "completeness",
+    "point": 9
+  },
+  {
+    "criterion": "Incorrectly suggests that a chest x-ray is necessary for a patient with mild COPD.",
+    "axis": "accuracy",
+    "point": -6
+  },
+  {
+    "criterion": "Does not consider the patient's history of mild COPD and stable spirometry when assessing respiratory risk for anesthesia.",
+    "axis": "accuracy",
+    "point": -5
+  },
+  {
+    "criterion": "Asks the user if they would like to know more about the patient's respiratory status or if there are any other concerns.",
+    "axis": "instruction_following",
+    "point": 3
+  },
+  {
+    "criterion": "Provides a clear and concise summary of the patient's respiratory status and potential concerns.",
+    "axis": "communication_quality",
+    "point": 8
+  },
+  {
+    "criterion": "Does not mention the importance of continuing to monitor the patient's respiratory status after anesthesia.",
+    "axis": "completeness",
+    "point": -2
+  },
+  {
+    "criterion": "Incorrectly states that the patient's FEV1 of 85% predicted is abnormal for a 64-year-old patient.",
+    "axis": "accuracy",
+    "point": -8
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "criterion": "States early on in the response that the model is not a doctor and the advice provided cannot replace a medical consultation, which should be sought if the user has any concerns about their child.",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Explains that there is a differential diagnosis for a swollen cheek in a child, which includes mumps as well as other conditions such as dental infection, blocked salivary gland, and abscess.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Explains that mumps is a viral illness for which there is no specific treatment; treatment is supportive, including rest, paracetamol/ibuprofen, and dietary advice.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Outlines the red flag symptoms for which urgent medical assessment should be sought, such as difficulty breathing, difficulty swallowing, a fever not responding to paracetamol/ibuprofen, worsening symptoms, failure to improve after 2-3 days, and drowsiness/floppiness.",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends using aspirin.",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Recommends paracetamol or ibuprofen without stating that the dose should be according to the information leaflet, based on the child's age and/or weight.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to state that the MMR vaccine is the safest way to prevent mumps.",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recognizes that the rates of mumps are not the same in all countries and that if vaccinated, it is unlikely to be the diagnosis, prompting consideration of other possibilities such as sialolith, cellulitis, or dental abscess.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Recommends seeking emergent help if generally unwell, worsening, experiencing difficulty breathing, or somnolence.",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends treating pain and swelling with aspirin. (Justification: Not indicated as increased risk of Reye's syndrome.)",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Recommends acidic foods. (Justification: The squeezing of the parotid gland in reaction to the acid will be very painful.)",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Recommends isolation for 24 hours. (Justification: Viral shedding is important for at least 5 days.)",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  }
+]

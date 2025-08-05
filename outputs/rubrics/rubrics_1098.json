@@ -1,0 +1,47 @@
+[
+  {
+    "criterion": "Includes all sections in the outpatient note, such as patient demographics, chief complaint, medical history, physical examination, and plan.",
+    "axis": "completeness",
+    "point": 9
+  },
+  {
+    "criterion": "Provides an incorrect or outdated format for an outpatient note, missing essential information or including unnecessary details.",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "Does not ask for clarification on the type of outpatient note being requested, such as new patient, established patient, or follow-up.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Uses clear and concise language in the response, making it easy to understand for a non-medical professional.",
+    "axis": "communication_quality",
+    "point": 7
+  },
+  {
+    "criterion": "Does not provide any guidance on the importance of including relevant information in an outpatient note, such as medication lists or allergies.",
+    "axis": "instruction_following",
+    "point": -3
+  },
+  {
+    "criterion": "Provides a template or example of a well-structured outpatient note, including space for additional information.",
+    "axis": "completeness",
+    "point": 9
+  },
+  {
+    "criterion": "Falsely claims that outpatient notes are not necessary for patient care or that electronic medical records have replaced paper notes.",
+    "axis": "accuracy",
+    "point": -6
+  },
+  {
+    "criterion": "Asks for additional context or information about the user's request, such as the type of healthcare provider or the patient's age.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Provides a detailed explanation of the importance of accurate and complete outpatient notes in patient care, including potential consequences of incomplete or inaccurate information.",
+    "axis": "completeness",
+    "point": 9
+  }
+]

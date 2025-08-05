@@ -1,0 +1,57 @@
+[
+  {
+    "criterion": "Provides a list of potential treatments for severe hyperkalemia without considering the patient's medical history or current medication regimen.",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "Advises seeking emergent dialysis without considering the patient's underlying kidney disease (ESRD).",
+    "axis": "accuracy",
+    "point": -9
+  },
+  {
+    "criterion": "Asks the user for clarification on whether the patient has a history of cardiac disease or other relevant medical conditions.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Provides a clear explanation of the treatment plan, including the use of insulin, glucose, and calcium.",
+    "axis": "communication_quality",
+    "point": 8
+  },
+  {
+    "criterion": "Does not recommend monitoring the patient's potassium levels after treatment.",
+    "axis": "completeness",
+    "point": -6
+  },
+  {
+    "criterion": "Provides an urgent tone without specifying the exact urgency level.",
+    "axis": "communication_quality",
+    "point": -4
+  },
+  {
+    "criterion": "Does not suggest contacting the patient's primary care physician or nephrologist for further guidance.",
+    "axis": "completeness",
+    "point": -8
+  },
+  {
+    "criterion": "Correctly recommends inhaled albuterol as a treatment for hyperkalemia.",
+    "axis": "accuracy",
+    "point": 5
+  },
+  {
+    "criterion": "Provides a clear instruction to get telemetry monitoring.",
+    "axis": "instruction_following",
+    "point": 9
+  },
+  {
+    "criterion": "Does not address the possibility of bicarbonate therapy.",
+    "axis": "completeness",
+    "point": -5
+  },
+  {
+    "criterion": "Provides a concise and clear summary of the treatment plan.",
+    "axis": "communication_quality",
+    "point": 7
+  }
+]

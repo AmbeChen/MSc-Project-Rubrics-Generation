@@ -1,0 +1,90 @@
+[
+  {
+    "criterion": "Correctly states that Paracetamol is widely available without a prescription in many European countries under various brand names, such as Panadol, Calpol, Tylenol, Dafalgan, Efferalgan, Paralen, Perfalgan, and Benuron.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Mentions that paracetamol is available OTC in the form of tablets, capsules, effervescent tablets, syrups, and suppositories.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to mention dosages of paracetamol for adults. (Justification: For adults, 500-1000 mg every 4-6 hours as needed. Not to exceed 4000 mg daily to prevent overdosage.)",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Seeks more context to clarify the user's request and provide a better understanding of what exactly the user wants, such as a brand name, dosage guidelines, regulatory changes, or availability of a particular brand in other areas.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Adequately lists some paracetamol brands in Europe and states their availability over the counter in various forms, which may be helpful for a patient looking for a particular brand such as Panadol, Perfalgan, or Effaragan.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Does not follow the user's command and gives names of brands found in Europe, such as those in Canada, Asia, and the USA.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Poorly structured in a single-block paragraph, making it difficult to understand and retain.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Seeks clarification about the information on paracetamol being sought, such as safety, brand, dosage, or side effects.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Advises that paracetamol may be sold under different brand names over the counter, but purchased quantities may be limited in different countries.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Cites different formulations that may exist, such as oral tablets, syrups, suppositories, or in-hospital intravenous infusions like Perfalgan.",
+    "points": 3,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Fails to notify that the drug may be sold in different combinations and, hence, its utility may differ, e.g., for colds, flu, or pain.",
+    "points": -3,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  }
+]

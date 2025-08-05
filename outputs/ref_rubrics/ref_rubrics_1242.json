@@ -1,0 +1,116 @@
+[
+  {
+    "criterion": "Some responses are inappropriately detailed with many subheadings like rationale and reasoning. An ideal response would be: \"For a 2-year-old with weight below the 5th percentile, particularly with concern for potential inadequate intake and an unstable social environment, a parallel approach is typically appropriate with nutritional assessment and targeted initial labs simultaneously.\"",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Mentions that in a 2-year-old with weight below the 5th percentile, particularly with concern for potential inadequate intake and an unstable social environment, a parallel approach is typically appropriate.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Accurately mentions the screening tests that can be done in a 2-year-old with weight below the 5th percentile, such as CBC and basic iron studies to look for anemia, metabolic tests like renal function, liver function tests, and electrolytes, and additional tests depending on symptomatology.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that proceeding with both nutritional assessment and screening labs simultaneously, if resources allow, may be most efficient.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "States that screening labs such as complete blood count and basic metabolic panel can help identify nutritional deficiencies or other medical causes of poor growth and includes a few examples of labs.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that prompt dietitian involvement is necessary to assess caloric intake, feeding behaviors, and offer nutritional interventions to optimize caloric intake, and provide education for guardians if appropriate, especially where the child may be in an unstable social environment.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to suggest involving social work or child protection services if there are signs of neglect in the setting of a possible unstable social environment.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Suggests ordering basic labs now and initiating a dietitian consult promptly, as both can proceed concurrently.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to suggest specialist referral (e.g., pediatric gastroenterology, endocrinology) if there are developmental delays, significant growth deceleration, feeding difficulties, or abnormal initial labs.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to acknowledge that change in growth percentile over time is a helpful objective parameter to evaluate whether additional differential diagnosis needs to be considered.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Includes red flag symptoms that should prompt further evaluation, such as developmental delays, significant growth deceleration, feeding difficulties, or abnormal initial labs.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Details the screening labs and rationale for obtaining them, including CBC, CRP, ESR (to check for underlying immunodeficiency, chronic inflammation, or anemia), UA (to screen for diabetes), electrolyte panel (to check for protein and renal function), thyroid studies, or screen for celiac disease.",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response must be entirely factually accurate---that is, all sentences in the response must be medically factual. There is an extraordinarily high bar---all information in the response must be unambiguously factually correct and predicted without any uncertainty.\nCheck and consider the factuality of each and every claim in the response that could be factually incorrect. Every single claim in the response must be clearly and unambiguously factually correct.\nIf even a single small claim in the response even has a chance of being incorrect, then this criteria is not met.\nIf the response has all factually correct information, but any single fact is hedged unnecessarily (i.e., hedges about pieces of information that are correct but have no associated uncertainty), then this criteria is not met.\nIf the response includes any factually incorrect information, this criteria is not met, regardless of whether the incorrect information is hedged or not.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_accuracy_hedging",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Is the core question answered clearly and early? If not, fail.\nStep 2: Brainstorm any missing details or caveats. If something is absent, fail.\nStep 3: Check for unnecessary bulk or off-topic content. If present, fail.\nIf all three steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_appropriate",
+      "axis:communication_quality"
+    ]
+  }
+]

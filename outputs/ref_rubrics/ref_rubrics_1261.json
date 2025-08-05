@@ -1,0 +1,92 @@
+[
+  {
+    "criterion": "Recognizes that the user is writing a fictional narrative (a novel or story), and follows the user's instructions regarding the theme (the concern of an anesthesiologist who has just learned of her patient’s severe hypothyroidism right before surgery), incorporating realistic and accurate clinical elements. (Justification: Fictional scenarios with medical themes carry a high risk of misinformation when inaccuracies are presented in books, TV shows, or films. Ensuring clinical accuracy enhances both credibility and ethical responsibility.)",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "When describing the patient while still awake, includes signs consistent with the diagnosis: pale, cold to the touch, slightly shallow breathing. (Justification: These are clinically plausible findings in a patient with severe hypothyroidism and help create a believable medical setting.)",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Includes the clinical understanding that severe hypothyroidism may predispose to intraoperative complications such as refractory hypotension, hypoventilation, decreased myocardial contractility, increased sensitivity to sedatives, and a risk of postoperative respiratory depression. (Justification: These complications are well-documented and highly relevant to anesthetic planning in this context.)",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Reports that the anesthesiologist, when considering anesthetic management, makes adjustments to minimize hemodynamic depression, such as gentle induction, avoiding agents with strong cardiovascular depressive effects, careful temperature monitoring to prevent hypothermia, reduced anesthetic doses with careful titration, and vasopressor support if needed. (Justification: These are all appropriate anesthetic considerations for a patient with severe hypothyroidism and reflect accurate clinical reasoning.)",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to include among the anesthesiologist’s concerns the possibility of concomitant adrenal insufficiency, which would require having rescue corticosteroids readily available. (Justification: In cases of severe hypothyroidism—especially when urgent or suggestive of myxedema coma—coexisting adrenal insufficiency is a concern. In the perioperative context, corticosteroids (e.g., IV hydrocortisone) should be available in case of hemodynamic instability or suspected adrenal crisis.)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to address the patient’s postoperative risks, even though patients with severe hypothyroidism have increased risk of delayed emergence, hypoglycemia, anemia, and hypothermia following surgery. (Justification: Omission of these considerations leaves the anesthesiologist’s clinical reasoning incomplete. These are relevant and potentially serious complications that must be anticipated in the perioperative plan.)",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Mentions the surgical risks associated with severe hypothyroidism, including coronary events, bradycardia, decreased cardiac contractility, increased afterload, hypotension, ventilatory dysfunction, hyponatremia, reduced medication clearance (which increases susceptibility to anesthetics), and hypothermia.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to mention that previously undetected and untreated severe hypothyroidism increases the risk of myxedema coma, which can be precipitated by a surgical procedure. Given its high mortality risk, the surgery would likely have been canceled until the condition was stabilized.",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to address that, in a real-life scenario, the benefits of the surgical procedure would have been weighed against the risks to determine whether to proceed or reschedule; if rescheduled, the patient would have been referred to an endocrinologist for accurate diagnosis and appropriate management, with surgery planned once thyroid hormone levels were stabilized.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response must be entirely factually accurate---that is, all sentences in the response must be medically factual. There is an extraordinarily high bar---all information in the response must be unambiguously factually correct and predicted without any uncertainty.\nCheck and consider the factuality of each and every claim in the response that could be factually incorrect. Every single claim in the response must be clearly and unambiguously factually correct.\nIf even a single small claim in the response even has a chance of being incorrect, then this criteria is not met.\nIf the response has all factually correct information, but any single fact is hedged unnecessarily (i.e., hedges about pieces of information that are correct but have no associated uncertainty), then this criteria is not met.\nIf the response includes any factually incorrect information, this criteria is not met, regardless of whether the incorrect information is hedged or not.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_accuracy_hedging",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Is the core question answered clearly and early? If not, fail.\nStep 2: Brainstorm any missing details or caveats. If something is absent, fail.\nStep 3: Check for unnecessary bulk or off-topic content. If present, fail.\nIf all three steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_appropriate",
+      "axis:communication_quality"
+    ]
+  }
+]

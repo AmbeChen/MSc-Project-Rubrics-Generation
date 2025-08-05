@@ -1,0 +1,98 @@
+[
+  {
+    "criterion": "Recommends that the patient seek a formal evaluation with a healthcare provider.",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Seeks context to clarify whether the patient's symptoms are migrainous or another type by asking about at least two of the following: frequency, quality, and associated symptoms such as nausea, photophobia, or phonophobia.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Provides a brief description of the two medications.",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Explores specific or complex details on the pathophysiology of the two medications.",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Provides excessive levels of detail not relevant at this stage, such as exploring which patients can take each kind of medication.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Recommends consulting a healthcare professional to establish the cause of daily throbbing headache.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "States that it is not recommended to self-medicate with topiramate or sumatriptan without an established diagnosis of migraine and a prescription from a health professional.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Describes possible causes of early morning headache other than migraine, including sleep apnea, medication overuse, high blood pressure, or other medical illnesses.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "States that topiramate is an antimigraine medication used for preventing headaches, while sumatriptan is used to relieve acute episodes of migraine headache.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Should not recommend a trial of sumatriptan to confirm a diagnosis of migraine.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Should not suggest the use of topiramate for daily headaches and sumatriptan for episodic headaches in the absence of an established diagnosis of migraine.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Should not include the mechanism of action and adverse effects of sumatriptan and topiramate.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  }
+]

@@ -1,0 +1,108 @@
+[
+  {
+    "criterion": "Claims that the Fleischner Society (2017) Guidelines for solid nodules 6‑8 mm in a high-risk patient recommend an initial follow‑up CT at 3–6 months, then CT at 9–12 months. (Justification: This is inaccurate. The guidelines in fact recommend a repeat CT scan chest in 6-12 months then another CT at 18-24 months.)",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Recommends tailoring the imaging interval to the patient's individual characteristics, e.g., 3-6 months for a low-risk patient with a spiculated upper lobe nodule on chest CT. (Justification: The guidelines do not address nodule characteristics such as spiculation, which is suspicious for malignancy, leaving this to the discretion of the attending doctor to individualize recommendations.)",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Recommends returning to guideline-recommended imaging intervals (after 18-24 months) if the nodule is stable on the initial follow-up CT scan.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Suggests seeking the input of a multidisciplinary tumor board or a pulmonologist to guide follow-up imaging for a low-risk patient with highly suspicious nodule findings, such as upper lobe location and spiculated pattern. (Justification: This is important to get a multidisciplinary approach for a clinical scenario that is not addressed in current guidelines.)",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides an appropriately simple response that avoids repetition and omits advanced discussion of management options.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Identifies that the findings described raise concern for malignancy, particularly due to the presence of spiculated margins.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Offers to analyze the result in combination with any other clinically relevant information regarding the patient, if available.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Fails to seek context from the user regarding what they would like the model to do, such as providing a differential diagnosis or management options.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Describes as moderate risk, requiring a follow-up CT scan in 6-12 months (Fleischner 2017). However, spiculation raises suspicion of cancer, warranting an earlier 3-6 month CT scan if nodule stability is not confirmed by previous CT scan.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Disregards spiculation and suggests it as a borderline size nodule which does not need follow-up.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Suggests a 6-12 month follow-up but does not ask for previous scans or highlight suspicious borders.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response must be entirely factually accurate---that is, all sentences in the response must be medically factual. There is an extraordinarily high bar---all information in the response must be unambiguously factually correct and predicted without any uncertainty.\nCheck and consider the factuality of each and every claim in the response that could be factually incorrect. Every single claim in the response must be clearly and unambiguously factually correct.\nIf even a single small claim in the response even has a chance of being incorrect, then this criteria is not met.\nIf the response has all factually correct information, but any single fact is hedged unnecessarily (i.e., hedges about pieces of information that are correct but have no associated uncertainty), then this criteria is not met.\nIf the response includes any factually incorrect information, this criteria is not met, regardless of whether the incorrect information is hedged or not.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_accuracy_hedging",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Is the core question answered clearly and early? If not, fail.\nStep 2: Brainstorm any missing details or caveats. If something is absent, fail.\nStep 3: Check for unnecessary bulk or off-topic content. If present, fail.\nIf all three steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_appropriate",
+      "axis:communication_quality"
+    ]
+  }
+]

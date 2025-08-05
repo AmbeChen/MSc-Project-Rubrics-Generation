@@ -1,0 +1,117 @@
+[
+  {
+    "criterion": "Offers short-term and long-term solutions for panic attack management, recommending noticing emotions, breathing exercises, grounding techniques, and muscle relaxation as short-term solutions, and therapy, medication, lifestyle adjustments, and social support systems as long-term solutions.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Explains the types of therapy used in panic attack treatment in detail. (Justification: It is the therapist's job to choose the most appropriate therapy option for the patient. It may not be appropriate to direct the patient towards a specific therapy.)",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides information about heart attacks and their symptoms to users who want to learn about panic attack management. (Justification: There is no need to make an already anxious user even more anxious.)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Makes the explanation long and detailed while providing information about panic attack management.",
+    "points": -3,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Suggests an emergency helpline, assuming that the user is having suicidal thoughts, and approaches the user in an alarmist manner.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Reminds the user with panic attacks that there may be an organic disease causing the panic attacks. (Justification: Some organic diseases such as hyperthyroidism and infection can cause panic attacks. It would be logical to rule out organic diseases first.)",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Warns about the addictive effects of short- and fast-acting benzodiazepines when discussing medication options for treating panic attacks.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "States that symptoms like chest pain, shortness of breath, and visual disturbance can overlap with concerning medical emergencies, and they should consider reaching out to a healthcare professional and going to an emergency department.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Educates the user that if they are experiencing panic attacks to such an extent that it affects their ability to perform basic life functions, they should seek professional help.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advises lifestyle changes such as exercising, meditating, journaling, and recording triggers.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to mention both cognitive behavioral therapy and medications as attenuating adjuncts.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

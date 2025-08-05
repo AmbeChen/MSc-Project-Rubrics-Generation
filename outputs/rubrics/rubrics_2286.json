@@ -1,0 +1,47 @@
+[
+  {
+    "criterion": "Provides an incomplete or misleading response, omitting relevant information or contradicting the radiology report.",
+    "axis": "completeness",
+    "point": -8
+  },
+  {
+    "criterion": "Correctly identifies the uncertainty in the radiology report, acknowledging the lack of a final report or older imaging for comparison.",
+    "axis": "accuracy",
+    "point": 5
+  },
+  {
+    "criterion": "Suggests seeking additional information or clarification from the radiologist or other medical professionals.",
+    "axis": "context_awareness",
+    "point": 4
+  },
+  {
+    "criterion": "Response uses natural language and correct interpretation.",
+    "axis": "communication_quality",
+    "point": 5
+  },
+  {
+    "criterion": "Fails to provide any relevant information or guidance on how to proceed with the radiology report.",
+    "axis": "completeness",
+    "point": -9
+  },
+  {
+    "criterion": "Incorrectly assumes that the radiology report is definitive or conclusive without additional information.",
+    "axis": "accuracy",
+    "point": -6
+  },
+  {
+    "criterion": "Provides an overly technical or jargon-heavy response, which may be difficult for non-medical professionals to understand.",
+    "axis": "communication_quality",
+    "point": -4
+  },
+  {
+    "criterion": "Correctly identifies potential areas of concern or uncertainty in the radiology report and suggests further evaluation.",
+    "axis": "completeness",
+    "point": 8
+  },
+  {
+    "criterion": "Fails to acknowledge the potential limitations or uncertainties in the radiology report.",
+    "axis": "context_awareness",
+    "point": -5
+  }
+]

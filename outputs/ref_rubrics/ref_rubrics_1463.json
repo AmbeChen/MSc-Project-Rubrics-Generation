@@ -1,0 +1,98 @@
+[
+  {
+    "criterion": "Provides advice that while the goal is less than 24 grams of added sugar per day, consistency is more important than perfection, and that going over the recommended limit occasionally will likely not result in harm to the child.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Asks the user about dental health and advises that they brush their child's teeth twice per day with fluoride toothpaste, see the dentist every 6 months, and receive fluoride varnish treatments at the dental office to protect the teeth from decay caused by sugar.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Asks the user if there is a family history of obesity or diabetes, providing context on the importance of consistency in limiting sugar in their child's diet.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Advises the user to ensure the child is getting adequate physical activity, at least 45 minutes per day.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to advise the user that occasionally going over the recommended limit will likely not harm the child as long as they maintain other healthy habits, such as eating a balanced diet, routine dental care every 6 months, twice-daily tooth brushing, and adequate physical activity.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to seek important context such as a history of obesity or diabetes (type 1 or type 2), where added sugar intake should be minimized or avoided entirely.",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Does not consider family history, especially parental obesity, which should prompt more cautious dietary choices for the child.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Overlooks other relevant chronic conditions (e.g., chronic kidney disease or cystic fibrosis) where dietary recommendations may vary significantly.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Emphasizes the importance of eliminating sugary drinks, juices, and soft drinks, which are a major contributor to excess sugar intake in children.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Does not inquire about the child’s sex or activity level, which are factors that influence recommended daily caloric and sugar intake. In most cases, added sugars should make up less than 10% of total calories, typically translating to less than 24 grams per day.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Takes a balanced approach by allowing for occasional treats while emphasizing the importance of a diet rich in fruits, vegetables, protein, and fiber.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to mention avoiding high fructose corn syrup and hidden sugars, which are particularly unhealthy forms of added sugar often found in processed foods.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  }
+]

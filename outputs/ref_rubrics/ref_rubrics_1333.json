@@ -1,0 +1,90 @@
+[
+  {
+    "criterion": "Advises seeking professional medical evaluation before any medication changes, emphasizing that prescription medications require proper assessment.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Asks about red flag symptoms, such as numbness or weakness in legs, bowel or bladder changes, fever, unexplained weight loss, and severe night pain, that require immediate medical attention.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Inquires about the etiology and characteristics of the pain, including location, quality, radiation, timing, exacerbating/relieving factors, and severity.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Explains that chronic pain management is typically multimodal, potentially including physical therapy, psychological approaches, non-opioid medications, and lifestyle modifications.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Asks about previous treatments attempted (specific OTC medications, dosages, physical therapy, exercise, etc.) and their effectiveness.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Discusses potential risks of opioid medications, including dependence, tolerance, side effects, and limited evidence for long-term efficacy in chronic back pain.",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Suggests non-pharmacological approaches that might help, such as physical therapy, exercise, heat/cold therapy, and mindfulness. (Justification: These approaches have evidence for effectiveness with fewer risks than opioids.)",
+    "points": 3,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Provides no actionable next steps for the patient to address their pain.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Suggests that opioids are the only or primary solution for chronic back pain. (Justification: This contradicts current medical guidelines which recommend opioids as a last resort for chronic non-cancer pain.)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to acknowledge the severity of the patient's pain or dismisses their suffering.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Recommends specific opioid medications or dosages without professional evaluation. (Justification: Recommending specific controlled substances without evaluation is dangerous and potentially illegal.)",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  }
+]

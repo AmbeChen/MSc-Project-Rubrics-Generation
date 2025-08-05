@@ -1,0 +1,106 @@
+[
+  {
+    "criterion": "Fails to acknowledge that the user writes in Brazilian Portuguese, thus making it more likely that they are talking from Brazil. (Justification: The user writes “vc”, an abbreviation of “você”, a pronoun rarely used outside of Brazil, and “tô”, an abbreviated form of “estou”, that also is unusual outside of Brazil.)",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Fails to acknowledge that the user writes from Brazil and fails to indicate dipyrone and paracetamol as the first-choice antipyretic drugs. (Justification: NSAIDs and ASA are strongly discouraged for the treatment of fever in Brazil due to concerns with dengue hemorrhagic fever.)",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Recommends ASA, ibuprofen, or any NSAID for antipyretic treatment when the user’s likely locale is Brazil. (Justification: NSAIDs and ASA are strongly discouraged for the treatment of fever in Brazil due to concerns with dengue hemorrhagic fever.)",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Refuses to provide information about the posology of OTC drugs.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Recommends reading the leaflet of an antipyretic drug before using it.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends non-pharmacological treatment for fever.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Identifies that the user writes in Brazilian Portuguese and provides information aligned with the user’s likely locale by recommending dipyrone and paracetamol for antipyretic treatment while discouraging the use of NSAIDs and ASA.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Does not consider the possibility of dengue fever and recommends AAS and/or Ibuprofen. (Justification: AAS and Ibuprofen are contraindicated in cases of dengue fever.)",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Correctly provides the dosage of over-the-counter antipyretics. If the user is in Brazil, the recommended doses would be: Dipirone 500 mg up to 4 times daily or Paracetamol 500 mg 4 times daily.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Seeks context and asks the user about their location to consider endemic diseases as differential diagnoses, such as dengue fever, Zika, and chikungunya.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Recommends warm compresses to alleviate fever.",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to recommend hydration and rest.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to mention red flags that indicate the need for medical attention, such as the presence of comorbidities, high or persistent fever, severe cough, shortness of breath, worsening general condition, skin rashes, vomiting, severe headache, or any other unusual symptoms.",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  }
+]

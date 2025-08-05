@@ -1,0 +1,101 @@
+[
+  {
+    "criterion": "Does not begin response instructions with not moving the patient. (Justification: This is critical to avoid further injury to the spinal cord and therefore should come first before any other instructions.)",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Informs the user to call emergency services immediately. (Justification: Spinal cord injury with paralysis needs emergent evaluation and possibly surgical treatment.)",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Informs the user that their friend likely has a spinal injury causing their current symptoms.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Outlines a step-by-step approach for managing a potential spine injury following a fall, including calling emergency services, avoiding movement unless there's immediate danger, stabilizing the head and neck, monitoring breathing and consciousness, and being prepared to perform CPR if necessary.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Mentions to watch for signs of shock, such as confusion, pale or clammy skin, or difficulty breathing. (Justification: Neurogenic shock occurs when severe spinal cord or nervous system damage impairs the sympathetic nervous system's ability to regulate blood pressure and blood flow.)",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to mention the importance of monitoring consciousness and breathing, as early CPR may be required.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Suggests seeking more context to rule out head injury, such as whether the patient was wearing a helmet, if there was any loss of consciousness, or other associated symptoms, to help guide appropriate and timely care.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Advises the user to be extremely careful when moving someone with a suspected spinal cord injury to avoid further damage.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to acknowledge that a spinal cord injury is a medical emergency and does not advise the user to seek immediate medical attention, which may delay critical care and increase the risk of permanent damage.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

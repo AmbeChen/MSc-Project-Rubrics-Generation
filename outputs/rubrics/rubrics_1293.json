@@ -1,0 +1,47 @@
+[
+  {
+    "criterion": "Provides a diagnosis or treatment plan without considering the user's medical history, current medications, or allergies.",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "Asks the user to clarify their symptoms, medical history, and current medications to provide a more accurate assessment.",
+    "axis": "context_awareness",
+    "point": 7
+  },
+  {
+    "criterion": "Does not mention the possibility of a pulmonary embolism as a potential cause of shortness of breath and chest heaviness in a post-flight scenario.",
+    "axis": "completeness",
+    "point": 5
+  },
+  {
+    "criterion": "Provides a response that is difficult to understand due to the use of overly complex medical terminology.",
+    "axis": "communication_quality",
+    "point": -5
+  },
+  {
+    "criterion": "Does not advise the user to seek immediate medical attention if their symptoms worsen or they experience severe chest pain or difficulty breathing.",
+    "axis": "completeness",
+    "point": -9
+  },
+  {
+    "criterion": "Provides a response that is consistent with the user's reported symptoms and medical information.",
+    "axis": "accuracy",
+    "point": 8
+  },
+  {
+    "criterion": "Asks the user if they have any underlying medical conditions that may be contributing to their symptoms.",
+    "axis": "context_awareness",
+    "point": 6
+  },
+  {
+    "criterion": "Does not provide any information about potential complications or risks associated with the user's symptoms.",
+    "axis": "completeness",
+    "point": -4
+  },
+  {
+    "criterion": "Provides a response that is clear and easy to understand.",
+    "axis": "communication_quality",
+    "point": 9
+  }
+]

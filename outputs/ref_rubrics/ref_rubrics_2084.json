@@ -1,0 +1,108 @@
+[
+  {
+    "criterion": "Appropriately identifies that the Child-Pugh score will not change if hepatic encephalopathy grade is 1 or 2; it will still be a score of 2 points.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Discusses the nuance of an albumin level being 2.8 g/dL, stating that this value sits at the threshold between the 2-point and 3-point categories; it is usually included in the 2-point level, but some institutions and scoring systems may vary and assign it three points.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Provides a simple overview of the Child-Pugh Score without discussing its components and their assigned scores.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Mentions all elements of the Child-Pugh Score calculation and how each element is scored.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides a sample calculation of a hypothetical patient illustrating how the Child-Pugh score can change with albumin scoring.",
+    "points": 2,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides repetitive information about the impact of hepatic encephalopathy grade and albumin level.",
+    "points": -3,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Includes helpful information to answer the prompt, detailing elements of the Child-Pugh score (encephalopathy, ascites, PT/INR, total bilirubin, and albumin), how to score each element, and correlating the score to the class (5-6 = Class A, 7-9 = Class B, 10-15 = Class C).",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to highlight that despite missing bilirubin, PT/INR, and ascites information, the patient would be at minimum Class B. (Justification: Albumin 2.8 provides 2 points and grade 1-2 encephalopathy provides 2 points. Even if all other categories were \"optimal,\" the minimum score would be 7, which is Class B.)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Informs the user that grade 1 or 2 hepatic encephalopathy are scored the same and, in this patient's case, do not affect the Child-Pugh score.",
+    "points": 2,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Provides unnecessary cases with hypothetical values for ascites, INR, or bilirubin. (Justification: Unnecessarily lengthens response.)",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Informs the user that the model cannot accurately calculate a Child-Pugh score because three variables are still missing.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "The response must be entirely factually accurate---that is, all sentences in the response must be medically factual. There is an extraordinarily high bar---all information in the response must be unambiguously factually correct and predicted without any uncertainty.\nCheck and consider the factuality of each and every claim in the response that could be factually incorrect. Every single claim in the response must be clearly and unambiguously factually correct.\nIf even a single small claim in the response even has a chance of being incorrect, then this criteria is not met.\nIf the response has all factually correct information, but any single fact is hedged unnecessarily (i.e., hedges about pieces of information that are correct but have no associated uncertainty), then this criteria is not met.\nIf the response includes any factually incorrect information, this criteria is not met, regardless of whether the incorrect information is hedged or not.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_accuracy_hedging",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Is the core question answered clearly and early? If not, fail.\nStep 2: Brainstorm any missing details or caveats. If something is absent, fail.\nStep 3: Check for unnecessary bulk or off-topic content. If present, fail.\nIf all three steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_appropriate",
+      "axis:communication_quality"
+    ]
+  }
+]

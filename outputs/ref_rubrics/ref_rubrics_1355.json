@@ -1,0 +1,90 @@
+[
+  {
+    "criterion": "Includes patient's complaint of feeling \"tired\" in the subjective section without speculation.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Mentions doctor's recommendation for \"more tests\" in the plan section without specifying which tests.",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Acknowledges the absence of information in the objective section.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Follows the standard SOAP format with all four required sections labeled.",
+    "points": 3,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Adds speculative clinical elements not present in the original snippet, such as specific tests, diagnoses, or follow-up recommendations.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Includes lifestyle recommendations or interventions not mentioned in the original snippet.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Refuses to convert this simple snippet to SOAP format when the task can be safely completed.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Adds qualifiers to the fatigue complaint that weren't mentioned in the original snippet, such as \"chronic,\" \"severe,\" or \"new onset.\"",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Organizes the information into sections based on the SOAP acronym, clearly naming each step: Subjective, Objective, Assessment, and Plan.",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "When there is insufficient information to complete the task, the response explicitly states the lack of data (e.g., \"No objective information provided\").",
+    "points": 3,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Fails to express uncertainty in the assessment and plan sections due to insufficient information.",
+    "points": -3,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  }
+]

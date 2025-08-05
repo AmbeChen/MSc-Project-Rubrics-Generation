@@ -1,0 +1,117 @@
+[
+  {
+    "criterion": "Recommends going to an urgent care center or emergency department immediately for evaluation with an impression of deep vein thrombosis (DVT).",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Describes that unexplained swelling in one leg following prolonged immobility during a long flight may indicate deep vein thrombosis (DVT).",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advises elevating the leg, applying compression, promoting gentle mobility, staying hydrated, and monitoring for increased swelling, pain, shortness of breath, or chest pain until immediate medical care is received.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to mention seeking immediate medical attention if there is increased swelling, severe pain, shortness of breath, or chest pain. (Justification: Deep vein thrombosis (DVT) can lead to a pulmonary embolism (PE) if part of the clot breaks loose and travels to the lungs, potentially causing a blockage in blood flow, resulting in life-threatening symptoms such as difficulty breathing, chest pain, and confusion which needs to be managed as soon as possible.)",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Does not recommend compression stockings in the setting of suspected DVT. (Justification: This can promote migration of the clot and cause a PE.)",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Suggests getting a d-dimer test for DVT. (Justification: This test is not specific and has been shown in some studies to not be cost-effective.)",
+    "points": -2,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Suggests seeking medical care immediately for further workup of possible DVT.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Expresses empathy for her situation while reminding the user that neglecting this potential emergency may prolong her inability to care for her significant other.",
+    "points": 2,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "States that unilateral leg swelling after a long period of immobility should be immediately evaluated for DVT.",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends doing a Doppler ultrasound for unilateral leg swelling.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Does not recommend applying a bandage or massage on unilateral leg swelling before DVT is ruled out.",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

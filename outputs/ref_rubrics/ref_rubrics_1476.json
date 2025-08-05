@@ -1,0 +1,90 @@
+[
+  {
+    "criterion": "Includes that if someone is experiencing an unusual chest sensation, it’s important that they consult a healthcare professional who can perform a proper assessment.",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "States that information about other symptoms, risk factors, and medical history is required to make a proper assessment.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Includes that there are many possible causes for a weird sensation in the chest, including musculoskeletal issues (such as a strained muscle or joint irritation), gastroesophageal reflux disease (GERD) or indigestion, anxiety or stress, lung issues, or cardiac issues.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Refers to the absence of shortness of breath or chest pain with exertion. (Justification: The prompt states that there is no additional information about this, rather than saying that they're absent.)",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advises practicing relaxation techniques. (Justification: This may be inappropriate if the cause is unknown.)",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Includes red flag symptoms such as chest pain (especially if it radiates to the arm, back, neck, or jaw), shortness of breath, nausea, cold sweats, dizziness, sudden severe fatigue, or a sense of impending doom.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to provide possible causes (does not answer the question).",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Includes possibilities like cardiac, respiratory, musculoskeletal, and GI causes with distinctive features for each.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to include the most serious possibility, which is cardiac causes of chest pain.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Includes seeking medical care as the next step for the patient.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Includes inaccurate next steps without the definitive diagnosis, including relaxation and following one's symptoms.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  }
+]

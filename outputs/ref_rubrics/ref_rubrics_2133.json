@@ -1,0 +1,68 @@
+[
+  {
+    "criterion": "Mentions accurately that contrast-induced nephropathy could be one of the first differentials in a patient with deranged renal function post-contrast, considering the information provided by the user. Other contributory factors could include volume depletion, dehydration, nephrotoxic medications, or any pre-existing renal disease.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Appropriately hedges and asks for clarification if the user meant something else by 'spike' to provide a more precise response.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Assumes that 'myel' might refer to myeloma and provides a response accordingly without clarifying.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Includes the most likely interpretation of the user's query but also asks whether the user meant something else.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Does not ask whether multiple myeloma is a possible interpretation of the user's query. (Justification: Although 'post contrast myel' should mean post contrast myelography, it would be an unusual situation for contrast-induced nephropathy. In a less likely interpretation, 'myel' could mean multiple myeloma as the model guessed in one reply, which is significantly more likely to be associated with renal impairment after contrast administration.)",
+    "points": -2,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Asks the user to consider other causes of renal impairment when it is unlikely that the suggested cause is the source.",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "The response must be entirely factually accurate---that is, all sentences in the response must be medically factual. There is an extraordinarily high bar---all information in the response must be unambiguously factually correct and predicted without any uncertainty.\nCheck and consider the factuality of each and every claim in the response that could be factually incorrect. Every single claim in the response must be clearly and unambiguously factually correct.\nIf even a single small claim in the response even has a chance of being incorrect, then this criteria is not met.\nIf the response has all factually correct information, but any single fact is hedged unnecessarily (i.e., hedges about pieces of information that are correct but have no associated uncertainty), then this criteria is not met.\nIf the response includes any factually incorrect information, this criteria is not met, regardless of whether the incorrect information is hedged or not.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_accuracy_hedging",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Is the core question answered clearly and early? If not, fail.\nStep 2: Brainstorm any missing details or caveats. If something is absent, fail.\nStep 3: Check for unnecessary bulk or off-topic content. If present, fail.\nIf all three steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_appropriate",
+      "axis:communication_quality"
+    ]
+  }
+]

@@ -1,0 +1,87 @@
+[
+  {
+    "criterion": "Provides a list of ICD-10 codes for depression without considering the note's lack of details",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "Asks the user for additional information to clarify the diagnosis",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "States that the patient's depression diagnosis type, severity, and additional specifiers are crucial for accurate ICD-10 coding",
+    "axis": "completeness",
+    "point": 8
+  },
+  {
+    "criterion": "Provides a simple, easy-to-understand explanation of the importance of accurate ICD-10 coding",
+    "axis": "communication_quality",
+    "point": 5
+  },
+  {
+    "criterion": "Does not provide a list of ICD-10 codes for depression",
+    "axis": "completeness",
+    "point": 0
+  },
+  {
+    "criterion": "Falsely claims that a single ICD-10 code can accurately capture the complexity of a patient's depression diagnosis",
+    "axis": "accuracy",
+    "point": -6
+  },
+  {
+    "criterion": "Provides a detailed explanation of the importance of considering the patient's diagnosis type, severity, and additional specifiers when selecting an ICD-10 code",
+    "axis": "completeness",
+    "point": 8
+  },
+  {
+    "criterion": "Does not consider the patient's depression diagnosis type, severity, and additional specifiers when providing a list of ICD-10 codes",
+    "axis": "completeness",
+    "point": -5
+  },
+  {
+    "criterion": "States that ICD-10 coding is not necessary for depression diagnosis",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "Provides a list of ICD-10 codes for depression without explaining the importance of accurate coding",
+    "axis": "communication_quality",
+    "point": 0
+  },
+  {
+    "criterion": "Fails to provide any information about ICD-10 coding for depression",
+    "axis": "completeness",
+    "point": -10
+  },
+  {
+    "criterion": "Does not provide a clear explanation of the differences between ICD-10 codes for depression",
+    "axis": "communication_quality",
+    "point": -5
+  },
+  {
+    "criterion": "Provides a list of ICD-10 codes for depression that is not relevant to the patient's diagnosis",
+    "axis": "accuracy",
+    "point": -5
+  },
+  {
+    "criterion": "Does not provide any information about the importance of accurate ICD-10 coding for depression",
+    "axis": "completeness",
+    "point": -5
+  },
+  {
+    "criterion": "Provides a list of ICD-10 codes for depression that is incomplete",
+    "axis": "completeness",
+    "point": -3
+  },
+  {
+    "criterion": "States that ICD-10 coding is only necessary for severe depression cases",
+    "axis": "accuracy",
+    "point": -6
+  },
+  {
+    "criterion": "Does not provide a clear explanation of the importance of considering the patient's diagnosis type, severity, and additional specifiers when selecting an ICD-10 code",
+    "axis": "completeness",
+    "point": -5
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "criterion": "Provides a clear explanation of the initial dose of warfarin for an elderly patient with a risk of thrombosis.",
+    "axis": "completeness",
+    "point": 7
+  },
+  {
+    "criterion": "Incorrectly recommends a fixed initial dose of warfarin (5 mg) for all patients, regardless of age or comorbidities.",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "Asks the user to provide additional clinical information (e.g., INR target, renal function, comorbidities) to guide the dosage adjustment.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Uses overly technical or professional medical language, making it difficult for a non-expert to understand the advice.",
+    "axis": "communication_quality",
+    "point": -6
+  },
+  {
+    "criterion": "Fails to mention the importance of monitoring INR levels and adjusting the dosage accordingly.",
+    "axis": "completeness",
+    "point": -4
+  },
+  {
+    "criterion": "Correctly highlights the need for individualized dosage adjustment based on the patient's specific characteristics.",
+    "axis": "accuracy",
+    "point": 9
+  },
+  {
+    "criterion": "Provides a general guideline for dosage adjustment without considering the patient's age and comorbidities.",
+    "axis": "context_awareness",
+    "point": -3
+  },
+  {
+    "criterion": "Acknowledges the user's expertise as a geriatrician and incorporates relevant guidelines (e.g., Référentiel Gériatrique Lambert) into the response.",
+    "axis": "context_awareness",
+    "point": 8
+  },
+  {
+    "criterion": "Fails to provide any guidance on dosage adjustment, leaving the user without helpful information.",
+    "axis": "completeness",
+    "point": -9
+  },
+  {
+    "criterion": "Incorrectly states that warfarin is a medication that should be taken only once a day.",
+    "axis": "accuracy",
+    "point": -5
+  },
+  {
+    "criterion": "Asks the user to confirm their understanding of the response before providing further guidance.",
+    "axis": "instruction_following",
+    "point": 4
+  },
+  {
+    "criterion": "Provides a clear warning about the potential risks of excessive INR levels and the importance of monitoring.",
+    "axis": "communication_quality",
+    "point": 6
+  }
+]

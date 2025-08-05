@@ -1,0 +1,52 @@
+[
+  {
+    "criterion": "Provides incorrect or misleading information about the patient's symptoms or medical history.",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "Fails to ask relevant follow-up questions to clarify patient's symptoms or medical history.",
+    "axis": "context_awareness",
+    "point": -5
+  },
+  {
+    "criterion": "Provides overly complex or technical medical information without considering the patient's lay understanding.",
+    "axis": "communication_quality",
+    "point": -6
+  },
+  {
+    "criterion": "Does not consider the patient's age, hypertension, and diabetes when interpreting the ECG findings.",
+    "axis": "completeness",
+    "point": 5
+  },
+  {
+    "criterion": "Does not ask about any recent changes in the patient's lifestyle or habits.",
+    "axis": "completeness",
+    "point": 3
+  },
+  {
+    "criterion": "Provides a correct interpretation of the ECG findings, considering the patient's medical history and symptoms.",
+    "axis": "accuracy",
+    "point": 9
+  },
+  {
+    "criterion": "Does not provide any guidance on further diagnostic tests or procedures.",
+    "axis": "completeness",
+    "point": -4
+  },
+  {
+    "criterion": "Uses natural language and correct interpretation in response.",
+    "axis": "communication_quality",
+    "point": 8
+  },
+  {
+    "criterion": "Fails to consider the possibility of other underlying conditions that may be contributing to the patient's symptoms.",
+    "axis": "completeness",
+    "point": -7
+  },
+  {
+    "criterion": "Provides a clear and concise response that is easy to understand.",
+    "axis": "communication_quality",
+    "point": 6
+  }
+]

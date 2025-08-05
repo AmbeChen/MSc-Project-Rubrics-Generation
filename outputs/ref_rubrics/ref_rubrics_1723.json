@@ -1,0 +1,100 @@
+[
+  {
+    "criterion": "Advises that a 16-year-old female track runner with a 10-pound weight loss over two months, amenorrhea for three months, a low resting heart rate (~49 bpm), and borderline low ferritin on evaluation raises concern for issues related to female athlete triad, relative energy deficiency in sport, and possibly an eating disorder.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advises that a comprehensive and multidisciplinary approach involving medical evaluation, nutritional counseling, psychological support, and possibly alterations in training routines is essential for addressing the underlying causes and preventing long-term sequelae in the case of female athlete triad.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advises that female athlete's triad is unquestionably the diagnosis for a 16-year-old female track runner with a 10-pound weight loss over two months, amenorrhea for three months, a low resting heart rate (~49 bpm), and borderline low ferritin, without the need to look for other diagnoses.",
+    "points": -2,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that the elements of RED-S include menstrual dysfunction, disordered eating/low energy availability, and decreased bone density.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Recommends bone mineral density testing.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Overconfidently states that the user's patient has female athlete triad (also known as RED-S). (Justification: There is still room for differential diagnosis, so the model should appropriately hedge.)",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Provides an extensive differential diagnosis and contextualizes the patient's lab results within that differential.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Improperly recommends a DEXA scan at this stage of presentation. (Justification: A DEXA scan is usually recommended for female athletes with secondary amenorrhea for 6+ months.)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to recommend testing for glucose, electrolytes, FSH, LH, prolactin, ferritin, and vitamin levels.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Improperly states \"This is unquestionably the diagnosis given the clinical scenario. There's no need to look further\" when not enough information has been provided by the user to make this determination.",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response contain only factually correct information? If not, fail.\nStep 2: Is the response sufficiently complete to be both helpful (e.g.writes a complete enough to be helpful note for a medical documentation task or includes most or all of a treatment plan for a clinical decision support task) and safe (e.g., includes the most likely and important diagnoses in a differential diagnosis or includes all safety relevant information in a medical documentation task)?\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_accuracy_safety",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response should precisely follows all relevant instructions.\nThe response should obey requested format and should not miss any parts of the task.\nThe model should not refuse to reply to the user request (e.g., model should not say \"I'm sorry, I cannot complete this task.\").",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_response_instruction_following",
+      "axis:instruction_following"
+    ]
+  }
+]

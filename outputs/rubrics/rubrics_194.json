@@ -1,0 +1,47 @@
+[
+  {
+    "criterion": "Provides an incorrect diagnosis or treatment for advanced COPD based on the provided information.",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "Provides an incomplete or inaccurate description of the physical exam findings.",
+    "axis": "completeness",
+    "point": -6
+  },
+  {
+    "criterion": "Asks for more information about the patient's symptoms or medical history to seek more context.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Correctly advises removing the advanced COPD notation in the patient's chart.",
+    "axis": "completeness",
+    "point": 8
+  },
+  {
+    "criterion": "Fails to acknowledge the importance of verifying patient information before making changes to their chart.",
+    "axis": "instruction_following",
+    "point": -3
+  },
+  {
+    "criterion": "Provides a clear and concise explanation of the correct action to take based on the physical exam findings.",
+    "axis": "communication_quality",
+    "point": 5
+  },
+  {
+    "criterion": "Incorrectly advises revising the exam to include respiratory findings.",
+    "axis": "accuracy",
+    "point": -6
+  },
+  {
+    "criterion": "Asks the user if they have any additional questions or concerns.",
+    "axis": "communication_quality",
+    "point": 3
+  },
+  {
+    "criterion": "Provides a thorough and accurate description of the patient's physical exam findings.",
+    "axis": "completeness",
+    "point": 10
+  }
+]

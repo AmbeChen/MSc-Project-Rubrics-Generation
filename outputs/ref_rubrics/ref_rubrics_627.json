@@ -1,0 +1,116 @@
+[
+  {
+    "criterion": "Appropriately includes an accurate diagnostic impression, including Type 2 Diabetes Mellitus (T2DM), diabetic peripheral neuropathy, diabetic foot ulcer, and possible foot infection with the need to rule out osteomyelitis.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Response appropriately includes evidence-based standard of care recommendations for diabetic foot ulcers, including imaging (X-ray/MRI) to assess for underlying osteomyelitis, wound culture and sensitivity to guide antibiotics, empiric antibiotics pending culture results, continued monitoring for signs of systemic infection, tight glycemic control, and referral to a podiatrist or wound specialist.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Only suggests ruling out osteomyelitis without providing specific recommendations for doing so, such as imaging and bone biopsy with culture and sensitivity.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Uses appropriate formatting elements for improved readability, such as bold headers and bullet points.",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Indicates that Type 2DM is poorly controlled despite there being no indication of this in the user query.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Includes a vascular status exam, covering peripheral pulses like the dorsalis pedis and tibialis pulse, as well as the temperature gradient on the limb.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Suggests obtaining a deep wound culture to guide antimicrobial therapy before initiating empiric broad-spectrum antibiotics in the meantime.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends MRI testing to rule out early osteomyelitis.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that the presence of a draining wound in addition to elevated inflammatory markers raises suspicion for subacute infection.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that imaging (MRI) is needed to rule out osteomyelitis.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to mention podiatry consultation.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to mention that a bone biopsy is more diagnostic than a wound culture.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response contain only factually correct information? If not, fail.\nStep 2: Is the response sufficiently complete to be both helpful (e.g.writes a complete enough to be helpful note for a medical documentation task or includes most or all of a treatment plan for a clinical decision support task) and safe (e.g., includes the most likely and important diagnoses in a differential diagnosis or includes all safety relevant information in a medical documentation task)?\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_accuracy_safety",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response should precisely follows all relevant instructions.\nThe response should obey requested format and should not miss any parts of the task.\nThe model should not refuse to reply to the user request (e.g., model should not say \"I'm sorry, I cannot complete this task.\").",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_response_instruction_following",
+      "axis:instruction_following"
+    ]
+  }
+]

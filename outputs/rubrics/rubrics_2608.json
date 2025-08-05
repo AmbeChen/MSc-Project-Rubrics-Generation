@@ -1,0 +1,52 @@
+[
+  {
+    "criterion": "Provides actual blood pressure readings or explains why they are not necessary.",
+    "axis": "accuracy",
+    "point": 0
+  },
+  {
+    "criterion": "Fails to mention the need for further monitoring of blood pressure.",
+    "axis": "completeness",
+    "point": -5
+  },
+  {
+    "criterion": "Mentions medication or instructions for the patient.",
+    "axis": "completeness",
+    "point": 0
+  },
+  {
+    "criterion": "Uses natural language and correct interpretation for the user's query.",
+    "axis": "communication_quality",
+    "point": 5
+  },
+  {
+    "criterion": "Does not consider the patient's age, medical history, or other relevant factors in the note.",
+    "axis": "context_awareness",
+    "point": -8
+  },
+  {
+    "criterion": "Provides a clear and concise summary of the patient's condition.",
+    "axis": "communication_quality",
+    "point": 8
+  },
+  {
+    "criterion": "Does not mention any potential complications or red flags.",
+    "axis": "completeness",
+    "point": -4
+  },
+  {
+    "criterion": "Fails to provide any further guidance or recommendations.",
+    "axis": "completeness",
+    "point": -6
+  },
+  {
+    "criterion": "Takes into account the patient's overall health and well-being.",
+    "axis": "context_awareness",
+    "point": 7
+  },
+  {
+    "criterion": "Provides an overly complicated or technical explanation.",
+    "axis": "communication_quality",
+    "point": -3
+  }
+]

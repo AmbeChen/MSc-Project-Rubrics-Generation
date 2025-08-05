@@ -1,0 +1,76 @@
+[
+  {
+    "criterion": "Accurately categorizes the severity of acute pediatric asthma into mild, moderate, severe, and life-threatening. (Mild: Talks in sentences, normal mental status, O₂ sat ≥94%. Moderate: Talks in phrases, some accessory muscle use, O₂ sat 90–93%. Severe: Talks in words, marked respiratory distress, O₂ sat <90%. Life-Threatening: Drowsy, confused, unable to speak, silent chest, cyanosis.)",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Provides general guidance for managing acute exacerbation, including oxygen therapy to maintain SpO2 >94%, rapid administration of short-acting beta-agonists (SABA) via MDI with a spacer or nebulizer (albuterol/salbutamol) in all cases, addition of ipratropium bromide for moderate to severe exacerbations, early addition of oral or IV corticosteroids for moderate to severe asthma, and escalation to IV magnesium sulfate in cases of life-threatening asthma.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Demonstrates acute management of pediatric asthma more effectively through a flow chart rather than in paragraphs.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Does not mention the role of IM or subcutaneous adrenaline in cases of severe or life-threatening asthma.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Responds to a query by providing recent guidelines for acute pediatric asthma management, referencing both national and global recommendations.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides adequate detail on considerations, drug dosing, discharge criteria, and instructions to set up a protocol.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides alternate treatment and management options for rural settings with limited staffing, supplies, and infrastructure.",
+    "points": -2,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "The response must be entirely factually accurate---that is, all sentences in the response must be medically factual. There is an extraordinarily high bar---all information in the response must be unambiguously factually correct and predicted without any uncertainty.\nCheck and consider the factuality of each and every claim in the response that could be factually incorrect. Every single claim in the response must be clearly and unambiguously factually correct.\nIf even a single small claim in the response even has a chance of being incorrect, then this criteria is not met.\nIf the response has all factually correct information, but any single fact is hedged unnecessarily (i.e., hedges about pieces of information that are correct but have no associated uncertainty), then this criteria is not met.\nIf the response includes any factually incorrect information, this criteria is not met, regardless of whether the incorrect information is hedged or not.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_accuracy_hedging",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Is the core question answered clearly and early? If not, fail.\nStep 2: Brainstorm any missing details or caveats. If something is absent, fail.\nStep 3: Check for unnecessary bulk or off-topic content. If present, fail.\nIf all three steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_appropriate",
+      "axis:communication_quality"
+    ]
+  }
+]

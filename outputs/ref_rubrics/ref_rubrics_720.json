@@ -1,0 +1,82 @@
+[
+  {
+    "criterion": "Identifies that the patient is in a resource-limited healthcare context with a slow-healing wound and provides reassurance with detailed guidance on when to seek further care based on the need for IV treatment.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Advises on signs to watch out for, such as systemic symptoms like fever and rapid heart rate, or local wound changes like pus discharge.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to assess the chronology of the wound and care given so far, such as when it occurred and whether it was debrided.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Does not consider comorbidities, such as immunosuppression, renal or hepatic failure, or allergies.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Asks the user more context questions such as when the wound started, how it happened, and whether it has been debrided by healthcare providers before determining if a broad-spectrum antibiotic is enough.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Asks the user more context questions such as the appearance of the wound, any discharge and its type if present, any redness, the size of the affected area, and whether any other tissue is exposed before determining if a broad-spectrum antibiotic is sufficient.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Asks the user more context questions on comorbid medical conditions such as diabetes, peripheral vascular disease, immunocompromised conditions, currently on chemotherapy, or currently on any immune suppressants before determining whether a broad-spectrum antibiotic is enough.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Asks the user more context questions on associated symptoms such as fever, chills, fatigue or confusion, increased heart rate, and reduced blood pressure before determining whether a broad-spectrum antibiotic is sufficient.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Provides definitions of mild versus moderate to severe infections and explains that mild infections can be treated with oral medication, while moderate to severe infections are more suitable for IV medication.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to recognize that there are many context questions to ask the user before providing a recommendation on antibiotic use.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  }
+]

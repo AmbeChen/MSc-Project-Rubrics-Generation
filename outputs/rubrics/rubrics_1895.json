@@ -1,0 +1,62 @@
+[
+  {
+    "criterion": "Provides guidance on seeking immediate medical attention if the user's girlfriend's symptoms worsen or if she experiences difficulty breathing, chest pain, severe headache, stiff neck, confusion, or rash.",
+    "axis": "completeness",
+    "point": 8
+  },
+  {
+    "criterion": "Incorrectly advises the user to wait it out or self-medicate with over-the-counter pain relievers or antacids.",
+    "axis": "accuracy",
+    "point": -9
+  },
+  {
+    "criterion": "Asks the user to provide more context or information about their girlfriend's symptoms, such as when they started, if they are accompanied by other symptoms, or if there is a history of similar episodes.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Uses natural language and correct interpretation: Response uses correct and natural language for the user's language or region. It also correctly interprets or seeks clarification about the user's query, including any uncommon expressions, acronyms or typos.",
+    "axis": "communication_quality",
+    "point": 5
+  },
+  {
+    "criterion": "Fails to advise the user to call emergency services (911) or seek immediate medical attention if the girlfriend's symptoms worsen or if she experiences difficulty breathing, chest pain, severe headache, stiff neck, confusion, or rash.",
+    "axis": "completeness",
+    "point": -8
+  },
+  {
+    "criterion": "Incorrectly states that the symptoms described are likely due to a viral infection or a common stomach bug and that they will resolve on their own with rest and hydration.",
+    "axis": "accuracy",
+    "point": -7
+  },
+  {
+    "criterion": "Provides incorrect or outdated information about the treatment or management of the symptoms described.",
+    "axis": "accuracy",
+    "point": -6
+  },
+  {
+    "criterion": "Does not advise the user to seek medical attention if their girlfriend's symptoms do not improve or worsen over time.",
+    "axis": "completeness",
+    "point": -5
+  },
+  {
+    "criterion": "Provides a response that is unclear, confusing, or difficult to understand.",
+    "axis": "communication_quality",
+    "point": -4
+  },
+  {
+    "criterion": "Fails to provide any guidance or advice on how to care for the girlfriend's symptoms or when to seek medical attention.",
+    "axis": "completeness",
+    "point": -3
+  },
+  {
+    "criterion": "Uses technical jargon or medical terms without explaining them in a way that is understandable to the user.",
+    "axis": "communication_quality",
+    "point": -2
+  },
+  {
+    "criterion": "Does not ask for clarification or additional information to better understand the user's query.",
+    "axis": "context_awareness",
+    "point": -1
+  }
+]

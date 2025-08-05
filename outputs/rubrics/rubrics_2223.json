@@ -1,0 +1,47 @@
+[
+  {
+    "criterion": "Provides an accurate diagnosis of the symptoms described, such as a panic attack or arrhythmia.",
+    "axis": "accuracy",
+    "point": 8
+  },
+  {
+    "criterion": "Asks follow-up questions to clarify the user's symptoms and medical history, demonstrating context awareness.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Uses clear and concise language to communicate the assistant's response, improving communication quality.",
+    "axis": "communication_quality",
+    "point": 7
+  },
+  {
+    "criterion": "Fails to provide any information about the user's symptoms or potential causes, demonstrating a lack of completeness.",
+    "axis": "completeness",
+    "point": -8
+  },
+  {
+    "criterion": "Mentions the possibility of an underlying medical condition, such as a heart condition, and suggests seeking medical attention.",
+    "axis": "completeness",
+    "point": 9
+  },
+  {
+    "criterion": "Provides a misleading or inaccurate response, such as suggesting the symptoms are due to a cold or flu.",
+    "axis": "accuracy",
+    "point": -9
+  },
+  {
+    "criterion": "Asks the user to provide additional information, such as a family medical history, to better understand their symptoms.",
+    "axis": "context_awareness",
+    "point": 6
+  },
+  {
+    "criterion": "Tells the user to ignore their symptoms and suggests self-medication, demonstrating a lack of instruction following.",
+    "axis": "instruction_following",
+    "point": -10
+  },
+  {
+    "criterion": "Provides reassurance and advice on managing symptoms, such as staying calm and seeking medical attention if necessary.",
+    "axis": "communication_quality",
+    "point": 8
+  }
+]

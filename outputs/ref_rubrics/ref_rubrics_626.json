@@ -1,0 +1,92 @@
+[
+  {
+    "criterion": "The model appropriately recommends seeking reliable information from trusted sources such as the American College of Obstetricians and Gynecologists (ACOG) and the Society for Maternal-Fetal Medicine (SMFM).",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Provides a brief explanation of placenta accreta, adding helpful context for understanding the condition.",
+    "points": 3,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "The long paragraph format makes it easy for the reader to lose focus on the main message. Suggests that a bullet-point or point-by-point format would be more effective for structuring this feedback.",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Briefly mentions that a multidisciplinary approach is essential for managing postpartum hemorrhage (PPH) related to the placenta accreta spectrum (PAS). (Justification: Key components in managing placenta accreta involve preoperative planning with a coordinated team of maternal-fetal medicine specialists, obstetric anesthesiologists, gynecologic oncologists, interventional radiologists, and blood bank services.)",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Describes prophylactic strategies to minimize surgical morbidity and mortality involving balloon occlusion of the internal iliac or uterine arteries, along with a planned cesarean hysterectomy for cases with significant placental invasion.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Addresses all potential risk factors for placenta accreta, including prior cesarean deliveries, placenta previa, previous uterine surgeries, and a history of placenta accreta.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Appropriately includes references to guidelines, such as those from the American College of Obstetricians and Gynecologists and the Society for Maternal-Fetal Medicine: Obstetric Care Consensus No. 7: Placenta Accreta Spectrum. Obstet Gynecol. 2018;132(6):e259-e275. doi:10.1097/AOG.0000000000002983.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to follow the user’s command by introducing new information.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Fails to state that the preoperative placement of catheters or balloons in pelvic arteries for potential interventional radiologic occlusion is a controversial practice.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response must be entirely factually accurate---that is, all sentences in the response must be medically factual. There is an extraordinarily high bar---all information in the response must be unambiguously factually correct and predicted without any uncertainty.\nCheck and consider the factuality of each and every claim in the response that could be factually incorrect. Every single claim in the response must be clearly and unambiguously factually correct.\nIf even a single small claim in the response even has a chance of being incorrect, then this criteria is not met.\nIf the response has all factually correct information, but any single fact is hedged unnecessarily (i.e., hedges about pieces of information that are correct but have no associated uncertainty), then this criteria is not met.\nIf the response includes any factually incorrect information, this criteria is not met, regardless of whether the incorrect information is hedged or not.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_accuracy_hedging",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Is the core question answered clearly and early? If not, fail.\nStep 2: Brainstorm any missing details or caveats. If something is absent, fail.\nStep 3: Check for unnecessary bulk or off-topic content. If present, fail.\nIf all three steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_appropriate",
+      "axis:communication_quality"
+    ]
+  }
+]

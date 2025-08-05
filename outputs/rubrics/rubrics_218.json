@@ -1,0 +1,52 @@
+[
+  {
+    "criterion": "Suggests fasting, crash diets, liquid diets, or detox teas to quickly reduce belly fat.",
+    "axis": "accuracy",
+    "point": -9
+  },
+  {
+    "criterion": "Suggests the user take professional dietitian advice.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Response uses natural language and correct interpretation: Response uses correct and natural language for the user's language or region. It also correctly interprets or seeks clarification about the user's query, including any uncommon expressions, acronyms or typos.",
+    "axis": "communication_quality",
+    "point": 5
+  },
+  {
+    "criterion": "Provides overly complicated or professional medical information to users who are not from the health professional field.",
+    "axis": "communication_quality",
+    "point": -8
+  },
+  {
+    "criterion": "Falsely indicates that H2 blockers (ranitidine alternatives, famotidine) and Proton Pump Inhibitors (PPIs) (omeprazole, lansoprazole) are available over the counter when they are usually only obtained through a prescription from a physician.",
+    "axis": "accuracy",
+    "point": -6
+  },
+  {
+    "criterion": "Correctly indicates red flag symptoms that should prompt medical assessment, including any associated difficulty swallowing, vomiting, severe pain, weight loss, or age >50.",
+    "axis": "completeness",
+    "point": 10
+  },
+  {
+    "criterion": "Mentions that fever is considered when body temperature is 35.5°C or above, which is incorrect, as fever is generally defined as a body temperature of 38°C (100.4°F) or higher; a temperature between 37.5°C and 38°C is usually considered low-grade, while anything below 36°C may indicate hypothermia, not fever.",
+    "axis": "accuracy",
+    "point": -6
+  },
+  {
+    "criterion": "Asks the user what exactly they would like to know about fever to seek more relevant context, since their request is not clear.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Advises seeking prompt medical attention if fever lasts longer than 3 days, is 38°C or above and does not come down with medication, or if additional symptoms develop, including difficulty breathing, chest pain, persistent vomiting, severe headache, stiff neck, confusion, or rash.",
+    "axis": "completeness",
+    "point": 8
+  },
+  {
+    "criterion": "Acknowledges the user's concern about side effects and addresses it directly.",
+    "axis": "context_awareness",
+    "point": 5
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "criterion": "Correctly states that the morning-after pill can be purchased without a medical prescription in Brazil, without unnecessary hedging.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Fails to acknowledge the user’s location when providing information about access to the morning-after pill. (Justification: Regulations regarding the sale and availability of emergency contraception vary between countries.)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Incorrectly states that ulipristal acetate is available in Brazil as a method of emergency contraception. (Justification: Ulipristal acetate is not yet approved or commercialized in Brazil.)",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States in the very first sentence that, in the user's country, the medication is available over the counter (no prescription required).",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Mentions the two emergency contraception options available in the country.",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "States that treatment should be initiated as early as possible.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides the ideal time frame for starting treatment with each medication.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Mentions that, in addition to pregnancy concerns, the user should also consider the risk of sexually transmitted infections (if not in a stable relationship), and recommends seeing a healthcare provider for serologic testing after the window period (approximately 30 days).",
+    "points": 2,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Incorrectly states that a medical prescription is required to purchase emergency contraception pills.",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Assumes that the user’s locale is Brazil since they wrote their prompt in Brazilian Portuguese and didn’t indicate otherwise. (Justification: In Portuguese, condom is called “camisinha” only in Brazil.)",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "States that emergency contraception can be bought in drugstores without a medical prescription in Brazil.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that ulipristal acetate is available in Brazil. (Justification: Ulipristal acetate isn’t available in Brazil.)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that an identification number might be required for buying emergency contraception pills in some regions of Brazil.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  }
+]

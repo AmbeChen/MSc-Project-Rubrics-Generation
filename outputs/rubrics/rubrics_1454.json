@@ -1,0 +1,42 @@
+[
+  {
+    "criterion": "Provides a diagnosis without considering the user's query.",
+    "axis": "completeness",
+    "point": -8
+  },
+  {
+    "criterion": "Incorrectly states that left calf swelling, redness, and slight fever are not suspicious for DVT.",
+    "axis": "accuracy",
+    "point": -9
+  },
+  {
+    "criterion": "Asks for additional symptoms before providing potential diagnoses.",
+    "axis": "context_awareness",
+    "point": 6
+  },
+  {
+    "criterion": "Uses clear and natural language to explain potential diagnoses.",
+    "axis": "communication_quality",
+    "point": 7
+  },
+  {
+    "criterion": "Fails to provide any potential diagnoses for left calf swelling, redness, and slight fever.",
+    "axis": "completeness",
+    "point": -10
+  },
+  {
+    "criterion": "Correctly explains that left calf swelling, redness, and slight fever could be symptoms of both DVT and cellulitis.",
+    "axis": "accuracy",
+    "point": 9
+  },
+  {
+    "criterion": "Advises seeking medical attention if symptoms persist or worsen.",
+    "axis": "completeness",
+    "point": 8
+  },
+  {
+    "criterion": "Incorrectly states that the user's symptoms are not severe enough to warrant medical attention.",
+    "axis": "accuracy",
+    "point": -8
+  }
+]

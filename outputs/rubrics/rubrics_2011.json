@@ -1,0 +1,47 @@
+[
+  {
+    "criterion": "Provides a plan for treatment or diagnosis without considering the user's role as a clinical pharmacist.",
+    "axis": "context_awareness",
+    "point": -5
+  },
+  {
+    "criterion": "Incorrectly recommends antiviral medication for a patient with a 3-day-old fever, cough, and chills without considering vaccination status or recent exposures.",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "Does not consider the patient's recent exposures and vaccination status in the diagnosis and treatment plan.",
+    "axis": "completeness",
+    "point": 8
+  },
+  {
+    "criterion": "Uses technical jargon or overly complicated language that may not be easily understandable for a clinical pharmacist.",
+    "axis": "communication_quality",
+    "point": -4
+  },
+  {
+    "criterion": "Provides insufficient guidance on what to watch for if the patient's symptoms worsen or improve, and does not outline precautionary measures.",
+    "axis": "completeness",
+    "point": 5
+  },
+  {
+    "criterion": "Incorrectly states that COVID-19 and influenza are the only possible causes of the patient's symptoms.",
+    "axis": "accuracy",
+    "point": -6
+  },
+  {
+    "criterion": "Asks the user to provide more information about the patient's symptoms, medical history, or recent exposures to better tailor the diagnosis and treatment plan.",
+    "axis": "context_awareness",
+    "point": 7
+  },
+  {
+    "criterion": "Clearly outlines the importance of considering the patient's vaccination status, recent exposures, and medical history in the diagnosis and treatment plan.",
+    "axis": "completeness",
+    "point": 9
+  },
+  {
+    "criterion": "Does not provide any information on the patient's symptoms, diagnosis, or treatment plan.",
+    "axis": "completeness",
+    "point": -9
+  }
+]

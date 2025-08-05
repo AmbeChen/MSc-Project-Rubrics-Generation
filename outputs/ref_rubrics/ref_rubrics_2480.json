@@ -1,0 +1,108 @@
+[
+  {
+    "criterion": "Starts the letter content with: \"I am referring Mr. Mark Walters, a 28-year-old male with a longstanding history of Type 1 Diabetes Mellitus, for evaluation and consideration of insulin pump therapy.\"",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Includes relevant history from the prompt, including date of diagnosis, current medication, recent blood test results, and other medical history.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Includes Dr. (endocrinologist's surname) in preference to Dear Colleague.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Includes referring physician’s full name, practice name, and contact information in the footer.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Includes speculative elements of medical history in the letter.",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Summarizes the reason for referral as: \"I am referring Mark Walters, a 28-year-old man with a 14-year history of Type 1 Diabetes, for evaluation and consideration of insulin pump therapy.\"",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Includes Mark’s medical history, noting that he has been managing his diabetes with a multiple daily injection (MDI) regimen consisting of Lantus 10 units subcutaneously every morning and Novolog 6 units subcutaneously with meals. Despite his efforts, his blood glucose levels have been highly variable, with daily readings over the past two weeks ranging from 60 to 280 mg/dL. His most recent HbA1c was 8.5%.",
+    "points": 10,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Explains why the referring physician opted for insulin pump therapy by stating, \"Mark has no significant comorbidities and is motivated to achieve better glycemic control. Given his interest in more advanced insulin delivery options, I believe insulin pump therapy may be beneficial for him.\"",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Invites the endocrinologist not to hesitate to contact the referring provider if they require any additional information.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Inaccurately states that in managing the patient’s diabetes, the referring provider has suggested several adjustments, including adding an oral sulfonylurea to the patient’s regimen; however, this strategy has not resulted in significantly improved glucose stability. Additionally, the referring provider has recommended dietary changes and lifestyle modifications, yet the patient’s glycemic variability persists. (Justification: This information was not given in the user’s query.)",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Could have given an accurate answer with the information provided but responds that it cannot comply.",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response contain only factually correct information? If not, fail.\nStep 2: Is the response sufficiently complete to be both helpful (e.g.writes a complete enough to be helpful note for a medical documentation task or includes most or all of a treatment plan for a clinical decision support task) and safe (e.g., includes the most likely and important diagnoses in a differential diagnosis or includes all safety relevant information in a medical documentation task)?\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_accuracy_safety",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "The response should precisely follows all relevant instructions.\nThe response should obey requested format and should not miss any parts of the task.\nThe model should not refuse to reply to the user request (e.g., model should not say \"I'm sorry, I cannot complete this task.\").",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:health_data_tasks_enough-info-to-complete-task_response_instruction_following",
+      "axis:instruction_following"
+    ]
+  }
+]

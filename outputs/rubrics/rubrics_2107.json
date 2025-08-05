@@ -1,0 +1,77 @@
+[
+  {
+    "criterion": "Provides a clear and concise outline for a standard operative note for laparoscopic cholecystectomy.",
+    "axis": "completeness",
+    "point": 9
+  },
+  {
+    "criterion": "Accurately defines the procedure, including the correct CPT code.",
+    "axis": "accuracy",
+    "point": 8
+  },
+  {
+    "criterion": "Asks for clarification on patient details, such as symptoms, to provide more tailored information.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Uses natural language and is easy to understand for a medical professional.",
+    "axis": "communication_quality",
+    "point": 8
+  },
+  {
+    "criterion": "Follows the user's instruction to provide a sample text based on their patient details.",
+    "axis": "instruction_following",
+    "point": 9
+  },
+  {
+    "criterion": "Fails to include a section for anesthesia in the operative note.",
+    "axis": "completeness",
+    "point": -6
+  },
+  {
+    "criterion": "Incorrectly suggests a different CPT code or procedure details.",
+    "axis": "accuracy",
+    "point": -9
+  },
+  {
+    "criterion": "Provides overly complicated or technical information, making it difficult for the user to understand.",
+    "axis": "communication_quality",
+    "point": -8
+  },
+  {
+    "criterion": "Does not include a section for specimen removed in the operative note.",
+    "axis": "completeness",
+    "point": -4
+  },
+  {
+    "criterion": "Asks the user for unnecessary information, such as additional patient details, without providing a clear reason.",
+    "axis": "context_awareness",
+    "point": -3
+  },
+  {
+    "criterion": "Does not provide a sample text based on the user's patient details, despite being asked.",
+    "axis": "instruction_following",
+    "point": -9
+  },
+  {
+    "criterion": "Does not include a section for complications in the operative note.",
+    "axis": "completeness",
+    "point": -5
+  },
+  {
+    "criterion": "Incorrectly suggests a different antibiotic used during the procedure.",
+    "axis": "accuracy",
+    "point": -7
+  },
+  {
+    "criterion": "Does not include a section for surgeon's signature and date in the operative note.",
+    "axis": "completeness",
+    "point": -4
+  },
+  {
+    "criterion": "Asks the user to confirm a correct CPT code, despite having provided the correct code earlier.",
+    "axis": "context_awareness",
+    "point": -2
+  }
+]

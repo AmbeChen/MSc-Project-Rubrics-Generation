@@ -1,0 +1,42 @@
+[
+  {
+    "criterion": "Provides a correct medication name for the user's heartburn symptoms",
+    "axis": "accuracy",
+    "point": 8
+  },
+  {
+    "criterion": "Asks for more information about the user's previous treatment or symptoms to provide a more accurate recommendation",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Does not recommend taking a medication without consulting a doctor, especially if the user forgot the name",
+    "axis": "instruction_following",
+    "point": 9
+  },
+  {
+    "criterion": "Does not provide a dosage recommendation without considering the user's age, weight, and medical history",
+    "axis": "accuracy",
+    "point": -8
+  },
+  {
+    "criterion": "Provides a clear explanation of how the medication works and potential side effects",
+    "axis": "communication_quality",
+    "point": 8
+  },
+  {
+    "criterion": "Does not mention the importance of following a healthy diet and lifestyle for heartburn management",
+    "axis": "completeness",
+    "point": -4
+  },
+  {
+    "criterion": "Correctly advises the user to consult a doctor if their heartburn symptoms worsen or persist",
+    "axis": "completeness",
+    "point": 9
+  },
+  {
+    "criterion": "Does not recommend a medication that is contraindicated for the user's medical conditions",
+    "axis": "accuracy",
+    "point": -9
+  }
+]

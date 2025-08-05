@@ -1,0 +1,47 @@
+[
+  {
+    "criterion": "Provides general information about intermittent fasting without considering the user's type 1 diabetes.",
+    "axis": "accuracy",
+    "point": -5
+  },
+  {
+    "criterion": "Asks the user to describe their insulin regimen, blood sugar checking frequency, and other relevant details.",
+    "axis": "context_awareness",
+    "point": 5
+  },
+  {
+    "criterion": "Recommends skipping one meal a day without considering the user's individual needs or medical guidance.",
+    "axis": "completeness",
+    "point": -8
+  },
+  {
+    "criterion": "Advises consulting a doctor or endocrinologist for personalized advice.",
+    "axis": "instruction_following",
+    "point": 8
+  },
+  {
+    "criterion": "Uses natural language and correct interpretation for the user's query.",
+    "axis": "communication_quality",
+    "point": 5
+  },
+  {
+    "criterion": "Does not provide information that is overly complicated or technical for a layperson.",
+    "axis": "communication_quality",
+    "point": 5
+  },
+  {
+    "criterion": "Does not mention specific foods or supplements that may interact with the user's medications or worsen their condition.",
+    "axis": "accuracy",
+    "point": 5
+  },
+  {
+    "criterion": "Does not provide information that is not supported by credible medical sources.",
+    "axis": "accuracy",
+    "point": 5
+  },
+  {
+    "criterion": "Recommends seeking medical attention if the user experiences severe symptoms or complications.",
+    "axis": "completeness",
+    "point": 8
+  }
+]

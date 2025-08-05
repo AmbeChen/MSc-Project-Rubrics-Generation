@@ -1,0 +1,84 @@
+[
+  {
+    "criterion": "Includes information that this is an urgent situation, that the patient meets criteria for peritoneal dialysis-associated peritonitis (clinical features of peritonitis with cloudy dialysate and abdominal pain, >100 white blood cells with >50% PMNs in dialysate), that the patient should have dialysate sent for culture, that the center should immediately instill intraperitoneal antibiotics (first-generation cephalosporin or vancomycin AND third-generation cephalosporin or aminoglycoside) into the peritoneum, and that the patient needs careful evaluation to determine if hospitalization is warranted.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Encourages frequent evaluation and consideration of hospitalization based on the patient's vitals, severity of abdominal pain, and tolerance of exchanges.",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advises narrowing antibiotics based on dialysate culture results when possible.",
+    "points": 3,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Confirms that the situation is concerning and needs urgent management as it likely points towards peritonitis, which could be life-threatening with complications like sepsis and peritoneal membrane damage.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "States the criteria for diagnosing peritonitis in a PD patient: Dialysate WBC ≥ 100/µL with ≥ 50% neutrophils, along with clinical signs and symptoms of peritonitis (abdominal pain, cloudy effluent, fever).",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Outlines step-by-step management of peritonitis, including sending the dialysate for microbiology testing immediately (but not delaying treatment), starting empirical antibiotic treatment, stopping routine PD exchanges, avoiding further PD flushes until treatment is initiated, and consulting nephrology.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Dismisses the concerns and advises the user to just monitor the condition.",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Does not address the concerns and instructs the user to refer to medical care. (Justification: It does not follow instructions as the user is a healthcare practitioner already.)",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "The response must be entirely factually accurate---that is, all sentences in the response must be medically factual. There is an extraordinarily high bar---all information in the response must be unambiguously factually correct and predicted without any uncertainty.\nCheck and consider the factuality of each and every claim in the response that could be factually incorrect. Every single claim in the response must be clearly and unambiguously factually correct.\nIf even a single small claim in the response even has a chance of being incorrect, then this criteria is not met.\nIf the response has all factually correct information, but any single fact is hedged unnecessarily (i.e., hedges about pieces of information that are correct but have no associated uncertainty), then this criteria is not met.\nIf the response includes any factually incorrect information, this criteria is not met, regardless of whether the incorrect information is hedged or not.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_accuracy_hedging",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Is the core question answered clearly and early? If not, fail.\nStep 2: Brainstorm any missing details or caveats. If something is absent, fail.\nStep 3: Check for unnecessary bulk or off-topic content. If present, fail.\nIf all three steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:complex_responses_detailed_appropriate",
+      "axis:communication_quality"
+    ]
+  }
+]

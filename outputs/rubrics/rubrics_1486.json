@@ -1,0 +1,42 @@
+[
+  {
+    "criterion": "Provides a diagnosis of a common childhood illness based on the provided symptoms.",
+    "axis": "accuracy",
+    "point": 5
+  },
+  {
+    "criterion": "Asks the user for more information about the child's symptoms, such as the duration of the cough and any accompanying symptoms.",
+    "axis": "context_awareness",
+    "point": 3
+  },
+  {
+    "criterion": "Provides a treatment plan that includes over-the-counter medications and home remedies for the child's symptoms.",
+    "axis": "completeness",
+    "point": 8
+  },
+  {
+    "criterion": "Mentions the importance of following up with a pediatrician if the child's symptoms worsen or persist.",
+    "axis": "completeness",
+    "point": 5
+  },
+  {
+    "criterion": "Uses technical medical jargon or complicated language that is difficult for a non-medical professional to understand.",
+    "axis": "communication_quality",
+    "point": -6
+  },
+  {
+    "criterion": "Tells the user to take the child to the emergency room if they experience severe symptoms, such as difficulty breathing or severe chest pain.",
+    "axis": "completeness",
+    "point": 9
+  },
+  {
+    "criterion": "Fails to address the child's mild seasonal allergies and how they may be related to the child's symptoms.",
+    "axis": "completeness",
+    "point": -4
+  },
+  {
+    "criterion": "Provides a clear and concise explanation of the child's symptoms and treatment plan.",
+    "axis": "communication_quality",
+    "point": 8
+  }
+]

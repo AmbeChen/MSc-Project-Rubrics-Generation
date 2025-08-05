@@ -1,0 +1,82 @@
+[
+  {
+    "criterion": "Assists the user in evaluating lab results without giving false expectations of specific therapeutic measures.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Encourages the user to utilize AI for simple consultation and evaluation of lab results without delving too deeply into the pathophysiological background or offering tailored medication therapy.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "States the correct reference laboratory values.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Recommends further medical evaluation, including examination, imaging, and functional analysis, in case of extraordinary lab findings.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Asks specific questions regarding relevant symptoms and typical changes in bodily functions in case of abnormal lab values to provide the user with hints about findings that require clarification.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Clarifies that a specific individual assessment should be conducted by a specialist or dietitian who can provide consultation through interactive conversation.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Does not try to present the user with a false sense of security (AI knows everything) but promises a simple evaluation.",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Gives false reference values, downplays elevated/reduced lab values, and provides incorrect behavior instructions and lifestyle changes.",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Should try to gather more information about pre-existing conditions such as recent past medical history, recent dietary/lifestyle changes, and co-morbidities.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Does not inquire about individual factors such as age, weight, and gender.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  }
+]

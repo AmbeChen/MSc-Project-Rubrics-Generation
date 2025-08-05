@@ -1,0 +1,109 @@
+[
+  {
+    "criterion": "Provides accurate information about the standard timeline for mild concussion recovery, including the initial 24-48 hour rest period followed by a gradual return to activities.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Explains the gradual return-to-activity protocol, including the progression from light activities to more demanding ones based on symptom response.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Mentions that full recovery from a mild concussion typically takes 7-10 days for most people but can vary between individuals.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Advises monitoring for symptom recurrence or worsening when resuming activities.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Includes appropriate guidance for returning to specific activities (work/school vs. sports/physical activities).",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to mention that athletes or those at risk of head injury should receive medical clearance before returning to sports or high-risk activities.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides inaccurate recovery timeframes, such as suggesting an immediate return to full activities or unnecessarily prolonged complete rest.",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Advises seeking immediate medical attention if experiencing severe ongoing headaches, repeated vomiting, confusion or slurred speech, reduced alertness, or significant neck pain or stiffness. (Justification: These signs may point to serious conditions such as intracranial bleeding, which require prompt evaluation and treatment.)",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides standard care recommendations for managing a mild concussion. (Justification: Important measures for a mild concussion include physical and cognitive rest, gradually returning to daily routines, and monitoring for persistent headaches, behavioral changes, vision issues, and balance problems.)",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to mention the importance of seeking immediate medical attention if experiencing persistent severe headaches, repeated vomiting, confusion or slurred speech, decreased alertness, or significant neck pain or stiffness. (Justification: These symptoms could indicate serious conditions like intracranial bleeding, which require urgent medical evaluation and treatment.)",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "The response has no factually incorrect information.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_accurate",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1. Does the response explicitly and directly answer the primary question or request? If not, fail. (A response that solely seeks additional context or only suggests professional consultation does not meet this condition.)\nStep 2: Does the response hedge unnecessarily by expressing uncertainty through linguistic uncertainty (e.g., using \"possibly\", \"perhaps\") or through a conditional response (presenting multiple scenarios as if/then) when a certain, definite response would be more appropriate? If not, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_hedges",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Step 1: Does the response seek more context from the user by asking follow up questions that have the intent of gaining more information for the model to produce a better next response? If yes, fail.\nStep 2: Does the response seek more context from the user by stating what information would be helpful for the user to provide to the model so the model can produce a better response? If yes, fail.\nIf both steps pass, mark criteria_met = true.\nIf any of the steps fail, mark criteria_met = false.",
+    "points": 5,
+    "tags": [
+      "level:cluster",
+      "cluster:hedging_no-uncertainty_seeks_context",
+      "axis:context_awareness"
+    ]
+  }
+]

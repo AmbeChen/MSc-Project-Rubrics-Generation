@@ -1,0 +1,74 @@
+[
+  {
+    "criterion": "Includes all possible differential diagnoses for non-resolving mastitis, such as appropriate choice of first-line antibiotics, possibility of MRSA infection, compliance, and possible complications like abscess.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Advises using an ultrasound scan to detect complications like abscess formation and its further management, such as aspiration or incision and drainage.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Repeats what is already mentioned in the initial sentence in the summary or recommendations, such as MRSA, ultrasound use, and culturing the milk.",
+    "points": -1,
+    "tags": [
+      "level:example",
+      "axis:instruction_following"
+    ]
+  },
+  {
+    "criterion": "Mentions the possibility of rarer cases like fungal infections.",
+    "points": -1,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Gives caution on the use of Trimethoprim-Sulfamethoxazole during breastfeeding if the baby is less than 1 month old due to the risk of raised bilirubin.",
+    "points": 3,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Gives a detailed description of steps to consider in lactational mastitis unresponsive to initial antibiotics, including ensuring proper selection of antibiotics and adherence, evaluating for breast abscess, antibiotic resistance, and other potential differential diagnoses such as inflammatory breast cancer and granulomatous mastitis.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Gives a clear recommendation of subsequent actions, including obtaining a breast ultrasound, breast milk culture, or change of antibiotics (MRSA coverage or culture-guided), and referral for imaging and biopsy if breast cancer is suspected.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Fails to provide details of clinical context that could suggest unusual but possible differential diagnoses (granulomatous mastitis, tuberculous mastitis), including the presence of a breast lump, sinus tract, ulceration of the breast skin, epidemiologic significance, and refractoriness to appropriate antibiotics.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Expresses uncertainty about obtaining an ultrasound for evaluation of a possible breast abscess. (Justification: Breast ultrasound is recommended if mastitis fails to respond to antibiotics after 48 to 72 hours of initiation.)",
+    "points": -8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  }
+]

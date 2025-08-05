@@ -1,0 +1,114 @@
+[
+  {
+    "criterion": "States that as of 2025, there is no therapy with 100% efficacy. (Justification: While this is still a true statement, the model was not trained on data past October 2023; pretending it is completely up to date may lead the user to inaccurate information.)",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Includes the knowledge date cutoff in the response. (Justification: Helpful to give user information as to when the data was last updated.)",
+    "points": 3,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Suggests that the user reference current literature for updates beyond the last knowledge update. (Justification: Helpful to give user direction for most up-to-date information.)",
+    "points": 4,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Gives rationale for why claims of 100% efficacy are likely false, including bacterial diversity, patient factors, and real-world information based on clinical trial results. (Justification: Helpful to give user explanation why claims may be misleading.)",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Advises the user that there is a lack of evidence supporting a 100% success rate for any known antibiotic-resistant infection treatments.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Informs the user that the last knowledge update was in October 2023.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Presents emerging treatments (e.g., CRISPR or phage therapy) as definitively effective rather than experimental.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Provides overly technical information without clear explanations for a general audience.",
+    "points": -5,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Claims that any one antibiotic can guarantee to work 100% of the time.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that no single novel therapy can guarantee infection treatment 100% of the time.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Expresses appropriate uncertainty about the effectiveness of novel therapies thus far, namely phage therapy, for the treatment of infections.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Mentions current advancements in treating antibiotic-resistant infections, such as phage therapy, CRISPR-based therapies, antimicrobial peptides, newer antibiotics, and immunotherapy.",
+    "points": 5,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Invites the user to share details or sources of such claims (i.e., 100% effective treatment for antibiotic-resistant infections) for review and verification.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Makes a definitive claim that there are 100% effective treatments for antibiotic-resistant infections. (Justification: Clinical treatments for infections are very unlikely to achieve 100% efficacy due to individual health differences, genetics, bacterial resistance, infection severity, and other factors.)",
+    "points": -10,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  }
+]

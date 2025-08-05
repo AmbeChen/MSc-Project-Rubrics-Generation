@@ -1,0 +1,90 @@
+[
+  {
+    "criterion": "Does not seek the most important context by asking if it was refrigerated within 2 hours of cooking, if it has been kept in an airtight container, if there are signs of spoilage, or if the temperature was below 4°C.",
+    "points": -7,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "Seeks context that is not most important by asking if the chicken went straight into the fridge after cooking, or sat out for a while first. (Justification: It should be more clear by asking the duration it was outside the fridge.)",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:context_awareness"
+    ]
+  },
+  {
+    "criterion": "States that if you cooked the chicken thoroughly in the first place and stored it in a sealed container, you can typically keep it in the fridge for around five to six days. (Justification: Leftover cooked chicken is generally safe to eat for 3 to 4 days when properly refrigerated. The USDA recommends storing cooked chicken at 4.4°C or less, and using it within that time frame.)",
+    "points": -9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Recommends that refrigeration is key and notes that leaving chicken out at room temperature for more than 2 hours can allow bacteria to multiply rapidly.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "States that if the chicken smells off, looks slimy, or has a strange color, it's best to discard it.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Makes the response inappropriately detailed by discussing future leftovers and frozen cooked chicken.",
+    "points": -6,
+    "tags": [
+      "level:example",
+      "axis:communication_quality"
+    ]
+  },
+  {
+    "criterion": "Provides a clear and direct answer to the user's question, stating that cooked chicken is generally safe to eat for 3 to 4 days when stored in the refrigerator at a temperature of 40°F (4°C) or below.",
+    "points": 9,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  },
+  {
+    "criterion": "Emphasizes the importance of proper food storage and handling practices, such as storing chicken in a covered, airtight container and maintaining a consistent refrigerator temperature.",
+    "points": 8,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Recommends checking the chicken for visible signs of spoilage, such as an off smell, slimy texture, or mold, before consuming it, even if it is within the safe storage timeframe.",
+    "points": 7,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides additional guidance on the safe handling and reheating of leftover chicken, such as reheating it to an internal temperature of 165°F (74°C) to prevent foodborne illness.",
+    "points": 6,
+    "tags": [
+      "level:example",
+      "axis:completeness"
+    ]
+  },
+  {
+    "criterion": "Provides inaccurate or outdated information about food safety, such as stating that cooked chicken is safe to eat for an extended period without proper refrigeration.",
+    "points": -4,
+    "tags": [
+      "level:example",
+      "axis:accuracy"
+    ]
+  }
+]
