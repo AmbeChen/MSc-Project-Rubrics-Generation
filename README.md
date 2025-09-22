@@ -48,7 +48,6 @@ Interactive (Jupyter):
 1. Open `data_filter.ipynb`
 2. Run all cells to produce filtered subsets if you need them (by default it reads/writes inside `data/`).
 
-Headless (no UI):
 ```bash
 jupyter nbconvert --to notebook --execute data_filter.ipynb --inplace
 ```
@@ -60,7 +59,6 @@ jupyter nbconvert --to notebook --execute data_filter.ipynb --inplace
 1. Open `baseline/mayo_retriever.ipynb`
 2. Run all cells.
 
-**Headless (no UI):**
 ```bash
 jupyter nbconvert --to notebook --execute baseline/mayo_retriever.ipynb --inplace
 ```
@@ -68,11 +66,10 @@ jupyter nbconvert --to notebook --execute baseline/mayo_retriever.ipynb --inplac
 
 Interactive (Jupyter):
 
-Open baseline/generate_rubrics.ipynb
+1. Open baseline/generate_rubrics.ipynb
 
-Run all cells.
+2. Run all cells.
 
-Headless (no UI):
 ```bash
 jupyter nbconvert --to notebook --execute baseline/generate_rubrics.ipynb --inplace
 ```
