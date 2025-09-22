@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 ---
 
-### A) Data Preprocessing
+## A) Data Preprocessing
 
 Interactive (Jupyter):
 1. Open `data_filter.ipynb`
@@ -52,7 +52,7 @@ Headless (no UI):
 ```bash
 jupyter nbconvert --to notebook --execute data_filter.ipynb --inplace
 
-### B) Baseline (Vanilla RAG)
+## B) Baseline (Vanilla RAG)
 
 **Step B1 – Retrieve evidence from Mayo (via Serper)**
 
@@ -64,7 +64,7 @@ jupyter nbconvert --to notebook --execute data_filter.ipynb --inplace
 ```bash
 jupyter nbconvert --to notebook --execute baseline/mayo_retriever.ipynb --inplace
 
-### Step B2 – Generate rubrics (vanilla)
+## Step B2 – Generate rubrics (vanilla)
 
 Interactive (Jupyter):
 
