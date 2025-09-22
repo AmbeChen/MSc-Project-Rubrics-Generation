@@ -39,10 +39,10 @@ pip install -r requirements.txt
 >   - `data/conversations_all.txt`
 >   - `data/few_shot.jsonl`
 >   - `data/reference_rubrics_all.jsonl`
-
+```
 ---
 
-## A) Data Preprocessing
+### A) Data Preprocessing
 
 Interactive (Jupyter):
 1. Open `data_filter.ipynb`
@@ -51,8 +51,8 @@ Interactive (Jupyter):
 Headless (no UI):
 ```bash
 jupyter nbconvert --to notebook --execute data_filter.ipynb --inplace
-
-## B) Baseline (Vanilla RAG)
+```
+### B) Baseline (Vanilla RAG)
 
 **Step B1 – Retrieve evidence from Mayo (via Serper)**
 
@@ -63,8 +63,8 @@ jupyter nbconvert --to notebook --execute data_filter.ipynb --inplace
 **Headless (no UI):**
 ```bash
 jupyter nbconvert --to notebook --execute baseline/mayo_retriever.ipynb --inplace
-
-## Step B2 – Generate rubrics (vanilla)
+```
+### Step B2 – Generate rubrics (vanilla)
 
 Interactive (Jupyter):
 
@@ -75,3 +75,4 @@ Run all cells.
 Headless (no UI):
 ```bash
 jupyter nbconvert --to notebook --execute baseline/generate_rubrics.ipynb --inplace
+```
