@@ -1,11 +1,18 @@
+# Core model + runtime
 transformers>=4.41.0
-peft
-accelerate
-datasets
-sentence-transformers
-scikit-learn
-openai
-serper
-python-dotenv
-torch
-ipykernel
+torch>=2.1.0
+accelerate>=0.28.0
+safetensors>=0.4.2
+
+# Retrieval & HTML parsing
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+# lxml is optional but faster HTML parsing
+# lxml>=4.9.0
+
+# Embeddings / similarity / evaluation
+sentence-transformers>=2.6.0
+numpy>=1.24.0
+scipy>=1.10.0
+tqdm>=4.65.0
+pandas>=2.0.0
