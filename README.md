@@ -39,7 +39,7 @@ pip install -r requirements.txt
 >   - `data/conversations_all.txt`
 >   - `data/few_shot.jsonl`
 >   - `data/reference_rubrics_all.jsonl`
-```
+
 ---
 
 ### A) Data Preprocessing
