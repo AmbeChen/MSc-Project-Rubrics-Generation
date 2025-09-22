@@ -62,7 +62,7 @@ jupyter nbconvert --to notebook --execute data_filter.ipynb --inplace
 ```bash
 jupyter nbconvert --to notebook --execute baseline/mayo_retriever.ipynb --inplace
 ```
-### Step B2 – Generate rubrics (vanilla)
+**Step B2 – Generate rubrics **
 
 Interactive (Jupyter):
 
@@ -72,4 +72,26 @@ Interactive (Jupyter):
 
 ```bash
 jupyter nbconvert --to notebook --execute baseline/generate_rubrics.ipynb --inplace
+```
+
+### C) Multi-Agent Pipeline
+**Step C1 – Query generation agent**
+```bash
+python multi_agent/step1_signals.py
+```
+**Step C1.5 – Mayo RAG retrieval**
+```bash
+python multi_agent/step1_5_rag_mayo.py
+```
+**Step C2 – Generate rubric drafts**
+```bash
+python multi_agent/step2_generate_drafts.py
+```
+**Step C3 – Deduplicate & merge**
+```bash
+python multi_agent/step3_dedupe.py
+```
+**Step C3 (review) – Reviewing agent to finalize**
+```bash
+python multi_agent/step3_reviewing.py
 ```
