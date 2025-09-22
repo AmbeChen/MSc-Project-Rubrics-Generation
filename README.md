@@ -95,3 +95,8 @@ python multi_agent/step3_dedupe.py
 ```bash
 python multi_agent/step3_reviewing.py
 ```
+
+### D) Evaluation
+```bash
+python evaluation/eval_rubrics.py
+```
