@@ -22,7 +22,7 @@ Clone the repository and install dependencies:
 git clone https://github.com/<your-username>/MSc-Project-Rubrics-Generation.git
 cd MSc-Project-Rubrics-Generation
 pip install -r requirements.txt
-
+```
 ## How to Run Everything 
 
 > **Prereqs**
